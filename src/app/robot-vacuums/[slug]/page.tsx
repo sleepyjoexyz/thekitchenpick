@@ -1,6 +1,7 @@
 import { getRobotVacuumArticle, getAllRobotVacuumArticleSlugs } from "@/data/robot-vacuum-articles";
 import { robotVacuums } from "@/data/robot-vacuums";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -247,6 +248,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/robot-vacuums/${slug}`} siteName="thekitchenpick" />
     </article>
   );
 }

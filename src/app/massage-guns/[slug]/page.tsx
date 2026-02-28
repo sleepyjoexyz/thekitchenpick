@@ -1,6 +1,7 @@
 import { getMassageGunArticle, getAllMassageGunArticleSlugs } from "@/data/massage-gun-articles";
 import { massageGuns } from "@/data/massage-guns";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -247,6 +248,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/massage-guns/${slug}`} siteName="thekitchenpick" />
     </article>
   );
 }

@@ -4,6 +4,7 @@ import {
 } from "@/data/air-purifier-articles";
 import { airPurifiers } from "@/data/air-purifiers";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -256,6 +257,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/air-purifiers/${slug}`} siteName="thekitchenpick" />
     </article>
   );
 }
