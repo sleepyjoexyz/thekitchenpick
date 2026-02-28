@@ -1,7 +1,5 @@
-import { getArticle, getAllArticleSlugs } from "@/data/articles";
-import { espressoMachines } from "@/data/espresso-machines";
+import { getEspressoMachineArticle, getAllEspressoMachineArticleSlugs } from "@/data/espresso-machine-articles";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -12,7 +10,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllArticleSlugs();
+  const slugs = getAllEspressoMachineArticleSlugs();
   return slugs.map((slug) => ({
     slug,
   }));
@@ -23,7 +21,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const slug = (await params).slug;
-  const article = getArticle(slug);
+  const article = getEspressoMachineArticle(slug);
 
   if (!article) {
     return {
@@ -45,7 +43,7 @@ export async function generateMetadata(
 
 export default async function ArticlePage({ params }: PageProps) {
   const slug = (await params).slug;
-  const article = getArticle(slug);
+  const article = getEspressoMachineArticle(slug);
 
   if (!article) {
     return (

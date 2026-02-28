@@ -1,5 +1,4 @@
-import { getArticle, getAllArticleSlugs } from "@/data/articles";
-import { standingDesks } from "@/data/standing-desks";
+import { getStandingDeskArticle, getAllStandingDeskArticleSlugs } from "@/data/standing-desk-articles";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
@@ -11,10 +10,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllArticleSlugs().filter((slug) => {
-    const article = getArticle(slug);
-    return article?.category === "standing-desks";
-  });
+  const slugs = getAllStandingDeskArticleSlugs();
   return slugs.map((slug) => ({
     slug,
   }));
@@ -25,9 +21,9 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const slug = (await params).slug;
-  const article = getArticle(slug);
+  const article = getStandingDeskArticle(slug);
 
-  if (!article || article.category !== "standing-desks") {
+  if (!article) {
     return {
       title: "Article Not Found",
     };
@@ -47,9 +43,9 @@ export async function generateMetadata(
 
 export default async function ArticlePage({ params }: PageProps) {
   const slug = (await params).slug;
-  const article = getArticle(slug);
+  const article = getStandingDeskArticle(slug);
 
-  if (!article || article.category !== "standing-desks") {
+  if (!article) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-2xl font-bold text-gray-900">Article not found</h1>
