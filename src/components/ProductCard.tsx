@@ -2,7 +2,6 @@
 
 import { Product } from "@/lib/types";
 import { formatPrice, getTypeLabel, formatRating, getAmazonLink } from "@/lib/utils";
-import Link from "next/link";
 
 interface ProductCardProps {
   product: Product;
@@ -66,12 +65,6 @@ export default function ProductCard({ product }: ProductCardProps) {
               View on Amazon
             </a>
           )}
-          <Link
-            href={`/espresso-machines/${product.id}`}
-            className="block w-full text-center bg-gray-100 text-gray-900 py-2 rounded font-medium text-sm hover:bg-gray-200 transition-colors"
-          >
-            Details
-          </Link>
         </div>
       </div>
     </div>
