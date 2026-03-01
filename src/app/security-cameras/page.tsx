@@ -193,13 +193,8 @@ export default function SecurityCamerasComparison() {
                   key={product.id}
                   className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                 >
-                  <td className="border border-gray-300 px-4 py-2 font-semibold">
-                    <Link
-                      href={`/security-cameras/${product.id}`}
-                      className="text-blue-600 hover:underline"
-                    >
-                      {product.brand} {product.model}
-                    </Link>
+                  <td className="border border-gray-300 px-4 py-2 font-semibold text-gray-900">
+                    {product.brand} {product.model}
                   </td>
                   <td className="border border-gray-300 px-4 py-2 text-right">
                     ${product.price}
