@@ -4,7 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy | The Kitchen Pick",
   description: "Privacy policy for The Kitchen Pick. Learn how we protect your information.",
-  canonical: "https://thekitchenpick.com/privacy",
+    alternates: {
+      canonical: "https://thekitchenpick.com/privacy",
+    },
 };
 
 export default function PrivacyPolicy() {

@@ -4,7 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service | The Kitchen Pick",
   description: "Terms of Service for The Kitchen Pick. Read our terms and conditions.",
-  canonical: "https://thekitchenpick.com/terms",
+    alternates: {
+      canonical: "https://thekitchenpick.com/terms",
+    },
 };
 
 export default function TermsOfService() {
