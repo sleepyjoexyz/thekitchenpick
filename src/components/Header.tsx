@@ -72,7 +72,7 @@ export default function Header() {
       </div>
 
       {/* Main navigation bar */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between" aria-label="Main navigation">
         <Link href="/" className="font-bold text-xl text-gray-900 hidden sm:block">
           The Kitchen Pick
         </Link>
@@ -111,6 +111,7 @@ export default function Header() {
           className="lg:hidden text-gray-700 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (

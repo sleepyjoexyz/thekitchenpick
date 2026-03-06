@@ -5,6 +5,20 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import { airPurifiers } from "@/data/air-purifiers";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Air Purifiers Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare air purifiers for rooms and homes. Detailed specs on HEPA filters, CADR ratings, noise levels, and prices to find the best air purifier for your space.",
+  canonical: "https://thekitchenpick.com/air-purifiers",
+  openGraph: {
+    title: "Best Air Purifiers Compared",
+    description: "Data-driven comparison of air purifiers with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/air-purifiers",
+    type: "website",
+  },
+};
 
 export default function AirPurifersComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -47,6 +61,22 @@ export default function AirPurifersComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Air Purifiers", url: "https://thekitchenpick.com/air-purifiers" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Air Purifiers"
+        categoryUrl="https://thekitchenpick.com/air-purifiers"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

@@ -6,6 +6,20 @@ import { securityCameras } from "@/data/security-cameras";
 import { SecurityCamera } from "@/data/security-cameras";
 import Link from "next/link";
 import { getAllSecurityCameraArticleSlugs } from "@/data/security-camera-articles";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Security Cameras Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare security cameras for indoor and outdoor use. Detailed specs on resolution, night vision, smart features, and pricing to protect your home.",
+  canonical: "https://thekitchenpick.com/security-cameras",
+  openGraph: {
+    title: "Best Security Cameras Compared",
+    description: "Data-driven comparison of security cameras with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/security-cameras",
+    type: "website",
+  },
+};
 
 export default function SecurityCamerasComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -45,6 +59,22 @@ export default function SecurityCamerasComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Security Cameras", url: "https://thekitchenpick.com/security-cameras" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Security Cameras"
+        categoryUrl="https://thekitchenpick.com/security-cameras"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

@@ -5,6 +5,20 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import { massageGuns, MassageGun } from "@/data/massage-guns";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Massage Guns Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare massage guns for muscle recovery, percussion speed, and battery life. Find the best massage gun for athletes and recovery.",
+  canonical: "https://thekitchenpick.com/massage-guns",
+  openGraph: {
+    title: "Best Massage Guns Compared",
+    description: "Data-driven comparison of massage guns with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/massage-guns",
+    type: "website",
+  },
+};
 
 export default function MassageGunsComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -47,6 +61,22 @@ export default function MassageGunsComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Massage Guns", url: "https://thekitchenpick.com/massage-guns" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Massage Guns"
+        categoryUrl="https://thekitchenpick.com/massage-guns"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

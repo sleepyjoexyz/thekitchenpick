@@ -6,6 +6,20 @@ import ProductCard from "@/components/ProductCard";
 import { electricToothbrushes } from "@/data/electric-toothbrushes";
 import { ElectricToothbrush } from "@/data/electric-toothbrushes";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Electric Toothbrushes Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare electric toothbrushes with brush type, vibration, smart features, and battery life. Find the best electric toothbrush for your oral health.",
+  canonical: "https://thekitchenpick.com/electric-toothbrushes",
+  openGraph: {
+    title: "Best Electric Toothbrushes Compared",
+    description: "Data-driven comparison of electric toothbrushes with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/electric-toothbrushes",
+    type: "website",
+  },
+};
 
 export default function ElectricToothbrushesComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -47,6 +61,22 @@ export default function ElectricToothbrushesComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Electric Toothbrushes", url: "https://thekitchenpick.com/electric-toothbrushes" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Electric Toothbrushes"
+        categoryUrl="https://thekitchenpick.com/electric-toothbrushes"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

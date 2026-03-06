@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FilterBar from "@/components/FilterBar";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -9,6 +8,20 @@ import ProductCard from "@/components/ProductCard";
 import { espressoMachines } from "@/data/espresso-machines";
 import { Product } from "@/lib/types";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Espresso Machines Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare 15 espresso machines across all price points. Detailed specs, features, prices, and ratings to find the machine that matches your needs and budget.",
+  canonical: "https://thekitchenpick.com/espresso-machines",
+  openGraph: {
+    title: "Best Espresso Machines Compared",
+    description: "Data-driven comparison of espresso machines with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/espresso-machines",
+    type: "website",
+  },
+};
 
 export default function EspressoMachinesComparison() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(
@@ -17,6 +30,22 @@ export default function EspressoMachinesComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Espresso Machines", url: "https://thekitchenpick.com/espresso-machines" }
+      ]} />
+      <ProductListSchema
+        products={espressoMachines.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor
+        }))}
+        categoryName="Espresso Machines"
+        categoryUrl="https://thekitchenpick.com/espresso-machines"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

@@ -6,6 +6,20 @@ import ProductCard from "@/components/ProductCard";
 import { robotVacuums } from "@/data/robot-vacuums";
 import { RobotVacuum } from "@/data/robot-vacuums";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Robot Vacuums Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare robot vacuums with mapping, suction power, mopping, and app control. Detailed specs and ratings to find the best robot vacuum for your home.",
+  canonical: "https://thekitchenpick.com/robot-vacuums",
+  openGraph: {
+    title: "Best Robot Vacuums Compared",
+    description: "Data-driven comparison of robot vacuums with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/robot-vacuums",
+    type: "website",
+  },
+};
 
 export default function RobotVacuumsComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -48,6 +62,22 @@ export default function RobotVacuumsComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Robot Vacuums", url: "https://thekitchenpick.com/robot-vacuums" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Robot Vacuums"
+        categoryUrl="https://thekitchenpick.com/robot-vacuums"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

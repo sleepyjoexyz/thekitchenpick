@@ -6,6 +6,20 @@ import ProductCard from "@/components/ProductCard";
 import { airFryers } from "@/data/air-fryers";
 import { AirFryer } from "@/data/air-fryers";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Air Fryers Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare air fryers across all styles and price points. Detailed specs, basket sizes, power ratings, and expert ratings to find your perfect air fryer.",
+  canonical: "https://thekitchenpick.com/air-fryers",
+  openGraph: {
+    title: "Best Air Fryers Compared",
+    description: "Data-driven comparison of air fryers with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/air-fryers",
+    type: "website",
+  },
+};
 
 export default function AirFryersComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -46,6 +60,22 @@ export default function AirFryersComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Air Fryers", url: "https://thekitchenpick.com/air-fryers" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Air Fryers"
+        categoryUrl="https://thekitchenpick.com/air-fryers"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

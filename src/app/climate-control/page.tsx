@@ -5,6 +5,20 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import { climateDevices, ClimateDevice } from "@/data/climate-control";
 import Link from "next/link";
+import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Climate Control Devices Compared — 2025-2026 | The Kitchen Pick",
+  description: "Compare humidifiers, dehumidifiers, and portable heaters. Find the best climate control device for your home and comfort needs.",
+  canonical: "https://thekitchenpick.com/climate-control",
+  openGraph: {
+    title: "Best Climate Control Devices Compared",
+    description: "Data-driven comparison of climate control devices with specs, prices, and ratings.",
+    url: "https://thekitchenpick.com/climate-control",
+    type: "website",
+  },
+};
 
 export default function ClimateControlComparison() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -46,6 +60,22 @@ export default function ClimateControlComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://thekitchenpick.com" },
+        { name: "Climate Control", url: "https://thekitchenpick.com/climate-control" }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.bestFor || p.model
+        }))}
+        categoryName="Climate Control"
+        categoryUrl="https://thekitchenpick.com/climate-control"
+      />
+
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs
