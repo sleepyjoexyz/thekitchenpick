@@ -1,3 +1,5 @@
+'use client';
+
 export function WebSiteSchema() {
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
