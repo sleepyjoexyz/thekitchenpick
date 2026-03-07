@@ -86,16 +86,16 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           {categories.map((cat) => (
             <div key={cat.group} className="relative group">
-              <button className="text-gray-700 hover:text-blue-600 font-medium text-sm py-2">
+              <button className="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-2 font-medium text-sm" aria-label={`${cat.group} menu`}>
                 {cat.group}
               </button>
-              <div className="absolute left-0 top-full mt-0 pt-2 hidden group-hover:block z-50">
+              <div className="absolute left-0 top-full mt-0 pt-2 hidden group-hover:block group-focus-within:block z-50">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[200px]">
                   {cat.items.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 focus:outline-none focus:bg-blue-50 focus:text-blue-600"
                     >
                       {item.label}
                     </Link>

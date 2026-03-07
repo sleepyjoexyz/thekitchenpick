@@ -36,9 +36,6 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: "index, follow",
-  alternates: {
-    canonical: "https://thekitchenpick.com",
-  },
 };
 
 export default function RootLayout({
@@ -48,12 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="canonical"
-          href="https://thekitchenpick.com"
-        />
-      </head>
+      <head></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
       >

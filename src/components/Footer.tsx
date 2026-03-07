@@ -82,19 +82,21 @@ export default function Footer() {
         <div className="border-t border-gray-200 pt-8">
           <div className="text-center text-sm text-gray-600 space-y-2">
             <p>&copy; 2026 The Kitchen Pick. All rights reserved.</p>
-            <p>
-              As an Amazon Associate, we earn from qualifying purchases.
-            </p>
-            <p className="text-xs">
+            <div className="space-y-1 text-xs text-gray-600">
+              <p className="font-medium">Affiliate Disclosure:</p>
+              <p>
+                As an Amazon Associate, we earn from qualifying purchases. We may also earn commissions from other affiliate programs.
+              </p>
+            </div>
+            <div className="space-y-1 text-xs text-gray-500 pt-2">
+              <p className="font-medium text-gray-600">AI Disclosure:</p>
+              <p>
+                This website was prepared with AI-assisted research. It is provided for informational purposes only and does not constitute legal, financial, or investment advice. All data should be independently verified before use.
+              </p>
+            </div>
+            <p className="text-xs text-gray-400">
               Prices and availability are subject to change. Last updated:{" "}
               {currentDate}
-            </p>
-            <p className="text-xs pt-2 text-gray-500">
-              This website was prepared with AI-assisted research by DWU
-              Consulting. It is provided for informational purposes only and
-              does not constitute legal, financial, or investment advice. All
-              data should be independently verified before use in any official
-              capacity.
             </p>
           </div>
         </div>

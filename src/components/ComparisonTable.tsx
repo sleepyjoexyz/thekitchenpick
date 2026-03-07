@@ -50,11 +50,14 @@ export default function ComparisonTable({ products }: ComparisonTableProps) {
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Brand & Model
             </th>
-            <th
-              className="px-4 py-3 text-left font-bold text-gray-900 cursor-pointer hover:bg-gray-200"
-              onClick={() => handleSort("price")}
-            >
-              Price{getSortIndicator("price")}
+            <th className="px-4 py-3 text-left font-bold text-gray-900">
+              <button
+                onClick={() => handleSort("price")}
+                className="w-full text-left hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
+                aria-label="Sort by Price"
+              >
+                Price{getSortIndicator("price")}
+              </button>
             </th>
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Type
@@ -62,11 +65,14 @@ export default function ComparisonTable({ products }: ComparisonTableProps) {
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Boiler
             </th>
-            <th
-              className="px-4 py-3 text-left font-bold text-gray-900 cursor-pointer hover:bg-gray-200"
-              onClick={() => handleSort("pressureBars")}
-            >
-              Pressure{getSortIndicator("pressureBars")}
+            <th className="px-4 py-3 text-left font-bold text-gray-900">
+              <button
+                onClick={() => handleSort("pressureBars")}
+                className="w-full text-left hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
+                aria-label="Sort by Pressure"
+              >
+                Pressure{getSortIndicator("pressureBars")}
+              </button>
             </th>
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Grinder
@@ -74,11 +80,14 @@ export default function ComparisonTable({ products }: ComparisonTableProps) {
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Milk System
             </th>
-            <th
-              className="px-4 py-3 text-left font-bold text-gray-900 cursor-pointer hover:bg-gray-200"
-              onClick={() => handleSort("rating")}
-            >
-              Rating{getSortIndicator("rating")}
+            <th className="px-4 py-3 text-left font-bold text-gray-900">
+              <button
+                onClick={() => handleSort("rating")}
+                className="w-full text-left hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
+                aria-label="Sort by Rating"
+              >
+                Rating{getSortIndicator("rating")}
+              </button>
             </th>
             <th className="px-4 py-3 text-left font-bold text-gray-900">
               Link
