@@ -39,13 +39,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // Article pages by category
-  const espressoArticles = getAllArticleSlugs().map((slug) => ({
-    url: `${baseUrl}/espresso-machines/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  // Standing desk slugs (shared in articles.ts but belong to standing-desks category)
+  const standingDeskSlugs = [
+    "single-vs-dual-motor-standing-desks",
+    "best-standing-desks-under-400",
+    "standing-desk-ergonomics-guide",
+    "standing-desk-stability-test",
+  ];
+
+  // Article pages by category — filter out standing desk articles from espresso
+  const espressoArticles = getAllArticleSlugs()
+    .filter((slug) => !standingDeskSlugs.includes(slug))
+    .map((slug) => ({
+      url: `${baseUrl}/espresso-machines/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
 
   const robotVacuumArticles = getAllRobotVacuumArticleSlugs().map((slug) => ({
     url: `${baseUrl}/robot-vacuums/${slug}`,
@@ -100,13 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Standing desk articles are in the shared articles.ts
-  const standingDeskSlugs = [
-    "single-vs-dual-motor-standing-desks",
-    "best-standing-desks-under-400",
-    "standing-desk-ergonomics-guide",
-    "standing-desk-stability-test",
-  ];
+  // Standing desk articles mapped to correct URL path
   const standingDeskArticles = standingDeskSlugs.map((slug) => ({
     url: `${baseUrl}/standing-desks/${slug}`,
     lastModified: new Date(),
