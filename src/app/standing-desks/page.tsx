@@ -48,8 +48,8 @@ export default function StandingDesksContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Standing Desks", url: "https://thekitchenpick.com/standing-desks" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Standing Desks", url: "https://www.thekitchenpick.com/standing-desks" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -60,7 +60,7 @@ export default function StandingDesksContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Standing Desks"
-        categoryUrl="https://thekitchenpick.com/standing-desks"
+        categoryUrl="https://www.thekitchenpick.com/standing-desks"
       />
 
       {/* Breadcrumbs */}

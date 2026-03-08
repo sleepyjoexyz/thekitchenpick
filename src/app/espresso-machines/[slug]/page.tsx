@@ -39,10 +39,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/espresso-machines/${slug}`,
+      url: `https://www.thekitchenpick.com/espresso-machines/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/espresso-machines/${slug}`,
+      canonical: `https://www.thekitchenpick.com/espresso-machines/${slug}`,
     },
   };
 }
@@ -60,14 +60,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/espresso-machines/${slug}`}
+        url={`https://www.thekitchenpick.com/espresso-machines/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Espresso Machines", url: "https://thekitchenpick.com/espresso-machines" },
-        { name: article.title, url: `https://thekitchenpick.com/espresso-machines/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Espresso Machines", url: "https://www.thekitchenpick.com/espresso-machines" },
+        { name: article.title, url: `https://www.thekitchenpick.com/espresso-machines/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

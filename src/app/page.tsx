@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Compare home and kitchen products side-by-side with detailed specs and prices. Espresso machines, robot vacuums, air purifiers, standing desks, and more. No sponsored rankings. Just data.",
   alternates: {
-    canonical: "https://thekitchenpick.com",
+    canonical: "https://www.thekitchenpick.com",
   },
   openGraph: {
     title: "The Kitchen Pick",
     description: "Data-driven comparisons of home and kitchen products",
     type: "website",
-    url: "https://thekitchenpick.com",
+    url: "https://www.thekitchenpick.com",
     images: [
       {
         url: "/og-image.png",

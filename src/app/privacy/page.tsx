@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | The Kitchen Pick",
   description: "Privacy policy for The Kitchen Pick. Learn how we protect your information.",
     alternates: {
-      canonical: "https://thekitchenpick.com/privacy",
+      canonical: "https://www.thekitchenpick.com/privacy",
     },
 };
 

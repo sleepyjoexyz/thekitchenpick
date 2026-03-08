@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thekitchenpick.com"),
+  metadataBase: new URL("https://www.thekitchenpick.com"),
   title: "The Kitchen Pick — Data-Driven Kitchen Appliance Comparisons",
   description:
     "Compare kitchen appliances side-by-side with detailed specs, prices, and features. Explore espresso machines, air fryers, air purifiers, electric toothbrushes, standing desks, massage guns, robot vacuums, and security cameras. No sponsored rankings, no fake reviews—just data.",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "The Kitchen Pick",
     description:
       "Data-driven comparisons of kitchen appliances. Compare specs, prices, and features.",
-    url: "https://thekitchenpick.com",
+    url: "https://www.thekitchenpick.com",
     siteName: "The Kitchen Pick",
     type: "website",
     images: [

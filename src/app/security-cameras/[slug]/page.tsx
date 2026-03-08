@@ -43,10 +43,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/security-cameras/${slug}`,
+      url: `https://www.thekitchenpick.com/security-cameras/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/security-cameras/${slug}`,
+      canonical: `https://www.thekitchenpick.com/security-cameras/${slug}`,
     },
   };
 }
@@ -64,14 +64,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/security-cameras/${slug}`}
+        url={`https://www.thekitchenpick.com/security-cameras/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Security Cameras", url: "https://thekitchenpick.com/security-cameras" },
-        { name: article.title, url: `https://thekitchenpick.com/security-cameras/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Security Cameras", url: "https://www.thekitchenpick.com/security-cameras" },
+        { name: article.title, url: `https://www.thekitchenpick.com/security-cameras/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

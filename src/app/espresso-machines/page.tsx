@@ -18,8 +18,8 @@ export default function EspressoMachinesContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Espresso Machines", url: "https://thekitchenpick.com/espresso-machines" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Espresso Machines", url: "https://www.thekitchenpick.com/espresso-machines" }
       ]} />
       <ProductListSchema
         products={espressoMachines.map(p => ({
@@ -30,7 +30,7 @@ export default function EspressoMachinesContent() {
           description: p.bestFor
         }))}
         categoryName="Espresso Machines"
-        categoryUrl="https://thekitchenpick.com/espresso-machines"
+        categoryUrl="https://www.thekitchenpick.com/espresso-machines"
       />
 
       {/* Breadcrumbs */}

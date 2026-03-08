@@ -43,10 +43,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/climate-control/${slug}`,
+      url: `https://www.thekitchenpick.com/climate-control/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/climate-control/${slug}`,
+      canonical: `https://www.thekitchenpick.com/climate-control/${slug}`,
     },
   };
 }
@@ -64,14 +64,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/climate-control/${slug}`}
+        url={`https://www.thekitchenpick.com/climate-control/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Climate Control", url: "https://thekitchenpick.com/climate-control" },
-        { name: article.title, url: `https://thekitchenpick.com/climate-control/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Climate Control", url: "https://www.thekitchenpick.com/climate-control" },
+        { name: article.title, url: `https://www.thekitchenpick.com/climate-control/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

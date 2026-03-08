@@ -48,8 +48,8 @@ export default function ClimateControlContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Climate Control", url: "https://thekitchenpick.com/climate-control" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Climate Control", url: "https://www.thekitchenpick.com/climate-control" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -60,7 +60,7 @@ export default function ClimateControlContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Climate Control"
-        categoryUrl="https://thekitchenpick.com/climate-control"
+        categoryUrl="https://www.thekitchenpick.com/climate-control"
       />
 
       {/* Breadcrumbs */}

@@ -48,8 +48,8 @@ export default function ElectricToothbrushesContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Electric Toothbrushes", url: "https://thekitchenpick.com/electric-toothbrushes" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Electric Toothbrushes", url: "https://www.thekitchenpick.com/electric-toothbrushes" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -60,7 +60,7 @@ export default function ElectricToothbrushesContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Electric Toothbrushes"
-        categoryUrl="https://thekitchenpick.com/electric-toothbrushes"
+        categoryUrl="https://www.thekitchenpick.com/electric-toothbrushes"
       />
 
       {/* Breadcrumbs */}

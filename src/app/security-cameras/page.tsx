@@ -47,8 +47,8 @@ export default function SecurityCamerasContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Security Cameras", url: "https://thekitchenpick.com/security-cameras" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Security Cameras", url: "https://www.thekitchenpick.com/security-cameras" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -59,7 +59,7 @@ export default function SecurityCamerasContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Security Cameras"
-        categoryUrl="https://thekitchenpick.com/security-cameras"
+        categoryUrl="https://www.thekitchenpick.com/security-cameras"
       />
 
       {/* Breadcrumbs */}

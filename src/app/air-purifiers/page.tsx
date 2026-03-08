@@ -49,8 +49,8 @@ export default function AirPurifiersContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Air Purifiers", url: "https://thekitchenpick.com/air-purifiers" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Air Purifiers", url: "https://www.thekitchenpick.com/air-purifiers" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -61,7 +61,7 @@ export default function AirPurifiersContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Air Purifiers"
-        categoryUrl="https://thekitchenpick.com/air-purifiers"
+        categoryUrl="https://www.thekitchenpick.com/air-purifiers"
       />
 
       {/* Breadcrumbs */}

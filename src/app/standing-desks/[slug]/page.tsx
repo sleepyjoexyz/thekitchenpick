@@ -39,10 +39,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/standing-desks/${slug}`,
+      url: `https://www.thekitchenpick.com/standing-desks/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/standing-desks/${slug}`,
+      canonical: `https://www.thekitchenpick.com/standing-desks/${slug}`,
     },
   };
 }
@@ -60,14 +60,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/standing-desks/${slug}`}
+        url={`https://www.thekitchenpick.com/standing-desks/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Standing Desks", url: "https://thekitchenpick.com/standing-desks" },
-        { name: article.title, url: `https://thekitchenpick.com/standing-desks/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Standing Desks", url: "https://www.thekitchenpick.com/standing-desks" },
+        { name: article.title, url: `https://www.thekitchenpick.com/standing-desks/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

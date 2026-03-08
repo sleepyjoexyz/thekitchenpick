@@ -50,8 +50,8 @@ export default function RobotVacuumsContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Robot Vacuums", url: "https://thekitchenpick.com/robot-vacuums" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Robot Vacuums", url: "https://www.thekitchenpick.com/robot-vacuums" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -62,7 +62,7 @@ export default function RobotVacuumsContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Robot Vacuums"
-        categoryUrl="https://thekitchenpick.com/robot-vacuums"
+        categoryUrl="https://www.thekitchenpick.com/robot-vacuums"
       />
 
       {/* Breadcrumbs */}

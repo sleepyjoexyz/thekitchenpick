@@ -6,12 +6,12 @@ export function WebSiteSchema() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "The Kitchen Pick",
-      "url": "https://thekitchenpick.com",
+      "url": "https://www.thekitchenpick.com",
       "description": "Data-driven home and kitchen product comparisons",
       "publisher": {
         "@type": "Organization",
         "name": "The Kitchen Pick",
-        "url": "https://thekitchenpick.com"
+        "url": "https://www.thekitchenpick.com"
       }
     })}} />
   );
@@ -45,7 +45,7 @@ export function ArticleSchema({ title, description, url, datePublished, dateModi
       "datePublished": datePublished,
       "dateModified": dateModified,
       "author": { "@type": "Organization", "name": "The Kitchen Pick" },
-      "publisher": { "@type": "Organization", "name": "The Kitchen Pick", "url": "https://thekitchenpick.com" }
+      "publisher": { "@type": "Organization", "name": "The Kitchen Pick", "url": "https://www.thekitchenpick.com" }
     })}} />
   );
 }

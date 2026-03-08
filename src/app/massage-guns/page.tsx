@@ -49,8 +49,8 @@ export default function MassageGunsContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Massage Guns", url: "https://thekitchenpick.com/massage-guns" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Massage Guns", url: "https://www.thekitchenpick.com/massage-guns" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -61,7 +61,7 @@ export default function MassageGunsContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Massage Guns"
-        categoryUrl="https://thekitchenpick.com/massage-guns"
+        categoryUrl="https://www.thekitchenpick.com/massage-guns"
       />
 
       {/* Breadcrumbs */}

@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const affiliateLinks = [
-  { name: 'The Kitchen Pick', url: 'https://thekitchenpick.com', current: true },
-  { name: 'The Family Pick', url: 'https://thefamilypick.com', current: false },
-  { name: 'The Gadget Pick', url: 'https://thegadgetpick.com', current: false },
+  { name: 'The Kitchen Pick', url: 'https://www.thekitchenpick.com', current: true },
+  { name: 'The Family Pick', url: 'https://www.thefamilypick.com', current: false },
+  { name: 'The Gadget Pick', url: 'https://www.thegadgetpick.com', current: false },
 ];
 
 const categories = [

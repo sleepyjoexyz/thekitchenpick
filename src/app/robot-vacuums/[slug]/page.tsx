@@ -40,10 +40,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/robot-vacuums/${slug}`,
+      url: `https://www.thekitchenpick.com/robot-vacuums/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/robot-vacuums/${slug}`,
+      canonical: `https://www.thekitchenpick.com/robot-vacuums/${slug}`,
     },
   };
 }
@@ -61,14 +61,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/robot-vacuums/${slug}`}
+        url={`https://www.thekitchenpick.com/robot-vacuums/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Robot Vacuums", url: "https://thekitchenpick.com/robot-vacuums" },
-        { name: article.title, url: `https://thekitchenpick.com/robot-vacuums/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Robot Vacuums", url: "https://www.thekitchenpick.com/robot-vacuums" },
+        { name: article.title, url: `https://www.thekitchenpick.com/robot-vacuums/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

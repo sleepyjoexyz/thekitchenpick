@@ -48,8 +48,8 @@ export default function AirFryersContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Air Fryers", url: "https://thekitchenpick.com/air-fryers" }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Air Fryers", url: "https://www.thekitchenpick.com/air-fryers" }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -60,7 +60,7 @@ export default function AirFryersContent() {
           description: p.bestFor || p.model
         }))}
         categoryName="Air Fryers"
-        categoryUrl="https://thekitchenpick.com/air-fryers"
+        categoryUrl="https://www.thekitchenpick.com/air-fryers"
       />
 
       {/* Breadcrumbs */}

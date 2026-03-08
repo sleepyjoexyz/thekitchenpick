@@ -43,10 +43,10 @@ export async function generateMetadata(
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thekitchenpick.com/air-purifiers/${slug}`,
+      url: `https://www.thekitchenpick.com/air-purifiers/${slug}`,
     },
     alternates: {
-      canonical: `https://thekitchenpick.com/air-purifiers/${slug}`,
+      canonical: `https://www.thekitchenpick.com/air-purifiers/${slug}`,
     },
   };
 }
@@ -64,14 +64,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thekitchenpick.com/air-purifiers/${slug}`}
+        url={`https://www.thekitchenpick.com/air-purifiers/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: "Home", url: "https://thekitchenpick.com" },
-        { name: "Air Purifiers", url: "https://thekitchenpick.com/air-purifiers" },
-        { name: article.title, url: `https://thekitchenpick.com/air-purifiers/${slug}` }
+        { name: "Home", url: "https://www.thekitchenpick.com" },
+        { name: "Air Purifiers", url: "https://www.thekitchenpick.com/air-purifiers" },
+        { name: article.title, url: `https://www.thekitchenpick.com/air-purifiers/${slug}` }
       ]} />
 
       {/* Breadcrumbs */}

@@ -9,7 +9,7 @@ import { getAllElectricToothbrushArticleSlugs } from "@/data/electric-toothbrush
 import { getAllClimateControlArticleSlugs } from "@/data/climate-control-articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://thekitchenpick.com";
+  const baseUrl = "https://www.thekitchenpick.com";
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
