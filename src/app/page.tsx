@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     description: "Data-driven comparisons of home and kitchen products",
     type: "website",
     url: "https://thekitchenpick.com",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Kitchen Pick - Data-Driven Kitchen Appliance Comparisons",
+      },
+    ],
   },
 };
 
