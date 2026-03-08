@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     url: "https://thekitchenpick.com",
     siteName: "The Kitchen Pick",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Kitchen Pick - Data-Driven Kitchen Appliance Comparisons",
+      },
+    ],
   },
   robots: "index, follow",
 };
