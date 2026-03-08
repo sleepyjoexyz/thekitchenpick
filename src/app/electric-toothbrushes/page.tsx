@@ -3,9 +3,85 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { electricToothbrushes } from "@/data/electric-toothbrushes";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const toothbrushFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "Electric toothbrushes range from budget-friendly to premium.",
+    options: [
+      { value: "budget", label: "Under $100", description: "Reliable basics without breaking the bank", icon: "💰" },
+      { value: "mid", label: "$100 – $200", description: "Good balance of features and quality", icon: "⚖️" },
+      { value: "premium", label: "$200+", description: "Premium tech and advanced features", icon: "✨" },
+      { value: "any", label: "Any price", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "type",
+    question: "What brush technology do you prefer?",
+    subtitle: "Oscillating, sonic, and ultrasonic brushes clean differently.",
+    options: [
+      { value: "oscillating", label: "Oscillating", description: "Back-and-forth motion, proven effective", icon: "↔️" },
+      { value: "sonic", label: "Sonic", description: "High-frequency vibrations, gentle and efficient", icon: "🔊" },
+      { value: "ultrasonic", label: "Ultrasonic", description: "Highest frequency, specialized cleaning", icon: "⚡" },
+      { value: "any", label: "Not sure", description: "Show all types", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => val === "any" || p.type === val,
+  },
+  {
+    id: "smart",
+    question: "Do you want smart features?",
+    subtitle: "App and connectivity features provide real-time feedback and tracking.",
+    options: [
+      { value: "yes", label: "Yes, app control", description: "Connect to phone, get brushing feedback", icon: "📱" },
+      { value: "no", label: "No, manual is fine", description: "Simple timer and mode buttons", icon: "✓" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasApp === true;
+      return true; // "no" shows all
+    },
+  },
+  {
+    id: "travel",
+    question: "Do you travel frequently?",
+    subtitle: "Travel cases and long battery life matter if you're on the go.",
+    options: [
+      { value: "yes", label: "Yes, include travel case", description: "Need a protective case for trips", icon: "✈️" },
+      { value: "no", label: "No, home use only", description: "Don't need a travel case", icon: "🏠" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.travelCase === true;
+      return true; // "no" shows all
+    },
+  },
+];
+
+const toothbrushResultConfig: FinderResultConfig = {
+  getName: (p: any) => `${p.brand} ${p.model}`,
+  getPrice: (p: any) => p.price,
+  getRating: (p: any) => p.rating,
+  getSummary: (p: any) => p.bestFor,
+  getAsin: (p: any) => p.amazonAsin,
+  displayFields: [
+    { label: "Type", getValue: (p: any) => {
+      const types: Record<string, string> = { "oscillating": "Oscillating", "sonic": "Sonic", "ultrasonic": "Ultrasonic" };
+      return types[p.type] || p.type;
+    }},
+    { label: "Movements/min", getValue: (p: any) => `${(p.brushMovements / 1000).toFixed(0)}K` },
+    { label: "Battery Life", getValue: (p: any) => `${p.batteryDays} days` },
+    { label: "Travel Case", getValue: (p: any) => p.travelCase ? "Yes" : "No" },
+  ],
+};
 
 export default function ElectricToothbrushesContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -87,6 +163,17 @@ export default function ElectricToothbrushesContent() {
           and oral health needs. Our methodology is based on manufacturer specs,
           user ratings, and dental industry standards.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Electric Toothbrush"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={toothbrushFinderSteps}
+          products={electricToothbrushes}
+          resultConfig={toothbrushResultConfig}
+        />
       </section>
 
       {/* Filters */}

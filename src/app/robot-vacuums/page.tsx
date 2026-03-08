@@ -3,10 +3,91 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { robotVacuums } from "@/data/robot-vacuums";
 import { RobotVacuum } from "@/data/robot-vacuums";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const robotVacuumFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to vacuums in your price range.",
+    options: [
+      { value: "budget", label: "Under $400", description: "Basic models with essential features", icon: "💰" },
+      { value: "mid", label: "$400 – $800", description: "Mid-range with better navigation and features", icon: "⚖️" },
+      { value: "premium", label: "Over $800", description: "Premium models with top-tier features", icon: "✨" },
+      { value: "any", label: "Any budget", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: RobotVacuum, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "selfempty",
+    question: "Do you want self-emptying?",
+    subtitle: "Self-empty bases reduce maintenance—you empty once per month instead of weekly.",
+    options: [
+      { value: "yes", label: "Yes, self-emptying", description: "Hands-off convenience", icon: "🤖" },
+      { value: "no", label: "No, manual empty", description: "Save money, empty weekly", icon: "🧹" },
+      { value: "any", label: "Either way is fine", description: "Don't filter based on self-empty", icon: "🤷" },
+    ],
+    filterFn: (p: RobotVacuum, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.selfEmpty === true;
+      if (val === "no") return p.selfEmpty === false;
+      return true;
+    },
+  },
+  {
+    id: "mopping",
+    question: "Do you want mopping capability?",
+    subtitle: "Vacuum-mop combos clean both hard floors and carpets.",
+    options: [
+      { value: "yes", label: "Yes, with mopping", description: "Vacuum and mop in one pass", icon: "💦" },
+      { value: "no", label: "Vacuum only", description: "Vacuuming is enough for me", icon: "🌪️" },
+      { value: "any", label: "Doesn't matter", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: RobotVacuum, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.mopping === true;
+      if (val === "no") return p.mopping === false;
+      return true;
+    },
+  },
+  {
+    id: "suction",
+    question: "How strong does the suction need to be?",
+    subtitle: "Higher suction helps with pet hair and carpets.",
+    options: [
+      { value: "low", label: "Basic (under 3000 Pa)", description: "Hard floors only", icon: "💨" },
+      { value: "mid", label: "Moderate (3000-4500 Pa)", description: "Carpets and pet hair", icon: "💪" },
+      { value: "high", label: "Strong (4500+ Pa)", description: "Heavy pet hair and deep carpets", icon: "🌪️" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: RobotVacuum, val: string) => {
+      if (val === "any") return true;
+      if (val === "low") return p.suctionPa < 3000;
+      if (val === "mid") return p.suctionPa >= 3000 && p.suctionPa < 4500;
+      if (val === "high") return p.suctionPa >= 4500;
+      return true;
+    },
+  },
+];
+
+const robotVacuumResultConfig: FinderResultConfig = {
+  getName: (p: RobotVacuum) => `${p.brand} ${p.model}`,
+  getPrice: (p: RobotVacuum) => p.price,
+  getRating: (p: RobotVacuum) => p.rating,
+  getSummary: (p: RobotVacuum) => p.bestFor,
+  getAsin: (p: RobotVacuum) => p.amazonAsin,
+  displayFields: [
+    { label: "Suction Power", getValue: (p: RobotVacuum) => `${p.suctionPa} Pa` },
+    { label: "Navigation", getValue: (p: RobotVacuum) => p.navigation },
+    { label: "Self-Empty", getValue: (p: RobotVacuum) => p.selfEmpty ? "Yes" : "No" },
+    { label: "Mopping", getValue: (p: RobotVacuum) => p.mopping ? "Yes" : "No" },
+  ],
+};
 
 export default function RobotVacuumsContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -89,6 +170,17 @@ export default function RobotVacuumsContent() {
           needs. Our methodology is based on manufacturer specs, user ratings,
           and real-world performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Robot Vacuum"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={robotVacuumFinderSteps}
+          products={robotVacuums}
+          resultConfig={robotVacuumResultConfig}
+        />
       </section>
 
       {/* Filters */}

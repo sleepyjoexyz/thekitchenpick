@@ -3,9 +3,90 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { standingDesks, StandingDesk } from "@/data/standing-desks";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const standingDeskFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to desks in your price range.",
+    options: [
+      { value: "budget", label: "Under $400", description: "Affordable entry-level desks", icon: "💰" },
+      { value: "mid", label: "$400 – $800", description: "Mid-range with solid features", icon: "⚖️" },
+      { value: "premium", label: "Over $800", description: "Premium desks with advanced features", icon: "✨" },
+      { value: "any", label: "Any budget", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: StandingDesk, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "width",
+    question: "How wide should your desk be?",
+    subtitle: "Wider desks fit multiple monitors and more equipment.",
+    options: [
+      { value: "48", label: "Compact (48 inches)", description: "Single monitor, laptops", icon: "📦" },
+      { value: "60", label: "Standard (60 inches)", description: "Dual monitors, typical workspaces", icon: "💼" },
+      { value: "72", label: "Large (72+ inches)", description: "Triple monitors, extensive setup", icon: "🖥️" },
+      { value: "any", label: "Any width", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: StandingDesk, val: string) => {
+      if (val === "any") return true;
+      const width = parseInt(val);
+      return p.widthInches >= width;
+    },
+  },
+  {
+    id: "motor",
+    question: "What motor type do you prefer?",
+    subtitle: "Dual motors are faster and more stable; single motors save money.",
+    options: [
+      { value: "dual", label: "Dual motor", description: "Fast, stable, premium", icon: "⚡" },
+      { value: "single", label: "Single motor", description: "Budget-friendly, adequate for light use", icon: "🔧" },
+      { value: "any", label: "Either way", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: StandingDesk, val: string) => {
+      if (val === "any") return true;
+      if (val === "dual") return p.motorType.toLowerCase().includes("dual");
+      if (val === "single") return p.motorType.toLowerCase().includes("single");
+      return true;
+    },
+  },
+  {
+    id: "capacity",
+    question: "How much weight capacity do you need?",
+    subtitle: "Consider your monitors, equipment, and anything you'll place on the desk.",
+    options: [
+      { value: "light", label: "Light (under 280 lbs)", description: "Laptop + one monitor", icon: "📱" },
+      { value: "moderate", label: "Moderate (280-400 lbs)", description: "Dual monitors + equipment", icon: "🖥️" },
+      { value: "heavy", label: "Heavy (400+ lbs)", description: "Triple monitors + heavy equipment", icon: "🏋️" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: StandingDesk, val: string) => {
+      if (val === "any") return true;
+      if (val === "light") return p.weightCapacityLbs < 280;
+      if (val === "moderate") return p.weightCapacityLbs >= 280 && p.weightCapacityLbs < 400;
+      if (val === "heavy") return p.weightCapacityLbs >= 400;
+      return true;
+    },
+  },
+];
+
+const standingDeskResultConfig: FinderResultConfig = {
+  getName: (p: StandingDesk) => `${p.brand} ${p.model}`,
+  getPrice: (p: StandingDesk) => p.price,
+  getRating: (p: StandingDesk) => p.rating,
+  getSummary: (p: StandingDesk) => p.bestFor,
+  getAsin: (p: StandingDesk) => p.amazonAsin,
+  displayFields: [
+    { label: "Size", getValue: (p: StandingDesk) => `${p.widthInches}" x ${p.depthInches}"` },
+    { label: "Motor Type", getValue: (p: StandingDesk) => p.motorType },
+    { label: "Weight Capacity", getValue: (p: StandingDesk) => `${p.weightCapacityLbs} lbs` },
+    { label: "Memory Presets", getValue: (p: StandingDesk) => `${p.memoryPresets} presets` },
+  ],
+};
 
 export default function StandingDesksContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -87,6 +168,17 @@ export default function StandingDesksContent() {
           Our methodology is based on manufacturer specs, user ratings, and
           real-world stability and ergonomics testing.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Standing Desk"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={standingDeskFinderSteps}
+          products={standingDesks}
+          resultConfig={standingDeskResultConfig}
+        />
       </section>
 
       {/* Filters */}

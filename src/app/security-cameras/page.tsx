@@ -2,11 +2,89 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ProductFinder from "@/components/ProductFinder";
 import { securityCameras } from "@/data/security-cameras";
 import { SecurityCamera } from "@/data/security-cameras";
 import Link from "next/link";
 import { getAllSecurityCameraArticleSlugs } from "@/data/security-camera-articles";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const securityCameraFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to cameras in your price range.",
+    options: [
+      { value: "budget", label: "Under $150", description: "Affordable entry-level options", icon: "💰" },
+      { value: "mid", label: "$150 – $400", description: "Mid-range with better features", icon: "⚖️" },
+      { value: "premium", label: "Over $400", description: "Premium models with advanced features", icon: "✨" },
+      { value: "any", label: "Any budget", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: SecurityCamera, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "power",
+    question: "What power type do you prefer?",
+    subtitle: "Wired cameras stay on always; battery needs charging; solar combines both.",
+    options: [
+      { value: "Wired", label: "Wired (PoE)", description: "Always on, professional installation", icon: "🔌" },
+      { value: "Battery", label: "Battery-powered", description: "Flexible placement, charge every few months", icon: "🔋" },
+      { value: "Solar", label: "Solar-powered", description: "Minimal charging, eco-friendly", icon: "☀️" },
+      { value: "any", label: "Any power type", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: SecurityCamera, val: string) => {
+      if (val === "any") return true;
+      if (val === "Solar") return p.powerType.includes("Solar");
+      return p.powerType === val;
+    },
+  },
+  {
+    id: "resolution",
+    question: "What resolution do you need?",
+    subtitle: "Higher resolution captures more detail for facial/plate recognition.",
+    options: [
+      { value: "1080p", label: "1080p", description: "Motion detection and presence", icon: "📹" },
+      { value: "2K", label: "2K", description: "Better facial and plate detail", icon: "📸" },
+      { value: "4K", label: "4K", description: "Maximum detail and zoom flexibility", icon: "📷" },
+      { value: "any", label: "Any resolution", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: SecurityCamera, val: string) => {
+      if (val === "any") return true;
+      return p.resolution === val;
+    },
+  },
+  {
+    id: "storage",
+    question: "How do you prefer to store footage?",
+    subtitle: "Cloud is convenient; local storage has no recurring fees.",
+    options: [
+      { value: "cloud", label: "Cloud storage", description: "Easy remote access, subscription required", icon: "☁️" },
+      { value: "local", label: "Local storage", description: "SD card or NVR, no subscription", icon: "💾" },
+      { value: "any", label: "Either way", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: SecurityCamera, val: string) => {
+      if (val === "any") return true;
+      if (val === "cloud") return p.cloudStorage === true;
+      if (val === "local") return p.localStorage === true;
+      return true;
+    },
+  },
+];
+
+const securityCameraResultConfig: FinderResultConfig = {
+  getName: (p: SecurityCamera) => `${p.brand} ${p.model}`,
+  getPrice: (p: SecurityCamera) => p.price,
+  getRating: (p: SecurityCamera) => p.rating,
+  getSummary: (p: SecurityCamera) => p.bestFor,
+  getAsin: (p: SecurityCamera) => p.amazonAsin,
+  displayFields: [
+    { label: "Resolution", getValue: (p: SecurityCamera) => p.resolution },
+    { label: "Power Type", getValue: (p: SecurityCamera) => p.powerType },
+    { label: "Night Vision", getValue: (p: SecurityCamera) => p.colorNightVision ? "Color" : p.nightVision ? "B/W" : "No" },
+    { label: "Storage", getValue: (p: SecurityCamera) => `${p.cloudStorage ? "Cloud " : ""}${p.localStorage ? "Local" : ""}`.trim() },
+  ],
+};
 
 export default function SecurityCamerasContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -86,6 +164,17 @@ export default function SecurityCamerasContent() {
           budget, and installation preferences. Our methodology is based on
           manufacturer specs, user ratings, and real-world performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Security Camera"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={securityCameraFinderSteps}
+          products={securityCameras}
+          resultConfig={securityCameraResultConfig}
+        />
       </section>
 
       {/* Filters */}

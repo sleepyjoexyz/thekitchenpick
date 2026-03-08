@@ -3,9 +3,90 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
-import { massageGuns } from "@/data/massage-guns";
+import ProductFinder from "@/components/ProductFinder";
+import { massageGuns, MassageGun } from "@/data/massage-guns";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const massageGunFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to massage guns in your price range.",
+    options: [
+      { value: "budget", label: "Under $200", description: "Affordable options for casual recovery", icon: "💰" },
+      { value: "mid", label: "$200 – $400", description: "Mid-range with good power and features", icon: "⚖️" },
+      { value: "premium", label: "Over $400", description: "Premium models with maximum power and tech", icon: "✨" },
+      { value: "any", label: "Any budget", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: MassageGun, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "intensity",
+    question: "How much intensity do you need?",
+    subtitle: "Stall force determines how deeply the gun penetrates muscle.",
+    options: [
+      { value: "light", label: "Light recovery", description: "20-30 lbs (casual use, light soreness)", icon: "🌱" },
+      { value: "moderate", label: "Moderate intensity", description: "30-45 lbs (regular fitness, general soreness)", icon: "💪" },
+      { value: "intense", label: "Deep tissue/serious athletes", description: "45+ lbs (chronic tension, heavy training)", icon: "🔥" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: MassageGun, val: string) => {
+      if (val === "any") return true;
+      if (val === "light") return p.stallForceLbs <= 30;
+      if (val === "moderate") return p.stallForceLbs > 30 && p.stallForceLbs <= 45;
+      if (val === "intense") return p.stallForceLbs > 45;
+      return true;
+    },
+  },
+  {
+    id: "heating",
+    question: "Do you want built-in heating?",
+    subtitle: "Heating improves blood flow and reduces muscle tension.",
+    options: [
+      { value: "yes", label: "Yes, with heating", description: "For warming and enhanced recovery", icon: "🔥" },
+      { value: "no", label: "No, without heating", description: "I prefer standard massage only", icon: "❄️" },
+      { value: "any", label: "Either way is fine", description: "Don't filter based on heating", icon: "🤷" },
+    ],
+    filterFn: (p: MassageGun, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasHeating === true;
+      if (val === "no") return p.hasHeating === false;
+      return true;
+    },
+  },
+  {
+    id: "features",
+    question: "Do you want app control and smart features?",
+    subtitle: "App control lets you customize routines and track usage.",
+    options: [
+      { value: "yes", label: "Yes, with app", description: "App-controlled with smart features", icon: "📱" },
+      { value: "no", label: "No, keep it simple", description: "Manual button controls only", icon: "🎛️" },
+      { value: "any", label: "Doesn't matter", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: MassageGun, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasApp === true;
+      if (val === "no") return p.hasApp === false;
+      return true;
+    },
+  },
+];
+
+const massageGunResultConfig: FinderResultConfig = {
+  getName: (p: MassageGun) => `${p.brand} ${p.model}`,
+  getPrice: (p: MassageGun) => p.price,
+  getRating: (p: MassageGun) => p.rating,
+  getSummary: (p: MassageGun) => p.bestFor,
+  getAsin: (p: MassageGun) => p.amazonAsin,
+  displayFields: [
+    { label: "Stall Force", getValue: (p: MassageGun) => `${p.stallForceLbs} lbs` },
+    { label: "Battery Life", getValue: (p: MassageGun) => `${p.batteryMinutes} min` },
+    { label: "Noise Level", getValue: (p: MassageGun) => `${p.noiseLevelDb} dB` },
+    { label: "Features", getValue: (p: MassageGun) => `${p.hasApp ? "App " : ""}${p.hasHeating ? "Heat" : ""}`.trim() || "Basic" },
+  ],
+};
 
 export default function MassageGunsContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -88,6 +169,17 @@ export default function MassageGunsContent() {
           and budget. Our methodology is based on manufacturer specs, user
           ratings, and real-world deep-tissue testing.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Massage Gun"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={massageGunFinderSteps}
+          products={massageGuns}
+          resultConfig={massageGunResultConfig}
+        />
       </section>
 
       {/* Filters */}

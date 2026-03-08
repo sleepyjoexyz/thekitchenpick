@@ -3,9 +3,95 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { climateDevices } from "@/data/climate-control";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const climateFinderSteps: FinderStep[] = [
+  {
+    id: "need",
+    question: "What climate control do you need?",
+    subtitle: "Tell us your primary challenge and we'll find the right device.",
+    options: [
+      { value: "cooling", label: "Cooling (air conditioning)", description: "Hot summers, need to cool down", icon: "❄️" },
+      { value: "heating", label: "Heating (space heater)", description: "Cold winters, need warmth", icon: "🔥" },
+      { value: "humidity", label: "Humidity control (dehumidifier)", description: "Damp, muggy air issues", icon: "💧" },
+      { value: "any", label: "Not sure", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "cooling") return p.deviceType === "portable-ac" || p.deviceType === "evaporative-cooler";
+      if (val === "heating") return p.deviceType === "space-heater";
+      return p.deviceType === "dehumidifier";
+    },
+  },
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "Climate devices are available across price ranges.",
+    options: [
+      { value: "budget", label: "Under $400", description: "Basic models with essential features", icon: "💰" },
+      { value: "mid", label: "$400 – $800", description: "Mid-range with better efficiency", icon: "⚖️" },
+      { value: "premium", label: "$800+", description: "Premium efficiency and features", icon: "✨" },
+      { value: "any", label: "Any price", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "roomsize",
+    question: "How large is the room?",
+    subtitle: "Device power should match your room size for efficiency.",
+    options: [
+      { value: "small", label: "Small (under 300 sq ft)", description: "Bedroom, office, compact space", icon: "📦" },
+      { value: "medium", label: "Medium (300–500 sq ft)", description: "Living room, master bedroom", icon: "🏠" },
+      { value: "large", label: "Large (500+ sq ft)", description: "Open concept, large space", icon: "🏢" },
+      { value: "any", label: "Not sure", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "small") return p.roomSizeSqFt <= 300;
+      if (val === "medium") return p.roomSizeSqFt > 300 && p.roomSizeSqFt <= 500;
+      return p.roomSizeSqFt > 500;
+    },
+  },
+  {
+    id: "wifi",
+    question: "Do you want smart/WiFi control?",
+    subtitle: "Smart features let you control temperature remotely.",
+    options: [
+      { value: "yes", label: "Yes, WiFi control", description: "Control via app and smart home integration", icon: "📱" },
+      { value: "no", label: "No, manual control is fine", description: "Physical buttons and remote", icon: "✓" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasWifi === true;
+      return true; // "no" shows all
+    },
+  },
+];
+
+const climateResultConfig: FinderResultConfig = {
+  getName: (p: any) => `${p.brand} ${p.model}`,
+  getPrice: (p: any) => p.price,
+  getRating: (p: any) => p.rating,
+  getSummary: (p: any) => p.bestFor,
+  getAsin: (p: any) => p.amazonAsin,
+  displayFields: [
+    { label: "Type", getValue: (p: any) => {
+      const types: Record<string, string> = { "portable-ac": "Portable AC", "space-heater": "Space Heater", "evaporative-cooler": "Evaporative Cooler", "dehumidifier": "Dehumidifier" };
+      return types[p.deviceType] || p.deviceType;
+    }},
+    { label: "Coverage", getValue: (p: any) => `${p.roomSizeSqFt} sq ft` },
+    { label: "Power", getValue: (p: any) => {
+      if (p.deviceType === "space-heater") return `${p.btuOrWatts}W`;
+      return `${p.btuOrWatts} BTU`;
+    }},
+    { label: "WiFi", getValue: (p: any) => p.hasWifi ? "Yes" : "No" },
+  ],
+};
 
 export default function ClimateControlContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -87,6 +173,17 @@ export default function ClimateControlContent() {
           methodology is based on manufacturer specs, cooling/heating capacity,
           energy ratings, user reviews, and real-world performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Climate Control Device"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={climateFinderSteps}
+          products={climateDevices}
+          resultConfig={climateResultConfig}
+        />
       </section>
 
       {/* Filters */}

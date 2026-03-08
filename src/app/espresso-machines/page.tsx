@@ -5,10 +5,88 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FilterBar from "@/components/FilterBar";
 import ComparisonTable from "@/components/ComparisonTable";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { espressoMachines } from "@/data/espresso-machines";
 import { Product } from "@/lib/types";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const espressoFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to machines in your price range.",
+    options: [
+      { value: "budget", label: "Under $500", description: "Great starter machines with solid fundamentals", icon: "💰" },
+      { value: "mid", label: "$500 – $1,500", description: "Best balance of features and quality", icon: "⚖️" },
+      { value: "premium", label: "$1,500 – $3,000", description: "Premium build quality and advanced features", icon: "✨" },
+      { value: "any", label: "No limit", description: "Show me the best regardless of price", icon: "🏆" },
+    ],
+    filterFn: (p: Product, val: string) => p.priceRange === val,
+  },
+  {
+    id: "experience",
+    question: "How much espresso experience do you have?",
+    subtitle: "This determines how much control vs. automation you'll want.",
+    options: [
+      { value: "beginner", label: "Just starting out", description: "I want something easy — press a button, get espresso", icon: "🌱" },
+      { value: "intermediate", label: "Some experience", description: "I know basics and want to learn more", icon: "📚" },
+      { value: "advanced", label: "Experienced barista", description: "I want full manual control over every variable", icon: "🎯" },
+    ],
+    filterFn: (p: Product, val: string) => {
+      if (val === "beginner") return p.type === "super-automatic" || p.type === "pod/capsule";
+      if (val === "intermediate") return p.type === "semi-automatic" || p.type === "super-automatic";
+      return p.type === "semi-automatic" || p.type === "manual/lever";
+    },
+  },
+  {
+    id: "grinder",
+    question: "Do you already own a coffee grinder?",
+    subtitle: "A good grinder is essential for espresso — built-in grinders save space and money.",
+    options: [
+      { value: "need", label: "No, I need one built in", description: "All-in-one convenience", icon: "🔧" },
+      { value: "have", label: "Yes, I have a grinder", description: "I'll use my own grinder", icon: "✅" },
+      { value: "any", label: "Either way is fine", description: "Don't filter based on grinder", icon: "🤷" },
+    ],
+    filterFn: (p: Product, val: string) => {
+      if (val === "need") return p.hasGrinder === true;
+      if (val === "have") return true; // Don't exclude machines with grinders
+      return true;
+    },
+  },
+  {
+    id: "milk",
+    question: "Do you make milk drinks (lattes, cappuccinos)?",
+    subtitle: "This determines what milk system you'll need.",
+    options: [
+      { value: "auto", label: "Yes — I want automatic frothing", description: "One-touch lattes and cappuccinos", icon: "🥛" },
+      { value: "manual", label: "Yes — I'll steam milk myself", description: "Steam wand for full control over milk texture", icon: "💪" },
+      { value: "none", label: "No — espresso only", description: "I drink straight shots or Americanos", icon: "☕" },
+      { value: "any", label: "Not sure yet", description: "Show all options", icon: "🤔" },
+    ],
+    filterFn: (p: Product, val: string) => {
+      if (val === "auto") return p.milkSystem.toLowerCase().includes("automatic") || p.milkSystem.toLowerCase().includes("auto");
+      if (val === "manual") return p.milkSystem.toLowerCase().includes("steam");
+      if (val === "none") return true; // All machines can make espresso
+      return true;
+    },
+  },
+];
+
+const espressoResultConfig: FinderResultConfig = {
+  getName: (p: Product) => `${p.brand} ${p.model}`,
+  getPrice: (p: Product) => p.price,
+  getRating: (p: Product) => p.rating,
+  getSummary: (p: Product) => p.bestFor,
+  getAsin: (p: Product) => p.amazonAsin,
+  displayFields: [
+    { label: "Type", getValue: (p: Product) => p.type },
+    { label: "Grinder", getValue: (p: Product) => p.hasGrinder ? (p.grinderType || "Yes") : "No" },
+    { label: "Milk", getValue: (p: Product) => p.milkSystem },
+    { label: "Boiler", getValue: (p: Product) => p.boilerType },
+  ],
+};
 
 export default function EspressoMachinesContent() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(
@@ -56,6 +134,17 @@ export default function EspressoMachinesContent() {
           machine that matches your needs and budget. Our methodology is based
           on manufacturer specs, user ratings, and real-world performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Espresso Machine"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={espressoFinderSteps}
+          products={espressoMachines}
+          resultConfig={espressoResultConfig}
+        />
       </section>
 
       {/* Filters */}

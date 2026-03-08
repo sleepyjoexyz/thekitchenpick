@@ -3,9 +3,87 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { airPurifiers } from "@/data/air-purifiers";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const airPurifierFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "Air purifiers range from affordable basics to premium systems.",
+    options: [
+      { value: "budget", label: "Under $150", description: "Solid entry-level purifiers", icon: "💰" },
+      { value: "mid", label: "$150 – $400", description: "Premium features and better coverage", icon: "⚖️" },
+      { value: "premium", label: "$400+", description: "Top-tier performance and smart features", icon: "✨" },
+      { value: "any", label: "Any price", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "roomsize",
+    question: "How large is the room?",
+    subtitle: "CADR rating determines effective coverage area in square feet.",
+    options: [
+      { value: "small", label: "Small (200–300 sq ft)", description: "Bedroom, office, small living area", icon: "🏠" },
+      { value: "medium", label: "Medium (300–500 sq ft)", description: "Living room, master bedroom", icon: "🏡" },
+      { value: "large", label: "Large (500+ sq ft)", description: "Open plan, large living space", icon: "🏢" },
+      { value: "any", label: "Not sure", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "small") return p.cadrSqFt >= 200 && p.cadrSqFt < 300;
+      if (val === "medium") return p.cadrSqFt >= 300 && p.cadrSqFt < 500;
+      return p.cadrSqFt >= 500;
+    },
+  },
+  {
+    id: "carbon",
+    question: "Do you need odor and VOC filtering?",
+    subtitle: "Carbon filters remove odors, cooking smells, and volatile organic compounds.",
+    options: [
+      { value: "yes", label: "Yes, carbon filter needed", description: "Odors, smoke, VOCs are a concern", icon: "👃" },
+      { value: "no", label: "No, HEPA is enough", description: "Particle filtering is sufficient", icon: "✓" },
+      { value: "any", label: "Don't care", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasCarbon === true;
+      return true; // "no" shows all
+    },
+  },
+  {
+    id: "smart",
+    question: "Do you want smart home features?",
+    subtitle: "WiFi and app control let you monitor and control air quality remotely.",
+    options: [
+      { value: "yes", label: "Yes, smart features", description: "WiFi, app control, remote monitoring", icon: "📱" },
+      { value: "no", label: "No, manual control is fine", description: "Physical buttons only", icon: "✓" },
+      { value: "any", label: "Either way", description: "Don't filter by smart features", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.smartFeatures === true;
+      return true; // "no" shows all
+    },
+  },
+];
+
+const airPurifierResultConfig: FinderResultConfig = {
+  getName: (p: any) => `${p.brand} ${p.model}`,
+  getPrice: (p: any) => p.price,
+  getRating: (p: any) => p.rating,
+  getSummary: (p: any) => p.bestFor,
+  getAsin: (p: any) => p.amazonAsin,
+  displayFields: [
+    { label: "Coverage", getValue: (p: any) => `${p.cadrSqFt} sq ft` },
+    { label: "Carbon Filter", getValue: (p: any) => p.hasCarbon ? "Yes" : "No" },
+    { label: "Smart Features", getValue: (p: any) => p.smartFeatures ? "Yes" : "No" },
+    { label: "Noise (Low-High)", getValue: (p: any) => `${p.noiseMinDb}-${p.noiseMaxDb} dB` },
+  ],
+};
 
 export default function AirPurifiersContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -88,6 +166,17 @@ export default function AirPurifiersContent() {
           on manufacturer specs, CADR ratings, user reviews, and real-world
           performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Air Purifier"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={airPurifierFinderSteps}
+          products={airPurifiers}
+          resultConfig={airPurifierResultConfig}
+        />
       </section>
 
       {/* Filters */}

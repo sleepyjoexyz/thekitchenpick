@@ -3,10 +3,90 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
+import ProductFinder from "@/components/ProductFinder";
 import { airFryers } from "@/data/air-fryers";
 import { AirFryer } from "@/data/air-fryers";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
+import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+
+const airFryerFinderSteps: FinderStep[] = [
+  {
+    id: "budget",
+    question: "What's your budget?",
+    subtitle: "This helps us narrow down to air fryers in your price range.",
+    options: [
+      { value: "budget", label: "Under $150", description: "Quality fryers with solid features", icon: "💰" },
+      { value: "mid", label: "$150 – $300", description: "Premium features and larger capacity", icon: "⚖️" },
+      { value: "premium", label: "$300+", description: "Top-tier build quality and versatility", icon: "✨" },
+      { value: "any", label: "No limit", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => val === "any" || p.priceRange === val,
+  },
+  {
+    id: "style",
+    question: "What style appeals to you?",
+    subtitle: "Basket fryers are compact and quick; oven-style units are more versatile.",
+    options: [
+      { value: "basket", label: "Basket-style", description: "Compact, fast, dedicated air fryer", icon: "🧺" },
+      { value: "oven", label: "Oven-style", description: "Larger, bakes, toasts, air fries", icon: "🔲" },
+      { value: "any", label: "Either works", description: "Show all styles", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      const isOven = val === "oven";
+      return p.isOvenStyle === isOven;
+    },
+  },
+  {
+    id: "capacity",
+    question: "How much capacity do you need?",
+    subtitle: "Balance kitchen size and household cooking volume.",
+    options: [
+      { value: "small", label: "Small (3–5 qt)", description: "1–2 people, compact kitchens", icon: "📦" },
+      { value: "medium", label: "Medium (6–8 qt)", description: "Families of 3–4, good balance", icon: "📫" },
+      { value: "large", label: "Large (8+ qt)", description: "Families 5+, frequent meal prep", icon: "📦📦" },
+      { value: "any", label: "Any size", description: "Don't filter by capacity", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "small") return p.capacityQt >= 3 && p.capacityQt <= 5;
+      if (val === "medium") return p.capacityQt >= 6 && p.capacityQt <= 8;
+      return p.capacityQt > 8;
+    },
+  },
+  {
+    id: "dualzone",
+    question: "Do you want dual zone cooking?",
+    subtitle: "Dual zone lets you cook two foods at different temps simultaneously.",
+    options: [
+      { value: "yes", label: "Yes, dual zone", description: "Cook two foods at once with different settings", icon: "🎯" },
+      { value: "no", label: "Single zone is fine", description: "One cooking area is enough", icon: "✓" },
+      { value: "rotisserie", label: "Rotisserie matters more", description: "I want rotisserie capability", icon: "🔄" },
+      { value: "any", label: "Not sure", description: "Show all options", icon: "🤷" },
+    ],
+    filterFn: (p: any, val: string) => {
+      if (val === "any") return true;
+      if (val === "yes") return p.hasDualZone === true;
+      if (val === "rotisserie") return p.hasRotisserie === true;
+      return true; // "no" shows all (we don't exclude single-zone)
+    },
+  },
+];
+
+const airFryerResultConfig: FinderResultConfig = {
+  getName: (p: any) => `${p.brand} ${p.model}`,
+  getPrice: (p: any) => p.price,
+  getRating: (p: any) => p.rating,
+  getSummary: (p: any) => p.bestFor,
+  getAsin: (p: any) => p.amazonAsin,
+  displayFields: [
+    { label: "Style", getValue: (p: any) => p.isOvenStyle ? "Oven-Style" : "Basket" },
+    { label: "Capacity", getValue: (p: any) => `${p.capacityQt} qt` },
+    { label: "Dual Zone", getValue: (p: any) => p.hasDualZone ? "Yes" : "No" },
+    { label: "Rotisserie", getValue: (p: any) => p.hasRotisserie ? "Yes" : "No" },
+  ],
+};
 
 export default function AirFryersContent() {
   const [priceRange, setPriceRange] = useState<string>("all");
@@ -87,6 +167,17 @@ export default function AirFryersContent() {
           Our methodology is based on manufacturer specs, user ratings, and
           real-world performance data.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Air Fryer"
+          subtitle="Answer a few quick questions and we'll narrow down the best options for you."
+          steps={airFryerFinderSteps}
+          products={airFryers}
+          resultConfig={airFryerResultConfig}
+        />
       </section>
 
       {/* Filters */}
