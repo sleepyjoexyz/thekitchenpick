@@ -1,0 +1,178 @@
+export interface Deal {
+  id: string;
+  title: string;
+  category: 'Air Fryers' | 'Espresso Machines' | 'Robot Vacuums' | 'Air Purifiers' | 'Standing Desks' | 'Security Cameras';
+  originalPrice: number;
+  dealPrice: number;
+  percentOff: number;
+  source: string;
+  sourceUrl: string;
+  amazonUrl: string;
+  timeLeft: string;
+  imageAlt: string;
+}
+
+export const mockDeals: Deal[] = [
+  // Air Fryers
+  {
+    id: 'af-001',
+    title: 'Cosori Dual Blaze Air Fryer Oven',
+    category: 'Air Fryers',
+    originalPrice: 249.99,
+    dealPrice: 179.99,
+    percentOff: 28,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '12h left',
+    imageAlt: 'Cosori Air Fryer',
+  },
+  {
+    id: 'af-002',
+    title: 'Ninja AF101 Air Fryer',
+    category: 'Air Fryers',
+    originalPrice: 99.99,
+    dealPrice: 69.99,
+    percentOff: 30,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '6h left',
+    imageAlt: 'Ninja Air Fryer',
+  },
+  // Espresso Machines
+  {
+    id: 'em-001',
+    title: 'Gaggia Classic Pro Espresso Machine',
+    category: 'Espresso Machines',
+    originalPrice: 189.99,
+    dealPrice: 139.99,
+    percentOff: 26,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '18h left',
+    imageAlt: 'Gaggia Classic Pro',
+  },
+  {
+    id: 'em-002',
+    title: 'Breville Barista Express Espresso',
+    category: 'Espresso Machines',
+    originalPrice: 599.99,
+    dealPrice: 449.99,
+    percentOff: 25,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '3h left',
+    imageAlt: 'Breville Barista Express',
+  },
+  // Robot Vacuums
+  {
+    id: 'rv-001',
+    title: 'Roborock S7 Robot Vacuum',
+    category: 'Robot Vacuums',
+    originalPrice: 649.99,
+    dealPrice: 499.99,
+    percentOff: 23,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '9h left',
+    imageAlt: 'Roborock S7',
+  },
+  {
+    id: 'rv-002',
+    title: 'Ecovacs Deebot T8 Plus Robot Vacuum',
+    category: 'Robot Vacuums',
+    originalPrice: 499.99,
+    dealPrice: 349.99,
+    percentOff: 30,
+    source: 'Newegg',
+    sourceUrl: 'https://newegg.com',
+    amazonUrl: '#',
+    timeLeft: '14h left',
+    imageAlt: 'Ecovacs Deebot T8',
+  },
+  // Air Purifiers
+  {
+    id: 'ap-001',
+    title: 'Levoit Core 300 Air Purifier',
+    category: 'Air Purifiers',
+    originalPrice: 99.99,
+    dealPrice: 69.99,
+    percentOff: 30,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '2h left',
+    imageAlt: 'Levoit Core 300',
+  },
+  {
+    id: 'ap-002',
+    title: 'Coway AP-1512HHS Air Purifier',
+    category: 'Air Purifiers',
+    originalPrice: 229.99,
+    dealPrice: 169.99,
+    percentOff: 26,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '20h left',
+    imageAlt: 'Coway AP-1512HHS',
+  },
+  // Standing Desks
+  {
+    id: 'sd-001',
+    title: 'Flexispot E7 Standing Desk',
+    category: 'Standing Desks',
+    originalPrice: 549.99,
+    dealPrice: 399.99,
+    percentOff: 27,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '8h left',
+    imageAlt: 'Flexispot E7',
+  },
+  {
+    id: 'sd-002',
+    title: 'Autonomous SmartDesk Pro Standing Desk',
+    category: 'Standing Desks',
+    originalPrice: 699.99,
+    dealPrice: 549.99,
+    percentOff: 21,
+    source: 'Newegg',
+    sourceUrl: 'https://newegg.com',
+    amazonUrl: '#',
+    timeLeft: '22h left',
+    imageAlt: 'Autonomous SmartDesk',
+  },
+  // Security Cameras
+  {
+    id: 'sc-001',
+    title: 'Wyze Cam v3 Security Camera',
+    category: 'Security Cameras',
+    originalPrice: 49.99,
+    dealPrice: 34.99,
+    percentOff: 30,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '11h left',
+    imageAlt: 'Wyze Cam v3',
+  },
+  {
+    id: 'sc-002',
+    title: 'Reolink RLC-410W WiFi Camera',
+    category: 'Security Cameras',
+    originalPrice: 99.99,
+    dealPrice: 69.99,
+    percentOff: 30,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '5h left',
+    imageAlt: 'Reolink RLC-410W',
+  },
+];

@@ -13,8 +13,8 @@ const categories = [
   {
     group: 'Kitchen',
     items: [
-      { label: 'Espresso Machines', href: '/espresso-machines' },
       { label: 'Air Fryers', href: '/air-fryers' },
+      { label: 'Espresso Machines', href: '/espresso-machines' },
     ],
   },
   {
@@ -22,7 +22,6 @@ const categories = [
     items: [
       { label: 'Robot Vacuums', href: '/robot-vacuums' },
       { label: 'Air Purifiers', href: '/air-purifiers' },
-      { label: 'Climate Control', href: '/climate-control' },
     ],
   },
   {
@@ -32,13 +31,6 @@ const categories = [
   {
     group: 'Security',
     items: [{ label: 'Security Cameras', href: '/security-cameras' }],
-  },
-  {
-    group: 'Personal Care',
-    items: [
-      { label: 'Electric Toothbrushes', href: '/electric-toothbrushes' },
-      { label: 'Massage Guns', href: '/massage-guns' },
-    ],
   },
 ];
 
@@ -72,7 +64,7 @@ export default function Header() {
       </div>
 
       {/* Main navigation bar */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between" aria-label="Main navigation">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between" aria-label="Main navigation">
         <Link href="/" className="font-bold text-xl text-gray-900 hidden sm:block">
           The Kitchen Pick
         </Link>
