@@ -1,0 +1,78 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import DealCard from "@/components/DealCard";
+import { mockDeals } from "@/data/mockDeals";
+import { dealCategories, getCategoryBySlug, getAllCategorySlugs } from "@/lib/dealCategories";
+
+interface Props {
+  params: Promise<{ category: string }>;
+}
+
+export async function generateStaticParams() {
+  return getAllCategorySlugs().map((slug) => ({ category: slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category: slug } = await params;
+  const cat = getCategoryBySlug(slug);
+  if (!cat) return {};
+  return {
+    title: cat.name + " Deals — Save Today | The Kitchen Pick",
+    description: cat.description,
+    alternates: { canonical: "https://www.thekitchenpick.com/deals/" + slug },
+  };
+}
+
+export default async function CategoryDealsPage({ params }: Props) {
+  const { category: slug } = await params;
+  const cat = getCategoryBySlug(slug);
+  if (!cat) notFound();
+
+  const categoryDeals = mockDeals.filter((d) => d.category === cat.name);
+  const otherCategories = dealCategories.filter((c) => c.slug !== slug);
+
+  return (
+    <main className="bg-white min-h-screen">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
+        <ol className="flex items-center gap-1.5 text-sm text-gray-500">
+          <li><Link href="/" className="hover:text-gray-700">Home</Link></li>
+          <li>/</li>
+          <li><Link href="/deals" className="hover:text-gray-700">Deals</Link></li>
+          <li>/</li>
+          <li className="text-gray-900 font-medium">{cat.name}</li>
+        </ol>
+      </nav>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{cat.emoji} {cat.name} Deals</h1>
+        <p className="text-gray-600 mb-2">{cat.description}</p>
+        <p className="text-sm text-gray-500">{categoryDeals.length} deals available — updated daily</p>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {categoryDeals.map((deal) => (<DealCard key={deal.id} {...deal} />))}
+        </div>
+      </section>
+
+      {otherCategories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">More Deal Categories</h2>
+          <div className="flex flex-wrap gap-2">
+            {otherCategories.map((c) => (
+              <Link key={c.slug} href={'/deals/' + c.slug} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium text-gray-700 transition-colors">
+                <span>{c.emoji}</span>
+                <span>{c.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">
+        <p className="text-xs text-gray-400">Deals are sourced from Amazon, Slickdeals, and Reddit. Prices and availability may change. As an Amazon Associate, The Kitchen Pick earns from qualifying purchases.</p>
+      </section>
+    </main>
+  );
+}
