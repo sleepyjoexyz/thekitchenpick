@@ -282,7 +282,7 @@ export default function ProductFinder({
                       </div>
                       {resultConfig.getAsin(product) && (
                         <a
-                          href={`https://amazon.com/dp/${resultConfig.getAsin(product)}${resultConfig.affiliateTag ? `?tag=${resultConfig.affiliateTag}` : ""}`}
+                          href={`https://amazon.com/dp/${resultConfig.getAsin(product)}${`?tag=${resultConfig.affiliateTag || "rogeti02-20"}`}`}
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           className="inline-block mt-2 text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 font-medium"

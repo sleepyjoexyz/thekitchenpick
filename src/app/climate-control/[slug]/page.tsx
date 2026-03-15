@@ -170,7 +170,7 @@ export default async function ArticlePage({ params }: PageProps) {
               </div>
               {product.amazonAsin && (
                 <a
-                  href={`https://amazon.com/dp/${product.amazonAsin}`}
+                  href={`https://amazon.com/dp/${product.amazonAsin}?tag=rogeti02-20`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
