@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import MarkdownContent from "@/components/MarkdownContent";
+import CrossCategoryLinks from "@/components/CrossCategoryLinks";
 
 interface PageProps {
   params: Promise<{
@@ -124,7 +125,11 @@ export default async function ArticlePage({ params }: PageProps) {
       </section>
 
       {/* Comments */}
-      <Comments pagePath={`/standing-desks/${slug}`} siteName="thekitchenpick" />
+      
+      {/* Cross-Category Links */}
+      <CrossCategoryLinks currentCategory="standing-desks" />
+
+<Comments pagePath={`/standing-desks/${slug}`} siteName="thekitchenpick" />
     </article>
   );
 }
