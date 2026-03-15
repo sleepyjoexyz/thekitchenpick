@@ -484,12 +484,76 @@ A: Espresso has more caffeine per ounce (~75mg per 1oz shot) but smaller serving
 
 **If space is your limiting factor, the DeLonghi Dedica ($149)** is the only one that fits in a cramped kitchen.
 
-All three options will make you genuinely better coffee than instant or drip. The difference is learning curve versus convenience. Pick based on your lifestyle, not just price. An espresso machine you don't use is just expensive counter clutter.
-\`\`\`
+All three options will make you genuinely better coffee than instant or drip. The difference is learning curve versus convenience. Pick based on your lifestyle, not just price. An espresso machine you don't use is just expensive counter clutter.`,
+  },
 
----
+  "how-to-pull-perfect-espresso-shot-at-home": {
+    slug: "how-to-pull-perfect-espresso-shot-at-home",
+    title: "How to Pull the Perfect Espresso Shot at Home",
+    description: "Master the fundamentals of pulling consistent, balanced espresso shots at home with proper machine prep, grind, dose, and extraction timing.",
+    category: "Coffee & Espresso",
+    content: `## Machine Warm-Up (15-25 Minutes)
 
-\`\`\``
+Before pulling any shot, your espresso machine must reach thermal equilibrium. Cold group heads produce under-extracted, sour shots. Turn on your machine and allow the water heater to reach target temperature. Run water through the group head for 10-15 seconds to purge old water. Wipe the group head dry. Wait 2-3 minutes after the ready indicator for full stabilization.
+
+## Dose and Distribution
+
+**Standard double shot: 18-20g** of ground coffee (verify with a scale). Consistency matters more than exact weight; use the same dose every shot so you can dial in one variable at a time.
+
+Pour ground coffee into the portafilter basket. Tap gently 2-3 times to settle grounds. Use a WDT tool (thin needle or specialized tool) through the grounds in a circular motion to break up clumps. Level the coffee with a leveling tool or gentle motion.
+
+## Grind Size
+
+Grind size is the single most important variable. Target consistency: fine, slightly coarser than flour but much finer than drip coffee. Not powdery. If starting blind, begin medium-fine and adjust based on extraction time.
+
+## Tamping
+
+Grip the tamper with a relaxed hand. Press down with level, even pressure: 25-30 lbs of force. Keep the tamper level to the basket. One firm motion; don't tamp multiple times. Optional: twist 90 degrees and lift to polish the top surface.
+
+Uneven tamping creates channels where water rushes through, under-extracting the shot.
+
+## Extraction Time and Output
+
+**Target: 25-30 seconds** from pump engagement until the shot finishes flowing. **Ideal double shot output: 36-40g** (roughly 2x the dose). First drops appear after 8-10 seconds. If immediately, grind coarser. If much slower, grind finer.
+
+Pre-infusion phase (0-8 sec): water soaks the puck. Main extraction (8-25 sec): golden flow. End of shot (25-30 sec): flow slows, espresso blonding begins.
+
+## Diagnosing Problems
+
+**Sour, thin shot = under-extracted.** Fix: grind finer, increase dose, tamp harder. Check if extraction time is under 20 seconds.
+
+**Bitter, harsh shot = over-extracted.** Fix: grind coarser, lower dose, tamp lighter. Check if extraction time is over 35 seconds.
+
+**Channeling (visible streams):** Use WDT tool before tamping, tamp more evenly, ensure consistent grind.
+
+## Water Temperature
+
+Target: 195-205 degrees F (90-96 degrees C). Too cool: under-extraction, sour. Too hot: over-extraction, bitter. Most domestic machines maintain this range automatically.
+
+## Milk Steaming Basics
+
+Purge the steam wand 2 seconds to remove condensed water. Fill pitcher 1/3 full with cold milk. Submerge steam tip just below surface. Begin with low steam power, increase to create a whirlpool. Target temperature: 150-155 degrees F. Too hot scalds the milk. Purge and wipe the steam wand immediately after.
+
+## Common Mistakes
+
+Not purging the group head before the shot. Inconsistent dose between shots. Rushing machine warm-up. Grinding too fine early (powder-fine grinds choke the machine). Uneven tamping causing channels. Ignoring output weight. Neglecting WDT distribution.
+
+## FAQ
+
+**Q: How often should I clean my portafilter and basket?**
+After every shot. Residual oils affect the next shot.
+
+**Q: What is the difference between a single and double shot?**
+Double shots use more coffee (18-20g vs 9-10g) and pull longer extraction. Most espresso drinks use double shots.
+
+**Q: Can I use pre-ground coffee?**
+Pre-ground loses flavor rapidly. Whole beans ground on-demand are much better. If using pre-ground, consume within hours and store airtight.
+
+**Q: Why does my shot pull unevenly?**
+Uneven tamping, clumpy grounds, or improper distribution. Use WDT, ensure level tamp, break up clumps.
+
+**Q: How do I know if my grinder is good enough?**
+Espresso requires a burr grinder producing fine, consistent particles. Blade grinders produce too many fines and clumps. Invest in a burr grinder with a fine-enough setting.`,
   },
 
 };
@@ -542,7 +606,7 @@ This machine excels for users who prioritize ${machine.bestFor.toLowerCase()}. I
 The ${machine.brand} ${machine.model} is a solid choice at $${machine.price}. With a rating of ${machine.rating}/5, it has proven reliability and user satisfaction. Consider this machine if its strengths align with your priorities and if the price fits your budget.
 
 For alternative options in similar price ranges and machine types, explore our other reviews and comparison guides.`,
-};
+  };
 });
 
 export function getEspressoMachineArticle(slug: string): EspressoMachineArticle | null {

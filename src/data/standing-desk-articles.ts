@@ -682,12 +682,76 @@ A: A desk pad (rubber or cork, $20–$40) doesn't reduce wobble but makes the su
 
 **For taller people or those who stand all day, the Uplift v2 ($459) is worth the premium.** Memory presets, dual motors, and rock-solid build mean you'll use it—and enjoy it—for 10+ years.
 
-The key to avoiding wobble: buy a desk with a wide footprint, dual motors if you can afford it, and clamp-down frames if available. Wobble is often a choice, not a limitation. Choose stability over bells and whistles, and your desk will support your focus, not distract from it.
-\`\`\`
+The key to avoiding wobble: buy a desk with a wide footprint, dual motors if you can afford it, and clamp-down frames if available. Wobble is often a choice, not a limitation. Choose stability over bells and whistles, and your desk will support your focus, not distract from it.`,
+  },
 
----
+  "how-to-set-up-standing-desk-ergonomically": {
+    slug: "how-to-set-up-standing-desk-ergonomically",
+    title: "How to Set Up Your Standing Desk Ergonomically",
+    description: "Optimize your standing desk for comfort and productivity with proper height, monitor positioning, and sit-stand workflow.",
+    category: "Home Office & Workspace",
+    content: `## Finding Your Correct Standing Height
 
-\`\`\``
+**Step 1: Measure Elbow Height** — Stand naturally with arms at your sides. Measure from the floor to the crease inside your elbow. This measurement is your target desk height.
+
+**Step 2: Verify** — At your desk, elbows should form roughly a 90 degree angle. Wrists should be straight. Shoulders should be relaxed, not hunched.
+
+**Step 3: Adjust** — Program electric standing desks with your standing height. Mark manual desks.
+
+## Correct Sitting Height
+
+Sit in your chair with feet flat on the floor. Measure to your elbow crease. Adjust your chair so this matches your desk height when lowered. Knees at 90-110 degree angle. Feet flat on floor or footrest.
+
+## Monitor Positioning
+
+**Distance: 20-26 inches** from eyes to screen (arm's length). **Height: top of screen at or slightly below eye level** (15-20 degree downward gaze is natural). Too high strains neck; too low causes hunching.
+
+Use a monitor arm for laptops or small screens. Two monitors should be at the same height, angled slightly inward. Position screen perpendicular to windows to reduce glare.
+
+## Keyboard and Mouse
+
+Keyboard should align with elbow height. Wrists neutral, not bent. Mouse immediately beside keyboard, same height. Keep elbow close to body. Avoid keyboard trays too low.
+
+## Anti-Fatigue Mat
+
+Standing without support causes foot and leg fatigue. An anti-fatigue mat reduces pressure, encourages micro-movements, and improves circulation. Choose 0.75-1.25 inch thickness in gel, foam, or rubber. Stand on it consistently during standing periods.
+
+## Cable Management
+
+Route cables behind desk legs. Use cable clips or sleeves. Leave slack for desk movement. Label cables for multiple peripherals.
+
+## Sit-Stand Ratio
+
+**Week 1-2:** Stand 10-15 minutes per hour. **Week 3-4:** Stand 20-25 minutes per hour. **Ongoing:** Aim for 30 minutes standing per hour.
+
+**Task-based switching:** Stand for video calls, phone calls, reviewing documents. Sit for focused writing, coding, detailed tasks.
+
+Set an hourly timer or use the desk app for transition reminders. Listen to your body: if feet hurt, sit; if back is stiff, stand.
+
+## Common Posture Mistakes
+
+Standing with weight on one leg (causes hip asymmetry). Hunching over keyboard (desk or monitor too low). Locked knees (creates back strain; maintain slight bend). Reaching for the mouse (move it closer). Head craned forward (verify monitor height and distance).
+
+## Troubleshooting
+
+**Feet/leg pain:** check shoes (need cushioning), use anti-fatigue mat, reduce standing duration. **Lower back pain:** verify desk and monitor height, check chair lumbar support, strengthen core muscles. **Wrist/arm pain:** keyboard too high or low, mouse too far, add wrist rest.
+
+## FAQ
+
+**Q: How long should I stand each day?**
+20-30 minutes per hour is optimal. Alternate with sitting throughout the day.
+
+**Q: Can I use a standing desk with a treadmill?**
+Yes, but treadmill desks reduce focus on fine motor tasks. Best for reading, email, or calls.
+
+**Q: What if my desk doesn't adjust high enough?**
+Use a monitor arm, keyboard riser, or desk riser. If the desk is still too low fully raised, you may need a taller desk.
+
+**Q: Should I wear special shoes?**
+No special shoes required, but supportive, cushioned shoes are better than flat options for long standing periods.
+
+**Q: How do I remember to switch positions?**
+Set phone reminders, use a desk app, or listen to body cues (restlessness or fatigue signals).`,
   },
 
 };
