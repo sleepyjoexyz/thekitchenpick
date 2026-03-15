@@ -66,8 +66,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thekitchenpick.com/security-cameras/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://www.thekitchenpick.com" },
@@ -99,44 +99,31 @@ export default async function ArticlePage({ params }: PageProps) {
         <MarkdownContent content={article.content} />
       </section>
 
-      {/* Related Cameras Section */}
+      {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Cameras Featured in This Guide
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {securityCameras.slice(0, 6).map((camera) => (
-            <Link
-              key={camera.id}
-              href={`/security-cameras/${camera.id}`}
-              className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition"
-            >
-              <h3 className="font-semibold text-gray-900">
-                {camera.brand} {camera.model}
-              </h3>
-              <p className="text-gray-600 text-sm mt-1">${camera.price}</p>
-              <p className="text-gray-600 text-sm">{camera.resolution}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA Back to Comparisons */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <div className="bg-blue-50 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Ready to Choose Your Camera?
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Compare all 13 security cameras side-by-side with full specifications,
-            ratings, and Amazon links.
-          </p>
-          <Link
-            href="/security-cameras"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-          >
-            View Full Comparison Table
-          </Link>
+          {getAllSecurityCameraArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getSecurityCameraArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/security-cameras/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

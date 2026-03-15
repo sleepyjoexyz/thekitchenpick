@@ -66,8 +66,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thekitchenpick.com/air-purifiers/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://www.thekitchenpick.com" },
@@ -99,74 +99,31 @@ export default async function ArticlePage({ params }: PageProps) {
         <MarkdownContent content={article.content} />
       </section>
 
-      {/* Related Comparison CTA */}
-      <section className="bg-blue-50 border-y border-blue-200 py-12 my-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Compare All Purifiers
-          </h2>
-          <p className="text-gray-600 mb-6">
-            See the full comparison table with all 12 air purifiers, specs, and
-            prices.
-          </p>
-          <Link
-            href="/air-purifiers"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded font-medium hover:bg-blue-700 transition-colors"
-          >
-            View Comparison Table
-          </Link>
-        </div>
-      </section>
-
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          More Guides & Comparisons
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/air-purifiers/hepa-filter-types-explained">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                HEPA Filter Types Explained
-              </h3>
-              <p className="text-sm text-gray-600">
-                Understand H11, H13, and H14 filters and their efficiency levels.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/best-air-purifiers-for-allergies">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Best Purifiers for Allergies
-              </h3>
-              <p className="text-sm text-gray-600">
-                Target specific allergens and find the right purifier for you.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/air-purifier-running-costs">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                True Cost of Ownership
-              </h3>
-              <p className="text-sm text-gray-600">
-                Calculate 5 and 10-year costs including filters and electricity.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/do-air-purifiers-help-with-smoke">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Wildfire Smoke & Air Purifiers
-              </h3>
-              <p className="text-sm text-gray-600">
-                Learn which purifiers effectively handle smoke and particulates.
-              </p>
-            </div>
-          </Link>
+          {getAllAirPurifierArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getAirPurifierArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/air-purifiers/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 
