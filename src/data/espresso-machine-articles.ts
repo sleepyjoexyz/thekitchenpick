@@ -555,7 +555,315 @@ Uneven tamping, clumpy grounds, or improper distribution. Use WDT, ensure level 
 **Q: How do I know if my grinder is good enough?**
 Espresso requires a burr grinder producing fine, consistent particles. Blade grinders produce too many fines and clumps. Invest in a burr grinder with a fine-enough setting.`,
   },
+  "iced-espresso-drinks-at-home-summer-2026": {
+    slug: "iced-espresso-drinks-at-home-summer-2026",
+    title: "How to Make Iced Espresso Drinks at Home This Summer",
+    description:
+      "Master iced espresso drinks for summer 2026. Learn iced latte and cappuccino techniques, cold brew concentrate, espresso tonic, and flash-brewed iced coffee. Includes equipment guide and recipes.",
+    category: "espresso-machines",
+    content: `## Introduction
 
+Summer espresso drinking shifts dramatically from hot milk-based drinks to iced variations. Iced lattes, cold brew concentrates, and espresso tonics replace hot cappuccinos. The challenge: making quality iced drinks at home requires different technique than hot drinks. Poorly executed iced espresso is bitter, diluted, or overly sweetened.
+
+This guide covers the best methods for iced espresso drinks at home, equipment recommendations, and exact recipes for summer 2026.
+
+## Why Iced Espresso Differs from Hot Espresso
+
+### Temperature Impact on Flavor
+
+Hot milk masks espresso's bitter compounds. Cold milk doesn't dissolve bitter compounds the same way, making espresso quality more critical (and mistakes more obvious).
+
+**Hot latte (4:1 milk:espresso ratio):**
+- Milk steaming adds sweetness and body
+- Heat enhances aroma and flavor perception
+- Temperature buffers bitter notes
+
+**Iced latte (4:1 milk:espresso ratio):**
+- Cold milk doesn't dissolve bitter compounds
+- Bitter notes prominent without heat enhancement
+- Requires higher-quality espresso or sweetening
+
+### Dilution Challenge
+
+Melting ice dilutes iced drinks over time. A perfectly balanced iced latte becomes watery after 5-10 minutes. Solutions involve under-sweetening initially or using frozen coffee cubes.
+
+## Essential Equipment for Iced Espresso Drinks
+
+### Espresso Machine (Required)
+
+Any espresso machine works—manual, automatic, super-automatic. Critical: pull quality shots (even distribution, proper extraction).
+
+**Budget:** Gaggia Classic Pro ($99) or Breville Bambino Plus ($699)
+**Premium:** Rocket Espresso ($1,000+) or La Marzocco ($3,000+)
+
+### Grinder (Essential for Quality)
+
+**Budget:** Baratza Encore Conical ($40) — adequate for coarse grinding
+**Better:** Baratza Sette 270 ($149) — precise grind adjustment, espresso-capable
+**Premium:** Niche Zero ($500) — single-dose, minimal retention, espresso-optimized
+
+### Ice Options
+
+**Standard ice cubes:** Dilute as they melt (acceptable)
+
+**Large format ice:** Sphere or block ice ($2-5 per form) melts slower, less dilution (excellent)
+
+**Frozen espresso cubes:** Brew extra shots, freeze in cube tray. Replaces regular ice for zero dilution. (Best)
+
+**Dry ice:** Creates fog effect; not recommended for consumption (dangerous if ingested)
+
+### Milk Frother (Optional)
+
+- **Manual frother:** $20-40 (good for iced drinks; less essential since no steaming required)
+- **Electric frother:** $50-150 (unnecessary for iced drinks; use for hot drinks)
+- For iced drinks: cold milk can be poured directly without frothing
+
+### Specialty Equipment (Optional)
+
+**Milk pitcher with ice compartment:** Keeps milk cold while pouring ($20-40)
+
+**Double-walled glasses:** Insulates drink; prevents condensation ($10-20 per glass, bulk discount)
+
+**Siphon coffee maker:** For cold brew concentrate ($30-60)
+
+## Core Iced Espresso Drinks
+
+### 1. Classic Iced Latte (4:1 milk:espresso)
+
+**Ingredients:**
+- 2 oz espresso (double shot)
+- 8 oz cold milk
+- Ice
+- Optional: 1-2 tbsp sweetener (simple syrup, honey, flavored syrups)
+
+**Instructions:**
+1. Fill glass with ice (3/4 full)
+2. Pull 2 oz espresso shot directly over ice
+3. Pour 8 oz cold milk
+4. Stir well
+5. Optional: add sweetener and stir again
+
+**Serving:** Immediate consumption best (drink before ice melts too much)
+
+**Variations:**
+- **Vanilla latte:** Add 1/2 tsp vanilla extract before milk
+- **Caramel latte:** Add 2 tbsp caramel sauce
+- **Cinnamon latte:** Dust cinnamon on top before serving
+
+### 2. Iced Cappuccino (1:1 milk:espresso)
+
+**Ingredients:**
+- 2 oz espresso
+- 2-3 oz cold milk
+- 2-3 oz milk foam (optional for iced)
+- Ice
+
+**Instructions:**
+1. Fill glass 1/2 way with ice
+2. Pull 2 oz espresso over ice
+3. Pour 2 oz cold milk
+4. Top with 2 oz milk foam (if desired)
+5. Serve immediately
+
+**Note:** Iced cappuccinos are less popular than iced lattes (smaller milk volume, quicker warming in heat).
+
+### 3. Cold Brew Concentrate Method (Easiest)
+
+**Prep (overnight or 12+ hours):**
+1. Coarse ground coffee: 1 cup in cold water: 4 cups (or 1:4 ratio)
+2. Mix in jar; cover; let sit 12-24 hours at room temperature
+3. Strain through fine mesh or cheesecloth
+4. Resulting concentrate is 4-5x stronger than regular coffee
+
+**To serve iced:**
+1. Pour 1-2 oz cold brew concentrate in glass
+2. Add 4-6 oz cold milk
+3. Add ice
+4. Stir
+
+**Advantage:** No espresso machine required; more forgiving than pulled shots
+
+**Disadvantage:** Lacks crema and shot freshness of true espresso
+
+### 4. Espresso Tonic (Trendy Summer Drink)
+
+**Ingredients:**
+- 2 oz espresso
+- 4-6 oz tonic water (bitter or regular)
+- Ice
+- Optional: lemon slice or mint
+
+**Instructions:**
+1. Fill glass with ice
+2. Pour tonic water (leave 2 inches headspace)
+3. Pull espresso shot over ice/tonic
+4. Stir quickly (prevents espresso from settling)
+5. Garnish with lemon slice
+
+**Why it works:** Tonic's bitterness complements espresso's bitterness; carbonation adds texture
+
+**Premium variation:** Use premium Indian tonic or Japanese tonic for more interesting flavor profile ($3-5 per bottle)
+
+### 5. Flash-Brewed Iced Coffee (Immediate Method)
+
+**No espresso machine required:**
+1. Brew hot coffee using standard method (pour-over, AeroPress, French press)
+2. Immediately pour over ice (flash cooling)
+3. Add milk and sweetener to taste
+
+**Advantage:** Faster than cold brew (5-10 minutes vs 12+ hours); uses standard coffee equipment
+
+**Disadvantage:** Not true espresso (lacks crema, higher acidity than espresso shots)
+
+**Best method:** AeroPress (produces concentrated coffee similar to espresso) or pour-over with 1:1 water:coffee ratio
+
+## Sweetening Strategies for Summer
+
+### Simple Syrup (Preferred)
+
+Dissolves instantly in cold milk (regular sugar doesn't dissolve well in cold).
+
+**Recipe:**
+1. Mix 1 part sugar + 1 part hot water
+2. Let cool; store in fridge
+3. Use 1-2 tbsp per drink
+
+**Variations:**
+- Vanilla syrup (add 1 tsp vanilla extract)
+- Cinnamon syrup (add 1/2 tsp cinnamon, let infuse 1 hour)
+- Brown sugar syrup (richer flavor)
+
+### Store-Bought Syrups
+
+- **Vanilla, caramel, hazelnut:** Most common; $6-12 per bottle
+- **Premium syrups:** Monin, Torani brands ($10-15)
+- **Sugar-free syrups:** Monk fruit or stevia-sweetened ($10-12)
+
+### Honey or Agave
+
+- Dissolves in cold slowly (stir vigorously)
+- More natural than refined sugar
+- Slightly different sweetness profile
+
+## Milk Alternatives for Iced Espresso
+
+### Best Milk Options
+
+**Dairy milk:** Classic choice; sweetness and richness complement espresso
+
+**Oat milk:** Best milk alternative; creamy, neutral flavor, complements espresso
+
+**Almond milk:** Lighter, nutty, good with vanilla syrups
+
+**Coconut milk (lite):** Tropical flavor, less creamy than oat
+
+**Soy milk:** Neutral, high protein, standard alternative
+
+### Iced Milk Frothing (Optional)
+
+For iced cappuccinos, light milk foam adds texture. Techniques:
+
+1. **Whisk frother:** Manual frother whisked with cold milk 30 seconds
+2. **Blender:** Cold milk blended briefly (creates temporary foam)
+3. **Aeroccino:** Electric frother (most convenient, $50-150)
+
+Note: Foam on iced drinks is less stable than hot drinks (melts quickly).
+
+## Summer Iced Espresso Recipes (Complete)
+
+### Recipe 1: Iced Vanilla Latte
+
+- 2 oz double espresso
+- 1/2 tsp vanilla extract
+- 8 oz cold milk
+- 1 tbsp vanilla syrup (or simple syrup)
+- Ice
+- Total prep: 5 minutes
+
+### Recipe 2: Cold Brew Iced Latte
+
+- 1.5 oz cold brew concentrate
+- 6 oz cold milk
+- 0.5 oz simple syrup
+- Ice
+- Total prep: 2 minutes (if concentrate prepared)
+
+### Recipe 3: Espresso Tonic with Lemon
+
+- 2 oz double espresso
+- 5 oz premium tonic water
+- Ice
+- Lemon slice
+- Total prep: 3 minutes
+
+### Recipe 4: Iced Cinnamon Cappuccino
+
+- 2 oz double espresso
+- 3 oz cold milk
+- 1 oz milk foam
+- 1/4 tsp cinnamon syrup
+- Dust of cinnamon on top
+- Ice
+- Total prep: 5 minutes
+
+### Recipe 5: Iced Hazelnut Latte
+
+- 2 oz double espresso
+- 1 tbsp hazelnut syrup
+- 8 oz cold milk
+- Ice
+- Total prep: 5 minutes
+
+## Maintenance for Espresso Machines in Summer
+
+### Heat Considerations
+
+Summer heat affects espresso machine temperature stability:
+- Group head temperature rises faster
+- Water temperature fluctuates more
+- Pressure can increase unexpectedly
+
+**Mitigation:**
+- Run a few shots to purge before serving (discards overheated water)
+- Use PID-controlled machines (maintain precise temperature)
+- Backflush group head occasionally (removes excess heat)
+
+### Cleaning in Summer
+
+Heat and milk residue accelerate bacterial growth:
+- Purge group head after every shot (prevents milk clogging)
+- Soak shower screen and basket weekly (remove milk proteins)
+- Clean steam wand immediately after frothing (milk sours in heat)
+- Daily deep clean in hot climates
+
+## FAQ
+
+**Q: Can I make iced espresso without an espresso machine?**
+Yes. Cold brew concentrate method or flash-brewed coffee work well. Drinks won't have espresso's crema/intensity, but are quality iced coffee drinks.
+
+**Q: Should I use hot or cold milk for iced drinks?**
+Cold milk. Hot milk melts ice and ruins temperature balance. Always use milk straight from fridge.
+
+**Q: Why does my iced latte taste watered down?**
+Ice melted too much. Solutions: use larger ice, drink faster, use frozen espresso cubes instead of regular ice, or use cold brew concentrate (less dilution sensitive).
+
+**Q: Can I make iced espresso with a Nespresso machine?**
+Yes. Nespresso capsules produce crema and intensity adequate for iced drinks. Not traditional espresso but works well.
+
+**Q: What's the best glass for iced espresso drinks?**
+Double-walled insulated glasses ($15-20) keep drinks cold longer and prevent condensation. Standard glasses work fine too.
+
+**Q: How long can I store cold brew concentrate?**
+Refrigerated: 2 weeks maximum. Label with date. After 2 weeks, flavor degrades and bacterial growth risk increases in summer heat.
+
+## Conclusion
+
+Summer iced espresso drinks range from simple (iced latte with cold milk) to creative (espresso tonic with premium tonic). The key to quality is using fresh espresso shots, cold milk, and minimal dilution (frozen espresso cubes or larger ice).
+
+Most accessible starting point: cold brew concentrate method. Easiest and most forgiving. Most rewarding: properly pulled espresso shot over ice with quality milk. Both take 5 minutes.
+
+Master 2-3 recipes and rotate through summer. Your home will rival café quality iced espresso drinks while costing a fraction of daily $6-7 café visits.`,
+  },
 };
 
 // Generate product detail articles from espresso machines data
