@@ -39,6 +39,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  // Deals pages
+  const dealPages: MetadataRoute.Sitemap = [
+    "deals",
+    "deals/air-fryers",
+    "deals/espresso-machines",
+    "deals/robot-vacuums",
+    "deals/air-purifiers",
+    "deals/standing-desks",
+    "deals/security-cameras",
+  ].map((path) => ({
+    url: `${baseUrl}/${path}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
   // Standing desk slugs (shared in articles.ts but belong to standing-desks category)
   const standingDeskSlugs = [
     "single-vs-dual-motor-standing-desks",
@@ -47,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "standing-desk-stability-test",
   ];
 
-  // Article pages by category — filter out standing desk articles from espresso
+  // Article pages by category
   const espressoArticles = getAllArticleSlugs()
     .filter((slug) => !standingDeskSlugs.includes(slug))
     .map((slug) => ({
@@ -121,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...categoryPages,
+    ...dealPages,
     ...espressoArticles,
     ...robotVacuumArticles,
     ...airPurifierArticles,
