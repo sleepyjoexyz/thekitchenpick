@@ -590,6 +590,199 @@ For cost: air fryer wins if you're buying new; skip it if you have a convection 
 
 Don't be swayed by marketing claims about air fryer "technology." The real value is compact design, fast cooking, and excellent crisping—all enabled by the same convection heating that's been around since the 1950s. Buy based on your actual cooking needs, not hype.`,
   },
+,
+
+  "best-air-fryer-for-family": {
+    slug: "best-air-fryer-for-family",
+    title:
+      "Best Air Fryer for a Family of 4: Capacity, Features, and Value Compared",
+    description:
+      "Find the best air fryer for a family of 4. Learn why capacity matters, compare top models, and understand which features justify the cost.",
+    category: "air-fryers",
+    content: `## Why Capacity Matters for Families
+
+A family of 4 faces a capacity problem with most air fryers. Standard models are 5-8 quarts—fine for 1-2 people, but small for families. A typical family dinner for 4 means: main protein (1.5-2 lbs), vegetables, and sides. This fills a 5-quart basket, leaving no room for batch cooking.
+
+**The capacity issue:**
+- 5-quart basket: Cook once, feed 2-3 people, then repeat for the other half of the family
+- 8-quart dual-zone: Cook main dish in one basket, sides in the other, feed 4 simultaneously
+- 10+ quart oven-style: Cook entire meal at once (chicken + broccoli + fries all on one level)
+
+Most families either buy an oven-style unit (10+ quarts) or a dual-zone basket fryer (8 quarts). Single-basket 5-quart models frustrate families because you're cooking in batches.
+
+## Top Family Air Fryers Ranked
+
+### Best Overall: Ninja Foodi DualZone AF300 (8 quarts, $120)
+
+**Why it works for families:**
+- Two 4-quart baskets cook different foods simultaneously
+- Cook chicken in one, vegetables in the other
+- Both reach temperature at the same time
+- Total: 8-quart capacity for $120
+
+**Real family scenario:**
+- Basket 1: 1.5 lbs chicken breasts at 380°F for 12 minutes
+- Basket 2: Broccoli and sweet potato fries at 400°F for 10 minutes
+- Both done: Entire family meal ready at once
+- No batch cooking, no waiting
+
+**Specs:**
+- Capacity: 8 quarts (dual zone)
+- Price: $120
+- Wattage: 1700W
+- Max temp: 400°F
+- Dual zone: Yes (independent baskets)
+- Rating: 4.3/5
+
+**Pros:**
+- Best price-to-capacity ratio on market
+- Dual zone eliminates batch cooking for families
+- Both baskets heat independently
+- Energy efficient (1700W)
+- Easy cleanup (dishwasher-safe baskets)
+
+**Cons:**
+- Requires manual temperature adjustment between zones if recipes need different temps
+- Baskets are 4 quarts each (smaller than 5-quart single basket)
+- Limited preset functions (6 presets)
+- Heating elements: both baskets must reach target before cooking
+
+**Best for:** Budget-conscious families of 4 who prioritize capacity and dual cooking.
+
+### Best Premium: Breville Smart Oven Air Fryer (0.8 cu ft oven, $400)
+
+**Why it works for families:**
+- Oven-style design: entire meal on one level
+- Fits 4 chicken breasts + tray of vegetables + fries simultaneously
+- Multiple cooking functions: air fry, bake, toast, roast
+- Larger footprint but worth it for family meals
+
+**Real family scenario:**
+- Tray 1 (top): 4 chicken breasts
+- Tray 2 (bottom): Brussels sprouts and carrots
+- Time: 20 minutes at 400°F
+- No batch cooking, no basket swapping
+
+**Specs:**
+- Capacity: 0.8 cubic feet (larger than any basket)
+- Price: $400
+- Wattage: 1800W
+- Max temp: 450°F
+- Functions: Air fry, bake, toast, roast, convection
+- Rating: 4.6/5
+
+**Pros:**
+- Massive capacity (oven-style)
+- Multiple cooking modes (not just air fry)
+- Perfect for batch cooking Sunday meals
+- Temperature and time controls are precise
+- Build quality is premium (durability)
+
+**Cons:**
+- High price ($400)
+- Takes up significant counter space
+- Takes longer to preheat than basket fryers
+- Not portable
+
+**Best for:** Families who meal-prep, host dinner often, and have counter space.
+
+### Best Value: Ninja Foodi XL AF150AMZ (5.5 quarts, $130)
+
+**Why it works for smaller families:**
+- If your family is on the smaller side (toddlers, light eaters), 5.5 quarts works
+- Compact enough for small kitchens
+- Still room for main + sides without batch cooking
+
+**Specs:**
+- Capacity: 5.5 quarts
+- Price: $130
+- Wattage: 1750W
+- Max temp: 400°F
+- Presets: 8
+- Rating: 4.2/5
+
+**Best for:** Families with smaller appetites or limited counter space.
+
+## Family Air Fryer Buying Guide
+
+### The Capacity Math
+
+**For a family of 4, calculate:** main protein (1.5-2 lbs) + vegetables (0.5-1 lb) + sides (0.5 lb) = 2.5-3.5 lbs total.
+
+- 5-quart basket: Fits 2.5-3 lbs (tight fit, batch cook for seconds)
+- 8-quart dual-zone: Fits 2.5-3.5 lbs (everything at once)
+- 10+ quart oven-style: Fits 4-5 lbs (scales up for extras)
+
+**Best capacity for 4:** Minimum 8 quarts (dual zone) or 10+ quarts (oven-style).
+
+### Budget vs. Premium Trade-off
+
+**Budget ($100-150):** Dual-zone 8-quart baskets (Ninja AF300)
+- Saves $250 vs. premium models
+- Still handles family meals
+- Trade-off: smaller individual baskets, basic controls
+
+**Premium ($300-500):** Oven-style units (Breville, Ninja Foodi Oven)
+- Better build quality
+- Multiple cooking modes
+- Easier to use (all on one level)
+- Trade-off: takes up more space, costs more
+
+### Cooking Tests: Real Family Meals
+
+**Scenario 1: Weeknight Dinner (Chicken + Veggies)**
+- Ninja AF300 (dual-zone): Basket 1 = chicken, Basket 2 = broccoli. Done in 12 minutes. Total meal time: 18 minutes.
+- Breville Smart Oven: Both on one tray. Done in 20 minutes. Total meal time: 25 minutes.
+- Winner for speed: Ninja AF300
+
+**Scenario 2: Sunday Prep (3 lbs chicken + 2 lbs vegetables)**
+- Ninja AF300: Must cook in two batches (one batch of chicken 12 min, one batch of veggies 10 min, then repeat)
+- Breville Smart Oven: All at once (20 minutes)
+- Winner for batch: Breville Smart Oven
+
+**Scenario 3: Mixed Cook Times (Fish + Vegetables)**
+- Fish cooks at 380°F for 8 minutes
+- Vegetables cook at 400°F for 12 minutes
+- Ninja AF300: Must adjust one basket mid-cook or start vegetables first
+- Breville Smart Oven: Both trays, both temperatures independently controlled
+- Winner for flexibility: Breville Smart Oven
+
+## FAQ
+
+**Q: Can I fit 4 chicken breasts in a 5-quart air fryer?**
+A: Barely, if they're arranged tightly. But you have no room for sides. That's why 8-quart capacity matters for families.
+
+**Q: Do I need a dual-zone air fryer?**
+A: Not essential, but it saves time and effort. Without dual-zone, you cook in batches.
+
+**Q: Can I use two separate air fryers instead?**
+A: Yes, and some families do. But one dual-zone saves counter space and $120-200 vs. two separate units.
+
+**Q: What temperature should I use for a family meal?**
+A: Most proteins: 380-400°F. Most vegetables: 400-420°F. Check individual recipes. Dual-zone lets you do both temps at once.
+
+**Q: How long does it take to cook for 4 people?**
+A: Ninja AF300 (dual-zone): 12-15 minutes. Breville Smart Oven: 18-25 minutes. Both faster than conventional oven.
+
+**Q: Can I meal-prep for the whole week?**
+A: Yes. A 10+ quart oven-style can cook 2-3 days of meals in one session. Dual-zone can cook 1-2 days per session.
+
+**Q: Is oven-style or dual-zone better?**
+A: Dual-zone for speed and space-saving. Oven-style for capacity and versatility. Depends on your kitchen.
+
+## Conclusion
+
+For a family of 4, capacity is your #1 priority. A 5-quart single-basket air fryer creates batch-cooking frustration. The sweet spot is either:
+
+1. **Ninja Foodi DualZone AF300 ($120):** Best budget option. 8 quarts. Cook two dishes simultaneously.
+2. **Breville Smart Oven Air Fryer ($400):** Best premium option. 0.8 cu ft. Cook entire meal at once. Multiple functions.
+
+If you're on a tight budget and can accept occasional batch cooking: buy the Ninja AF300. You save $280 and still feed your family efficiently.
+
+If you have counter space and cook often (meal prep, entertaining): invest in Breville. The oven-style design and multiple functions justify the cost.
+
+Either way, choose based on: (1) capacity (minimum 8 quarts for 4 people), (2) whether you'll batch cook, (3) budget. Don't buy a 5-quart single-basket fryer for a family of 4—you'll regret it within a month.`,
+  },
 };
 
 export function getAirFryerArticle(slug: string): AirFryerArticle | null {
