@@ -1,8 +1,8 @@
-const AFFILIATE_TAG = "AFFILIATE_TAG";
+const AFFILIATE_TAG = "rogeti02-20";
 
 export function getAmazonLink(asin: string | null): string | null {
   if (!asin) return null;
-  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
+  return `https://www.amazon.com/dp/${asin}?tag=${rogeti02-20}`;
 }
 
 export function formatPrice(price: number): string {
