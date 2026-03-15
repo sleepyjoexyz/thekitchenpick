@@ -284,7 +284,7 @@ export default function ProductFinder({
                         <a
                           href={`https://amazon.com/dp/${resultConfig.getAsin(product)}${`?tag=${resultConfig.affiliateTag || "rogeti02-20"}`}`}
                           target="_blank"
-                          rel="noopener noreferrer nofollow"
+                          rel="sponsored noopener noreferrer"
                           className="inline-block mt-2 text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 font-medium"
                         >
                           Check Price →

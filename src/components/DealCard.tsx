@@ -49,7 +49,7 @@ export default function DealCard({
     <a
       href={amazonUrl}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="sponsored noopener noreferrer"
       className="block bg-white rounded border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
     >
       {/* Compact image */}

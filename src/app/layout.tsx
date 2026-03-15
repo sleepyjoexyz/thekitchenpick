@@ -55,6 +55,11 @@ export const metadata: Metadata = {
     ],
   },
   robots: "index, follow",
+  manifest: '/manifest.json',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({

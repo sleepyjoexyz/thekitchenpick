@@ -138,7 +138,7 @@ export default function ComparisonTable({ products }: ComparisonTableProps) {
                     <a
                       href={amazonUrl}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="sponsored noopener noreferrer"
                       className="text-blue-600 hover:underline font-medium"
                     >
                       Amazon

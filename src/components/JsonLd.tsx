@@ -1,4 +1,4 @@
-'use client';
+use client';
 
 export function WebSiteSchema() {
   return (
@@ -12,6 +12,14 @@ export function WebSiteSchema() {
         "@type": "Organization",
         "name": "The Kitchen Pick",
         "url": "https://www.thekitchenpick.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.thekitchenpick.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     })}} />
   );
@@ -61,7 +69,7 @@ export function ProductListSchema({ products, categoryName, categoryUrl }: {
       "name": `Best ${categoryName} Compared`,
       "url": categoryUrl,
       "numberOfItems": products.length,
-      "itemListElement": products.slice(0, 10).map((p, i) => ({
+      "itemListElement": products.map((p, i) => ({
         "@type": "ListItem",
         "position": i + 1,
         "item": {

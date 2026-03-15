@@ -59,7 +59,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <a
               href={amazonUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="block w-full text-center bg-blue-600 text-white py-2 rounded font-medium text-sm hover:bg-blue-700 transition-colors"
             >
               View on Amazon
