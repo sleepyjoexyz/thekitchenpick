@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import MarkdownContent from "@/components/MarkdownContent";
 
 interface PageProps {
   params: Promise<{
@@ -94,100 +95,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Article Content */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-sm max-w-none">
-          {article.content.split("\n\n").map((paragraph, i) => {
-            // Handle markdown headers
-            if (paragraph.startsWith("##")) {
-              const headerText = paragraph.replace("##", "").trim();
-              return (
-                <h2
-                  key={i}
-                  className="text-2xl font-bold text-gray-900 mt-8 mb-4"
-                >
-                  {headerText}
-                </h2>
-              );
-            }
-
-            if (paragraph.startsWith("#")) {
-              const headerText = paragraph.replace("#", "").trim();
-              return (
-                <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-3">
-                  {headerText}
-                </h3>
-              );
-            }
-
-            // Handle markdown lists
-            if (paragraph.startsWith("-")) {
-              const items = paragraph.split("\n").filter((line) => line.trim());
-              return (
-                <ul key={i} className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                  {items.map((item, j) => (
-                    <li key={j}>{item.replace("-", "").trim()}</li>
-                  ))}
-                </ul>
-              );
-            }
-
-            // Handle markdown ordered lists
-            if (/^\d+\./.test(paragraph)) {
-              const items = paragraph.split("\n").filter((line) => line.trim());
-              return (
-                <ol key={i} className="list-decimal list-inside space-y-2 text-gray-700 mb-4">
-                  {items.map((item, j) => (
-                    <li key={j}>{item.replace(/^\d+\./, "").trim()}</li>
-                  ))}
-                </ol>
-              );
-            }
-
-            // Handle markdown tables
-            if (paragraph.includes("|")) {
-              const lines = paragraph.split("\n").filter((line) => line.trim());
-              if (lines.length > 2) {
-                return (
-                  <div key={i} className="overflow-x-auto my-6">
-                    <table className="w-full text-sm border-collapse">
-                      <tbody>
-                        {lines.map((line, j) => {
-                          const cells = line.split("|").filter((c) => c.trim());
-                          // Skip separator row
-                          if (cells[0].includes("-")) return null;
-
-                          return (
-                            <tr
-                              key={j}
-                              className={j === 0 ? "bg-gray-100" : j % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                            >
-                              {cells.map((cell, k) => (
-                                <td
-                                  key={k}
-                                  className={`border border-gray-300 px-4 py-2 ${
-                                    j === 0 ? "font-bold" : ""
-                                  }`}
-                                >
-                                  {cell.trim()}
-                                </td>
-                              ))}
-                            </tr>
-                          );
-                        })}
-                      </tbody>
-                    </table>
-                  </div>
-                );
-              }
-            }
-
-            // Regular paragraph
-            return (
-              <p key={i} className="text-gray-700 leading-relaxed mb-4">
-                {paragraph}
-              </p>
-            );
-          })}
-        </div>
+        <MarkdownContent content={article.content} />
       </section>
 
       {/* Related Comparison CTA */}

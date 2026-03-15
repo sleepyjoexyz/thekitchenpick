@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import MarkdownContent from "@/components/MarkdownContent";
 
 interface PageProps {
   params: Promise<{
@@ -95,55 +96,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Article Content */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-none text-gray-700">
-          {article.content.split("\n\n").map((paragraph, i) => {
-            if (paragraph.startsWith("##")) {
-              const heading = paragraph.replace("## ", "");
-              return (
-                <h2 key={i} className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  {heading}
-                </h2>
-              );
-            }
-            if (paragraph.startsWith("###")) {
-              const heading = paragraph.replace("### ", "");
-              return (
-                <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-3">
-                  {heading}
-                </h3>
-              );
-            }
-            if (paragraph.startsWith("-")) {
-              const items = paragraph.split("\n").map((item) => item.replace(/^-\s/, ""));
-              return (
-                <ul key={i} className="list-disc list-inside mb-4 space-y-2">
-                  {items.map((item, j) => (
-                    <li key={j} className="text-gray-700">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-            if (paragraph.match(/^\d+\./)) {
-              const items = paragraph.split("\n").map((item) => item.replace(/^\d+\.\s/, ""));
-              return (
-                <ol key={i} className="list-decimal list-inside mb-4 space-y-2">
-                  {items.map((item, j) => (
-                    <li key={j} className="text-gray-700">
-                      {item}
-                    </li>
-                  ))}
-                </ol>
-              );
-            }
-            return (
-              <p key={i} className="text-gray-700 mb-4">
-                {paragraph}
-              </p>
-            );
-          })}
-        </div>
+        <MarkdownContent content={article.content} />
       </section>
 
       {/* Recommended Products */}
