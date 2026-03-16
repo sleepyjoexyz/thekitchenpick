@@ -1308,6 +1308,96 @@ Season with lemon, dill, and garlic. Cook at 390 degrees for 7-10 minutes depend
 
 The Ninja DualZone handles the largest variety of summer meals with its dual-basket design. The Cosori Pro LE is the best value for smaller households. The Instant Vortex Plus earns its spot with the rotisserie function for whole chicken nights. None perfectly replicate charcoal smoke flavor, but for weeknight summer dinners, the convenience gap is enormous.`,
   },
+  "air-fryer-buying-guide-everything-to-know-2026": {
+    slug: "air-fryer-buying-guide-everything-to-know-2026",
+    title: "Air Fryer Buying Guide 2026: Everything You Need to Know Before You Buy",
+    description: "The complete air fryer buying guide — basket vs oven, capacity sizing, wattage, preset programs, accessories, and honest advice about what air fryers can and can't do.",
+    category: "air-fryers",
+    content: `## Introduction
+
+Air fryers have become the best-selling small kitchen appliance category, and the marketing has gotten ahead of reality. They don't actually fry food — they're compact convection ovens with powerful fans. Understanding what they really do (and don't do) helps you buy the right one and set realistic expectations.
+
+## How Air Fryers Actually Work
+
+An air fryer is a convection oven with a heating element and a high-speed fan in a compact housing. The small cooking chamber means air circulates faster and more intensely than in a full-size oven. This produces crispy exteriors similar to (but not identical to) deep frying, using little or no oil.
+
+**What they excel at:** Frozen foods (fries, nuggets, mozzarella sticks), reheating leftovers (pizza, fried chicken — far superior to microwave), roasting vegetables, cooking chicken wings and thighs.
+
+**What they struggle with:** Wet batters (the batter drips through the basket), large cuts of meat (limited capacity), anything that needs to be submerged in liquid, delicate fish.
+
+## Basket vs Oven-Style: The Two Designs
+
+### Basket Air Fryers
+
+A pull-out basket with a perforated bottom. Food sits in a single layer for best results. Most popular design (Ninja, Cosori, Philips, COSORI). Easy to shake/flip food mid-cook by pulling the basket out.
+
+**Pros:** Fastest cooking (smallest air volume), easiest to clean, most models under $100.
+
+**Cons:** Small cooking surface limits batch size, no visibility while cooking (must open to check), can't cook on multiple levels.
+
+### Oven-Style Air Fryers
+
+Look like a toaster oven with air fryer capability. Multiple racks allow cooking different items simultaneously. Larger capacity. Some double as toaster ovens, dehydrators, and rotisserie cookers.
+
+**Pros:** Larger capacity, multi-rack cooking, visible window to check progress, multi-function (toast, bake, dehydrate, rotisserie).
+
+**Cons:** Larger countertop footprint, slower cooking (bigger air volume), harder to clean (more surfaces), most models $100–$300.
+
+## Sizing Guide: What Capacity Do You Need?
+
+Air fryer capacity is measured in quarts, and manufacturer claims are optimistic. A "6-quart" basket's usable cooking area (single layer for crispy results) is roughly 60% of stated capacity.
+
+- **1–2 people:** 3–4 quart basket is sufficient. Cooks 1 lb of fries or 4 chicken thighs.
+- **3–4 people (family):** 5–6 quart basket or medium oven-style. Cooks 1.5–2 lbs of food.
+- **5+ people:** 8+ quart basket or large oven-style with dual baskets. Or accept cooking in two batches.
+
+**The Ninja Dual Basket** (DZ201, $130) is popular for families — two independent baskets cook different items at different temperatures simultaneously.
+
+## Wattage and Power
+
+Most air fryers run 1,400–1,800 watts. Higher wattage = faster preheating and more consistent temperature. Below 1,200 watts, cooking times increase noticeably. This matters more for oven-style models (larger chambers need more power to maintain temperature).
+
+**Practical note:** A 1,700-watt air fryer on a 15-amp kitchen circuit leaves room for a refrigerator but not much else. Don't run a microwave and air fryer on the same circuit simultaneously.
+
+## Features Worth Having
+
+**Digital controls with presets** — Not necessary, but convenient. One-touch buttons for fries, chicken, fish, etc. save you from looking up time/temperature combinations. Most presets are reasonably accurate.
+
+**Shake/flip reminder** — An audible beep halfway through cooking that reminds you to shake the basket for even browning. Simple but useful.
+
+**Dishwasher-safe basket** — Saves 5 minutes of hand-washing per use. Over a year of daily use, that's 30+ hours. Check before buying — some baskets have non-stick coatings that degrade in dishwashers.
+
+**Non-stick coating quality** — Cheap air fryers use thin non-stick that flakes within months. Ceramic-coated baskets (like COSORI Pro) last longer but cost more. Never use metal utensils in any non-stick basket.
+
+## Features You Don't Need
+
+**WiFi connectivity** — You're standing 5 feet away in the kitchen. You don't need an app to control an air fryer.
+
+**"Rapid Air Technology" or similar branded terms** — Marketing names for basic convection. Every air fryer uses the same principle.
+
+**Built-in thermometer probe** — Useful in theory, but air fryer cooking times are short enough that an instant-read thermometer ($15) works better.
+
+**Rotisserie function** — Sounds fun, cooks one chicken impressively, then the spit collects dust. Most owners use it once.
+
+## Honest Limitations
+
+Air fryers don't replace deep fryers for authentic fried texture. French fries from an air fryer are good but not identical to fast-food fries. Chicken tenders coated in breadcrumbs work well; beer-battered fish does not (wet batter drips).
+
+They don't replace ovens for large meals — Thanksgiving turkey, casseroles, sheet-pan dinners for 6+ people.
+
+They DO replace: toaster ovens (for most tasks), microwave reheating (better results), and reduce full-oven use for small meals (saves energy and doesn't heat your kitchen).
+
+## Budget Recommendations
+
+- **Under $60:** COSORI Pro LE (5-qt basket) — best value. 9 presets, 450°F max, dishwasher-safe basket. Does 90% of what $200 models do.
+- **$60–$100:** Ninja AF101 (4-qt) or COSORI Pro II (5.8-qt) — reliable daily drivers.
+- **$100–$150:** Ninja DZ201 Dual Basket (8-qt total) — best for families. Two independent baskets.
+- **$150–$250:** Breville Smart Oven Air (oven-style) — replaces toaster oven + air fryer. Worth it if counter space allows.
+
+## The Bottom Line
+
+For most people, a 5–6 quart basket-style air fryer under $80 is all you need. It will handle weeknight dinners, reheat leftovers perfectly, and cook frozen foods better than your oven in half the time. Don't overcomplicate it — the best air fryer is the one you use three times a week, not the one with the most features.`,
+  },
 };
 
 export function getAirFryerArticle(slug: string): AirFryerArticle | null {
