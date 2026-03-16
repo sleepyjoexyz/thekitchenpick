@@ -864,57 +864,6 @@ Most accessible starting point: cold brew concentrate method. Easiest and most f
 
 Master 2-3 recipes and rotate through summer. Your home will rival café quality iced espresso drinks while costing a fraction of daily $6-7 café visits.`,
   },
-};
-
-// Generate product detail articles from espresso machines data
-espressoMachines.forEach((machine) => {
-  const slug = machine.id;
-
-  espressoMachineArticles[slug] = {
-    slug,
-    title: `${machine.brand} ${machine.model} - Detailed Review & Specs`,
-    description: `Complete analysis of the ${machine.brand} ${machine.model}. Includes detailed specifications, pros and cons, pricing, and who it's best for.`,
-    category: "espresso-machines",
-    content: `## ${machine.brand} ${machine.model}
-
-**Price:** $${machine.price}
-**Type:** ${machine.type}
-**Rating:** ${machine.rating}/5
-
-## Quick Specs
-
-- **Boiler Type:** ${machine.boilerType}
-- **Pressure:** ${machine.pressureBars} bars
-- **Has Grinder:** ${machine.hasGrinder ? "Yes" : "No"}${machine.hasGrinder && machine.grinderType ? ` (${machine.grinderType})` : ""}
-- **Milk System:** ${machine.milkSystem}
-- **Water Tank:** ${machine.waterTankOz} oz
-- **Dimensions:** ${machine.dimensions}
-- **Weight:** ${machine.weightLbs} lbs
-
-## Overview
-
-The ${machine.brand} ${machine.model} is a ${machine.type} espresso machine positioned in the ${machine.priceRange} price range. It delivers the core features expected at this price point with a focus on ${machine.bestFor}.
-
-## Advantages
-
-${machine.pros.map((pro) => `- ${pro}`).join("\n")}
-
-## Disadvantages
-
-${machine.cons.map((con) => `- ${con}`).join("\n")}
-
-## Who It's Best For
-
-${machine.bestFor}
-
-This machine excels for users who prioritize ${machine.bestFor.toLowerCase()}. It represents good value in its category and will serve its intended audience well.
-
-## Overall Assessment
-
-The ${machine.brand} ${machine.model} is a solid choice at $${machine.price}. With a rating of ${machine.rating}/5, it has proven reliability and user satisfaction. Consider this machine if its strengths align with your priorities and if the price fits your budget.
-
-For alternative options in similar price ranges and machine types, explore our other reviews and comparison guides.`,
-  },
   "espresso-machine-watery-shots-fix": {
     slug: "espresso-machine-watery-shots-fix",
     title: "My Espresso Machine Makes Watery Shots — How to Fix It",
@@ -1131,6 +1080,57 @@ Most machines from Breville, Gaggia, Rancilio, and Delonghi come with 1-2 year w
 Watery espresso almost never means your machine is broken. Start with grind (coarser/finer adjustment), then dose (add a gram or two), then tamping (use a level tool and consistent pressure). Once those three are dialed, add fresh beans and proper maintenance.
 
 If you're new to espresso, expect 5-10 pulls to dial in your first machine. Once you hit that sweet spot (25-30 second pull time, visible crema, rich dark liquid), you'll know exactly what "right" feels like. Every shot after that is just maintaining what works.`,
+  },
+};
+
+// Generate product detail articles from espresso machines data
+espressoMachines.forEach((machine) => {
+  const slug = machine.id;
+
+  espressoMachineArticles[slug] = {
+    slug,
+    title: `${machine.brand} ${machine.model} - Detailed Review & Specs`,
+    description: `Complete analysis of the ${machine.brand} ${machine.model}. Includes detailed specifications, pros and cons, pricing, and who it's best for.`,
+    category: "espresso-machines",
+    content: `## ${machine.brand} ${machine.model}
+
+**Price:** $${machine.price}
+**Type:** ${machine.type}
+**Rating:** ${machine.rating}/5
+
+## Quick Specs
+
+- **Boiler Type:** ${machine.boilerType}
+- **Pressure:** ${machine.pressureBars} bars
+- **Has Grinder:** ${machine.hasGrinder ? "Yes" : "No"}${machine.hasGrinder && machine.grinderType ? ` (${machine.grinderType})` : ""}
+- **Milk System:** ${machine.milkSystem}
+- **Water Tank:** ${machine.waterTankOz} oz
+- **Dimensions:** ${machine.dimensions}
+- **Weight:** ${machine.weightLbs} lbs
+
+## Overview
+
+The ${machine.brand} ${machine.model} is a ${machine.type} espresso machine positioned in the ${machine.priceRange} price range. It delivers the core features expected at this price point with a focus on ${machine.bestFor}.
+
+## Advantages
+
+${machine.pros.map((pro) => `- ${pro}`).join("\n")}
+
+## Disadvantages
+
+${machine.cons.map((con) => `- ${con}`).join("\n")}
+
+## Who It's Best For
+
+${machine.bestFor}
+
+This machine excels for users who prioritize ${machine.bestFor.toLowerCase()}. It represents good value in its category and will serve its intended audience well.
+
+## Overall Assessment
+
+The ${machine.brand} ${machine.model} is a solid choice at $${machine.price}. With a rating of ${machine.rating}/5, it has proven reliability and user satisfaction. Consider this machine if its strengths align with your priorities and if the price fits your budget.
+
+For alternative options in similar price ranges and machine types, explore our other reviews and comparison guides.`,
   };
 });
 
