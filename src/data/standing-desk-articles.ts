@@ -1229,6 +1229,48 @@ A: Minor. The main concern is tripping or losing balance while reaching for item
 
 **The best approach for most people:** An adjustable standing desk at your primary workstation, with optional use of a treadmill desk or walking pad for low-focus tasks 1-2 hours per week. This delivers comprehensive health benefits at reasonable cost without productivity loss.`,
   },
+  "best-standing-desk-back-to-school-dorm-room-2026": {
+    slug: "best-standing-desk-back-to-school-dorm-room-2026",
+    title: "Best Standing Desks for Back-to-School Dorm Rooms (2026)",
+    description: "Compact, affordable standing desks that fit in college dorm rooms. Desk converters and small electric desks for students returning to campus fall 2026.",
+    category: "standing-desks",
+    content: `## Why Students Need Standing Desks
+
+College students spend 8-12 hours daily sitting between lectures, studying, and screen time. Standing desks reduce the sedentary load without requiring gym time that busy students rarely have. Dorm rooms add constraints: limited floor space (typically 10x12 feet shared), noise restrictions for late-night studying, and move-in/move-out portability.
+
+## Dorm Room Desk Constraints
+
+### Size
+Most dorm-provided desks are 42-48 inches wide. A standing desk converter must fit on this surface, or a freestanding desk must fit in the same footprint. Anything wider than 32 inches for a converter or 40 inches for a standalone will crowd the room.
+
+### Noise
+Electric motors matter in shared dorm rooms. Dual-motor desks are quieter than single-motor at 40-45 dB versus 50+ dB. Manual crank desks are silent but slow. Pneumatic converters produce a brief air sound during adjustment.
+
+### Budget
+Students operate on tight budgets. The sweet spot for dorm standing desks falls between $150-300, well below the $500+ range of premium home office models.
+
+### Portability
+The desk needs to survive at least 4 move-ins and move-outs over a college career. Lighter frames and tool-free assembly save time and prevent damage during moves.
+
+## Top Picks for Dorm Rooms
+
+### FlexiSpot E7 Pro (40-inch)
+The 40-inch top fits standard dorm desk footprints while providing enough surface for a laptop, monitor, and books. The dual-motor system adjusts quietly at 42 dB. Four programmable memory presets let you switch between sitting and standing heights instantly. The steel frame handles 355 lbs, stable enough for a monitor arm. At 52 lbs total, two students can carry it between floors during move-in.
+
+### VIVO 32-inch Desk Converter (DESK-V000K)
+For students who want to keep their dorm-provided desk, this converter sits on top and raises your laptop and keyboard to standing height. The 32-inch width fits on any standard dorm desk. Gas-spring lift adjusts smoothly and silently. No motor, no power cord, no noise. Under $150, making it the most budget-friendly option. Folds flat for storage during summer breaks.
+
+### Fezibo 40-inch Electric Desk
+The budget full-desk option at under $200. Single-motor is slightly louder than the FlexiSpot but adequate for dorm use. The frame is lighter at 44 lbs, easier for solo move-in. Splice board design means the desk top comes in two pieces that fit in a sedan trunk. Cable management tray keeps chargers and power strips organized.
+
+## Setup Tips for Dorm Rooms
+
+Position the desk near an outlet to avoid extension cords across walkways. Use a monitor arm to reclaim desk surface for books and supplies. Set standing height so your elbows are at 90 degrees and the screen is at eye level. Start with 20-minute standing intervals and increase gradually. Use an anti-fatigue mat if your dorm has hard flooring.
+
+## Bottom Line
+
+The VIVO converter is the safest dorm investment because it requires no commitment and stores flat during breaks. The FlexiSpot E7 Pro is the right choice for students who want a proper standing desk they will use through all four years. The Fezibo fits the tightest budgets while still delivering motorized height adjustment. All three survive the dorm room reality of tight spaces, shared living, and frequent moves.`,
+  },
 };
 
 // Generate product detail articles from standing desks data
