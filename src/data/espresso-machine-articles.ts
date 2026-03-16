@@ -914,6 +914,223 @@ This machine excels for users who prioritize ${machine.bestFor.toLowerCase()}. I
 The ${machine.brand} ${machine.model} is a solid choice at $${machine.price}. With a rating of ${machine.rating}/5, it has proven reliability and user satisfaction. Consider this machine if its strengths align with your priorities and if the price fits your budget.
 
 For alternative options in similar price ranges and machine types, explore our other reviews and comparison guides.`,
+  },
+  "espresso-machine-watery-shots-fix": {
+    slug: "espresso-machine-watery-shots-fix",
+    title: "My Espresso Machine Makes Watery Shots — How to Fix It",
+    description:
+      "Espresso too thin and weak? Learn why your shots are watery, how to fix grind size and tamping, and when your pump is failing.",
+    category: "espresso-machines",
+    content: `## Why Your Espresso Shots Are Watery and Weak
+
+A watery espresso shot pulls too fast, lacks body, has no crema (the golden foam on top), and tastes sour or bitter. Instead of the thick, syrupy 1-ounce espresso you expect, you get a weak stream of brownish liquid that tastes like coffee-flavored water.
+
+This is one of the most common espresso problems, and the good news: the cause is almost always fixable at home. Only rarely is your machine's pump actually failing.
+
+## Cause 1: Grind Too Coarse (Most Common)
+
+The single biggest reason for watery shots is grinding your beans too coarse. Coarse grounds don't resist water flow—water rushes straight through them in 10-15 seconds instead of the ideal 25-30 seconds.
+
+**How it works:** Water pressure (9 bars) needs resistance to build up properly. Coarse grounds have large gaps between particles, so water finds the path of least resistance and bypasses the coffee entirely.
+
+**What you'll see:** Espresso stops flowing after 8-10 seconds. Weak taste. No crema. Machine strains less than it should.
+
+**How to fix:**
+1. Grind finer—adjust your grinder 2-3 clicks toward "finer"
+2. Test-pull a single shot
+3. Time the pull—ideal is 25-30 seconds from first water contact to shot completion
+4. If it's still fast (under 20 sec), go finer again
+5. Repeat until you hit the 25-30 second window
+
+**Which grinders to use:**
+- Burr grinders: Baratza Encore (espresso-capable with adjustment), Baratza Specialita (dedicated espresso), Breville Smart Grinder Pro
+- Avoid: Blade grinders (inconsistent), cheap conical burrs (uneven particles)
+
+**Grind adjustment:** If your grinder doesn't have numbered settings, you're probably using the wrong grinder for espresso. Espresso demands **precise grind control**—burr grinders with numbered markings (1-40, 1-50, etc.) are essential. Blade grinders work for French press and Moka pots, but espresso will always struggle.
+
+## Cause 2: Dose Too Low
+
+Dose = the amount of ground coffee you put in the portafilter basket. Too little coffee means too little resistance, water flows too fast.
+
+**Standard doses:**
+- Single basket (single espresso): 7-9 grams
+- Double basket (double espresso): 18-20 grams
+- Triple basket (Lungo): 20-25 grams
+
+**How to check:**
+1. Get a scale (Acaia Pearl, Timemore Nano, cheap kitchen scale)
+2. Tare the portafilter+basket on the scale
+3. Grind and dose your beans directly into the basket
+4. Compare the weight to the standard above
+5. If you're 2-3g under, that's your problem
+
+**How to fix:**
+- Add 1 gram at a time until you hit the correct dose
+- Don't assume the basket "looks full"—volume is deceptive with ground coffee
+- A properly dosed basket will be slightly overfilled (you'll need to level and tamp down)
+
+**Pro tip:** Many semi-automatic machines come with a single and double basket. If you're only using the single basket for espresso, switch to the double—it forces a proper dose. Single baskets are often too small for quality extraction.
+
+## Cause 3: Tamping Pressure Inconsistent
+
+Tamping compresses the grounds into a puck, slowing water flow. Inconsistent tamping means inconsistent flow.
+
+**Correct tamping technique:**
+1. Fill basket with ground coffee (slightly overfilled)
+2. Level the grounds with a leveling tool or finger (removes air pockets)
+3. Tamp straight down with firm, even pressure (30-40 lbs)
+4. Apply pressure smoothly—no twisting or adjusting mid-tamp
+5. Remove the tamper straight up (don't wiggle)
+
+**How to tell if you're tamping wrong:**
+- Espresso pulls unevenly (side comes out first)
+- Crema is patchy (light on one side, dark on the other)
+- Pull time varies wildly (18 sec one time, 40 sec the next)
+
+**Fixes:**
+- Use a leveling tool (Espresso Company Leveler, Normcore leveler) to remove air pockets before tamping
+- Invest in a tamper with calibrated pressure (Espresso Company Calibrated Tamper applies exactly 30 lbs)
+- Apply steady, straight-down pressure—if you're straining to tamp, grind is too fine or dose is too high
+
+**Uneven tamping = uneven flow = watery shots in some sections, over-extracted in others.** Leveling + consistent pressure = better shots.
+
+## Cause 4: Water Temperature Too High
+
+If your water is too hot, extraction happens too fast. If it's too cold, extraction happens too slow, and you get sour espresso (a different problem, but worth mentioning).
+
+**Ideal temperature ranges:**
+- Lighter roasts: 200-202°F
+- Medium roasts: 198-200°F
+- Dark roasts: 195-198°F
+
+**How to check your temperature:**
+- Many machines don't have built-in temperature displays
+- Use an infrared thermometer on the group head (where you attach the portafilter)
+- Or measure the water temperature inside the portafilter after a flush
+- Machines like Breville Barista Express show temperature digitally
+
+**How to adjust:**
+- If your machine has a dial or lever, adjust slightly cooler (counterclockwise) if shots are pulling too fast
+- If you can't adjust temperature, contact the manufacturer
+- Some single-boiler machines have temperature stability issues—if water is inconsistent, that might be a defect
+
+**Note:** Temperature is rarely the *only* cause of watery shots, but it can contribute. Most often, it's coarse grind + low dose + weak tamping all at once.
+
+## Cause 5: Stale Beans
+
+Old coffee loses CO2 and natural oils. Stale espresso doesn't extract properly—the puck breaks apart more easily, water flows faster.
+
+**Espresso bean freshness:**
+- Best: 5-14 days after roast date
+- Acceptable: 2-30 days after roast
+- Avoid: Over 30 days old (CO2 is long gone)
+
+**How to tell if beans are stale:**
+- No layer of crema (biggest indicator)
+- Espresso tastes flat or sour
+- Pulls too fast even with correct grind
+
+**How to fix:**
+- Buy whole beans from a local roaster or specialty coffee shop
+- Check the roast date on the bag (it should be printed)
+- Buy smaller quantities (0.5 lb) and use within 2-3 weeks
+- Store beans in an airtight container away from light and heat
+- Don't refrigerate or freeze (damages the beans)
+
+If you've been using grocery store pre-ground espresso, switching to fresh whole beans will be the biggest improvement you can make.
+
+## Cause 6: Channeling
+
+Channeling = water finds tiny gaps in the puck and rushes through instead of penetrating the entire puck evenly.
+
+**How it happens:**
+- Uneven distribution (grounds not level)
+- Inconsistent tamping (more pressure on one side)
+- Defects in the basket or shower screen (rare, but possible)
+- Very fine grind + heavy tamp (can cause channeling even if done correctly)
+
+**What you'll see:**
+- Espresso gushes out in one section of the basket
+- Crema is dark on one side, light on the other
+- Coffee tastes thin and bitter (under-extracted in some zones, over-extracted in others)
+
+**How to fix:**
+1. Use a distribution tool (Espresso Company Distributor) to evenly distribute grounds before tamping
+2. Tamp level and straight (no twisting)
+3. Ensure your basket is clean (debris can create tiny channels)
+4. Check shower screen (the flat metal screen above the puck) for damage—if dented or scratched, replace it
+
+Distribution tools are inexpensive ($10-$30) and solve ~80% of channeling problems.
+
+## Cause 7: Cleaning and Descaling Neglect
+
+Over time, mineral buildup and old coffee oils coat the group head, shower screen, and diffuser basket. This restricts water flow and temperature consistency.
+
+**What happens:** Water can't flow evenly, creating both fast sections and slow sections. Overall extraction suffers.
+
+**How to clean:**
+1. **Daily:** Flush the group head for 5-10 seconds before and after each pull (removes coffee grounds)
+2. **Weekly:** Soak the portafilter, basket, and shower screen in hot water with espresso machine cleaner (Cafiza, Espresso Clean) for 15 minutes, then scrub with a brush
+3. **Monthly:** Run a cleaning cycle (if your machine has one) or manually backflush the group head (if single-boiler) to clear internal lines
+4. **Every 3-6 months:** Descale with a commercial descaler (Dripkit, Cafiza Descaler) following your machine's manual
+
+**Neglecting cleaning = watery shots** because water bypasses areas with buildup, creating uneven extraction.
+
+## Cause 8: Pump Failure (Rare)
+
+If you've dialed in your grind, dose, and tamping correctly, and shots still pull in 10 seconds with no crema, your pump might be failing.
+
+**Signs of pump failure:**
+- No pressure gauge movement (if your machine has one)
+- Espresso squirts out instead of flowing evenly
+- Water temperature fluctuates wildly
+- Machine hisses or makes grinding sounds during pull
+
+**What to do:**
+- Contact the machine manufacturer's support
+- Have the pump pressure tested (should be 9 bars)
+- If confirmed, pump replacement is typically $150-$500 depending on machine
+
+Most machines from Breville, Gaggia, Rancilio, and Delonghi come with 1-2 year warranties. Pump failure within warranty is typically covered. Out of warranty, you'll pay for parts + labor.
+
+## Machine-Type Specific Fixes
+
+**Semi-Automatic Machines (Gaggia Classic, Breville Barista Express):**
+- Focus on grind, dose, tamp, time—these are 100% under your control
+- Likely issues: coarse grind (90%), low dose (5%), weak tamp (4%), stale beans (1%)
+
+**Super-Automatic Machines (Jura, Delonghi Magnifica):**
+- If shots are watery, the machine's internal grinder is set too coarse
+- Adjust the grind setting 2-3 notches finer on the machine's dial
+- Run the cleaning cycle monthly—super-automatics are prone to buildup
+- Unlikely to be pump failure unless machine is over 5 years old
+
+**Pod/Capsule Machines (Nespresso, Keurig):**
+- Water temperature and pressure are pre-set and can't be adjusted
+- If shots are watery, pods may be expired or defective
+- Try a different pod batch
+- If problem persists, machine may need descaling (even though pods eliminate grounds)
+
+## Quick Fixes in Order (Try These First)
+
+1. **Grind finer** (click 3 notches toward "fine" on your grinder)
+2. **Pull a test shot and time it** (should be 25-30 seconds)
+3. **If under 20 seconds:** Go finer and retry
+4. **If over 35 seconds:** Go coarser
+5. **Once timed correctly:** Level your grounds before tamping
+6. **Tamp with steady, even pressure** (30-40 lbs)
+7. **Pull another shot**
+8. **If still weak:** Check your dose (should be 18-20g for double basket)
+9. **If still weak:** Check bean freshness (roast date on bag?)
+10. **If still weak:** Clean and descale your machine
+
+90% of watery espresso is solved by steps 1-5 alone.
+
+## The Bottom Line
+
+Watery espresso almost never means your machine is broken. Start with grind (coarser/finer adjustment), then dose (add a gram or two), then tamping (use a level tool and consistent pressure). Once those three are dialed, add fresh beans and proper maintenance.
+
+If you're new to espresso, expect 5-10 pulls to dial in your first machine. Once you hit that sweet spot (25-30 second pull time, visible crema, rich dark liquid), you'll know exactly what "right" feels like. Every shot after that is just maintaining what works.`,
   };
 });
 

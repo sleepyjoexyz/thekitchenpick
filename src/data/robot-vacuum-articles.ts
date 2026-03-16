@@ -1147,6 +1147,214 @@ The key insight: summer environmental stressors (sand, pollen, shedding) require
 
 Start the summer with a fresh filter replacement, commit to weekly maintenance, and you'll avoid the costly repairs that come from neglected summer use.`,
   },
+  "robot-vacuum-stuck-under-furniture": {
+    slug: "robot-vacuum-stuck-under-furniture",
+    title: "Robot Vacuum Keeps Getting Stuck Under Furniture — How to Fix It",
+    description:
+      "Robot wedged under couch or bed? Learn clearance heights, furniture risers, virtual walls, and which robots avoid entrapment.",
+    category: "robot-vacuums",
+    content: `## Why Your Robot Vacuum Gets Stuck Under Furniture
+
+Your robot vacuum works fine in open spaces, but every few days it wedges itself under the couch, bed, or dresser. It runs out of battery there. You find it stuck, unable to reverse out. The frustration: your vacuum is designed to work autonomously, but it keeps trapping itself.
+
+This is one of the most common pain points with robot vacuums, especially in homes with low furniture. The good news: it's almost entirely preventable with the right approach.
+
+## Understanding Your Robot's Clearance Needs
+
+Robot vacuums measure 3-4 inches tall (including the bump sensor on top). Furniture height matters enormously.
+
+**Clearance heights by machine type:**
+- **Roborock models** (S8, S7, Q7): 3.6-3.8 inches tall with bump sensor
+- **Ecovacs Deebot** (X2, X3): 3.5-3.7 inches with sensors
+- **iRobot Roomba** (J7, S9): 3.6-3.9 inches
+- **Bissell Icon/Spinwave**: 3.8 inches
+- **Shark RV912S**: 3.4 inches
+
+**Low-clearance furniture risks:**
+- Couches: 4-6 inches (risky if under 4.5 inches)
+- Beds: 8-12 inches (usually safe, unless platform bed sits lower)
+- Low dressers: 2-3 inches (major entrapment risk)
+- Coffee tables: 12-18 inches (safe)
+- Desks: 24-30 inches (safe)
+- Side tables: 15-24 inches (safe)
+
+**The danger zone:** Anything under 4 inches. Your robot can squeeze in but may not be able to back out, especially if wheels get caught on the carpet transition.
+
+## Solution 1: Measure Your Furniture Before Setup
+
+Before buying a robot or setting it up, measure the clearance under each piece of low furniture.
+
+**How to measure:**
+1. Get a measuring tape or straightedge
+2. Measure from the floor to the bottom edge of furniture (the lowest point)
+3. If under 4 inches, this is a high-risk zone
+4. If 4-4.5 inches, this is a caution zone
+5. If over 4.5 inches, safe
+
+**Furniture to measure immediately:**
+- Bed frame (measure to the lowest rail)
+- Couch base (especially if it's a low profile design)
+- Any low dressers or under-bed storage
+- Ottomans (some are surprisingly low)
+- Futon frames
+
+If multiple pieces are under 4 inches, you'll need to either: (a) raise the furniture, (b) use virtual walls to block access, or (c) return the robot (if it's incompatible with your layout).
+
+## Solution 2: Use Furniture Risers or Legs
+
+The simplest physical fix: raise low furniture by 1-2 inches using risers or bed legs.
+
+**Furniture risers (under $50):**
+- **Bed risers** (metal or plastic): 3-8 inches tall, go under each bed leg, instantly add height
+- **Couch legs** (replacement feet): Remove original feet, screw in taller legs (3-6 inch options)
+- **Dresser feet**: Swap short feet for taller ones ($5-10 per set)
+- **Rubber shims**: Wedge under furniture legs temporarily (not permanent, but works)
+
+**Recommended products:**
+- **AmazonBasics Bed Risers** (3-6 inch, set of 4): $15-25, adjustable height
+- **Furniture Feet Replacement Sets** (for couches/chairs): $20-40
+- **Heavy-duty Metal Bed Frame Risers** (8-10 inch): $30-50 for sturdy support
+
+**How to install:**
+1. Empty drawers from dressers (reduces weight)
+2. Carefully lift one corner of the furniture at a time
+3. Slide the riser under the leg
+4. Repeat for all legs
+5. Test stability—furniture should not wobble
+6. Now measure clearance again—target is 4.5+ inches
+
+For beds: raising 2 inches (using 5-inch risers instead of 3-inch feet) is often enough to make the clearance safe. For couches: the difference between a 4-inch and 5-inch base is huge.
+
+**Trade-off:** Your furniture sits higher. This looks different in the room. Make sure you're comfortable with the change before committing.
+
+## Solution 3: Install Virtual Walls and No-Go Zones
+
+Virtual walls (physical barriers) or no-go zones (app-based boundaries) prevent your robot from entering high-risk areas.
+
+**Physical barriers (magnetic walls):**
+- Most Roborock, Ecovacs, and Roomba robots include 1-2 physical magnetic strips (called "virtual walls" or "boundary strips")
+- Place the strip on the floor in front of low furniture entrances
+- The robot detects the magnetic field and avoids crossing the line
+- Placement: in the doorway or at the edge of the furniture (e.g., in front of the couch)
+- Cost: included with most machines; replacement strips cost $5-20
+
+**App-based no-go zones:**
+- Premium robots (Roborock S8 Pro, Deebot X3, Roomba j7+) include app-based mapping
+- Open the app, view the room map, and draw rectangular no-go zones with your finger
+- The robot avoids those zones entirely during all cleaning runs
+- This is more flexible than physical walls because you can adjust zones without moving strips
+
+**Example setup:**
+- Place a virtual wall strip directly in front of the couch (blocking entry)
+- Draw no-go zones in the app around low dressers or beds
+- Run a test clean to verify the robot respects the boundaries
+
+**Limitations:**
+- Physical strips work on hard floors but can be knocked out of position by foot traffic
+- App-based zones only work if your robot has the technology (budget models don't)
+- The robot still needs to be able to physically reach everything else (you can't block off 30% of your home)
+
+If your living room is 60% low-furniture danger zones, virtual walls become impractical. In that case, consider a taller robot or raising the furniture.
+
+## Solution 4: Choose a Robot with Better Obstacle Avoidance
+
+Some robots are better at detecting and avoiding furniture traps. LiDAR-equipped robots have better edge detection.
+
+**Robots with strong obstacle avoidance:**
+- **Roborock S8 Pro Ultra** ($1,200-1,400): LiDAR + cliff sensors, avoids low furniture better than older models
+- **Ecovacs Deebot X3 Omni** ($1,300): Advanced obstacle recognition, can identify furniture height
+- **iRobot Roomba j7+** ($800-900): Avoids obstacles reliably, good for low-clearance homes
+- **Roborock Q7 Max+** ($600-700): Budget option with decent LiDAR, avoids some traps
+
+**Robots to avoid if you have low furniture:**
+- **Budget gyroscope-only models** (under $300): No edge detection, gets stuck easily
+- **Pure camera-based models** (Roborock S6 MaxV): Camera sometimes misses low furniture
+- **Very thin models** (ultra-thin designs): Easier to wedge under things
+
+**What to look for:**
+- Multiple cliff sensors (at least 4, preferably around the entire perimeter)
+- LiDAR mapping (not just camera)
+- Strong bumper (not easily dented when hitting furniture)
+- Reversing algorithm (can back away if stuck)
+
+If you're buying new, check reviews specifically about low-furniture environments. Reddit communities (r/robotvacuums, r/Roborock) have specific feedback on which models are worst offenders.
+
+## Solution 5: DIY Barriers (Pool Noodles, Felt Pads)
+
+If virtual wall strips aren't strong enough, use physical barriers.
+
+**Pool noodle method:**
+- Buy foam pool noodles ($ 3-5 each)
+- Cut to length (e.g., 3-4 feet for a couch opening)
+- Place along the floor in front of low furniture
+- The robot bumps the noodle, stops, and reverses
+- Cost: $5-10 total, very effective
+- Looks a bit strange but works
+
+**Double-sided felt or rubber tape:**
+- Attach felt pads or rubber bumpers along the base of low furniture
+- When your robot makes contact, the bumper creates more friction
+- The robot's bumper sensor triggers earlier (in theory) and avoids going deeper
+- Cost: $10-20 for pads
+- Less visually obvious than noodles but less reliable
+
+**DIY magnetic wall:**
+- High-strength magnets + PVC pipe = makeshift boundary strip
+- Attach neodymium magnets to a PVC pipe lying flat on the ground
+- Position in front of the couch
+- Cost: $15-30
+- Works well but requires DIY comfort
+
+Most effective: pool noodles. They're cheap, visible to the robot's bumper, and prevent actual entrapment. The robot hits a soft obstacle and backs away.
+
+## Clearance Specs for Popular Models
+
+**Knowing your robot's exact height helps you measure furniture correctly:**
+
+| Robot Model | Height (with sensor) | Best for Low Furniture? |
+|-------------|----------------------|------------------------|
+| Roborock S8 Pro Ultra | 3.6" | Good (with LiDAR) |
+| Roborock S7 Max Ultra | 3.6" | Decent |
+| Roborock Q7 Max+ | 3.7" | Decent |
+| Ecovacs Deebot X3 Omni | 3.5" | Good |
+| Ecovacs Deebot X2 Omni | 3.6" | Decent |
+| iRobot Roomba j7+ | 3.6" | Good |
+| iRobot Roomba S9+ | 3.9" | Fair (taller) |
+| Shark RV912S | 3.4" | Poor (too thin) |
+| Bissell Spinwave | 3.8" | Fair |
+| Ecovacs Deebot T10 Plus | 3.5" | Decent |
+
+**Key insight:** Taller robots (3.8-3.9") have fewer problems because they can't fit under as many furniture pieces. Ultra-thin models (3.4") squeeze under everything and get stuck more often.
+
+## Quick Troubleshooting: Why It's Stuck Now
+
+If your robot is currently wedged under furniture:
+
+1. **Stop the clean cycle** via the app
+2. **Locate the robot** (look for it under low furniture)
+3. **Gently pull the robot straight out** (avoid yanking at an angle, which can damage bumpers)
+4. **Check for carpet snags** (if it gets caught on a rug seam, lift the edge gently)
+5. **Return to dock** manually via the app or button
+6. **Let it charge** (trapped robots sometimes drain the battery before backing out)
+7. **After recovery, implement a barrier** (virtual wall, riser, or pool noodle)
+
+**Prevention for next time:**
+- Don't let the robot run unattended in a new room until you've tested it
+- Check the app live view (if available) while it cleans near low furniture
+- Set no-go zones before running a full clean
+
+## The Bottom Line
+
+Robot vacuum entrapment is about your home layout, not your robot's quality. Even a $1,200 Roborock S8 Pro will get stuck if your couch is 3.8 inches high and you don't block access.
+
+**Your action plan:**
+1. Measure clearance under all low furniture (target: 4.5+ inches)
+2. If under 4.5 inches, choose one: raise furniture, add a virtual wall, or use a physical barrier
+3. If you have more than 2-3 low-furniture risk zones, consider a taller robot model for your next purchase
+4. Test the robot in a controlled way before trusting it to run overnight
+
+Once you've fixed the physical layout, your robot can run autonomously without fear of entrapment. No more surprises finding your vacuum dead under the couch.`,
+  },
 };
 
 export function getRobotVacuumArticle(slug: string): Article | null {

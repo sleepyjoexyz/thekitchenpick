@@ -1098,6 +1098,122 @@ Start with Simple (Crispy Chickpeas or Shrimp) to build confidence. Then progres
 
 The ultimate summer advantage: you can cook a full dinner in 20 minutes without heating your kitchen by 20°F. That's worth the investment alone.`,
   },
+  "air-fryer-smoking-first-use": {
+    slug: "air-fryer-smoking-first-use",
+    title: "Why Is My Air Fryer Smoking on First Use?",
+    description:
+      "New air fryer smoking? Learn why manufacturing residue, oil splatter, and debris cause smoke and when it's actually a problem.",
+    category: "air-fryers",
+    content: `## Why Is Your New Air Fryer Smoking?
+
+Congratulations on your new air fryer—but that smoke and smell on first use is alarming. Don't panic. Most of that smoke is normal, and this guide explains exactly what's happening, when it's harmless, and when you need to investigate a real defect.
+
+## Reason 1: Manufacturing Residue (The Most Common)
+
+Air fryers come from factories with protective coatings, lubricants, and dust on heating elements and interior surfaces. When you power it on for the first time, those coatings burn off.
+
+**What you'll see:** Visible smoke (especially white or gray) from the heating element. **Smell:** Acrid, chemical-like odor—almost like burning plastic or rubber.
+
+**Is it normal?** Yes. This happens with almost every new air fryer. It's not a defect; it's a factory processing step that happens to occur during your first use instead of at the factory.
+
+**What to do:**
+1. Turn on the air fryer to 400°F with an empty basket
+2. Run it for 10-15 minutes. Smoke should gradually decrease
+3. Ensure your kitchen is well-ventilated—open windows or turn on the exhaust fan
+4. Don't panic if smoke persists for the full 15 minutes; this is still normal
+5. After 15 minutes, turn off the air fryer and let it cool completely
+6. Wipe the interior with a damp cloth to remove any ash residue
+7. On your first actual cooking attempt, expect a slight smell again—this is residual burn-off
+
+Brands like Cosori, Ninja, and Instant explicitly mention this in their manuals. Some users report manufacturing smoke persisting across the first 2-3 cooking sessions.
+
+## Reason 2: Oil from High-Fat Foods
+
+Even on subsequent uses, air fryers can produce smoke—especially if you're cooking fatty foods.
+
+**What happens:** Oils from chicken skin, bacon, sausage, or marbled beef heat up and vaporize. This creates visible smoke as the oil breaks down at high temperatures (around 350°F+).
+
+**Why:** Air fryers work by circulating extremely hot air. That air doesn't absorb moisture like a traditional oven does. Instead, it vaporizes oils directly, creating more visible smoke than you'd see from an oven.
+
+**What to do:**
+- Pat foods dry before cooking (moisture escapes, oil remains on surface, creating more smoke)
+- Place a sheet of aluminum foil or parchment on the air fryer tray below the basket to catch dripping oils
+- Don't overfill the basket—air needs to circulate evenly
+- Lower the temperature by 25°F if smoke is heavy (375°F instead of 400°F)
+- Cook fattier meats like bacon or sausage at 350-375°F rather than 400°F+
+
+**Pro tip:** Fatty fish (salmon, mackerel) produce more smoke than lean white fish. Plan accordingly—open the kitchen window before cooking.
+
+## Reason 3: Burnt Food Debris from Previous Use
+
+If your air fryer smoked on an earlier cooking session, that burnt debris can re-ignite.
+
+**What happens:** Tiny pieces of food (breadcrumb coating, herb particles, bits of vegetable) stick to the heating element or basket. When you cook again, that residue heats up faster than new food and burns.
+
+**What to do:**
+- **Empty the basket after every use**—don't leave crumbs
+- **Wash the basket weekly**—removable baskets collect grease underneath
+- **Wipe the interior tray**—a damp cloth once a month removes built-up debris
+- **Shake out the basket** before each use if you notice accumulated crumbs
+
+Most air fryer smoke complaints after the first use are caused by inadequate cleaning between sessions.
+
+## Reason 4: Temperature Set Too High
+
+High temperatures accelerate smoke production, especially with fatty foods or residual oils.
+
+**Safe temperature ranges:**
+- Lean proteins (chicken breast, white fish): 380-400°F
+- Fatty proteins (salmon, beef, pork): 350-375°F
+- Vegetables (broccoli, Brussels sprouts): 375-400°F
+- Frozen foods (fries, nuggets): Follow package directions (usually 375-400°F)
+
+If you're smoking at 400°F, try 375°F next time. You'll sacrifice a tiny bit of crisping but eliminate most oil-related smoke.
+
+## Proper Break-In Procedure for New Air Fryers
+
+Follow this to minimize first-use smoke:
+
+1. **Unbox and inspect** for damage or loose parts
+2. **Remove all packaging** (plastic, foam, cardboard) from interior
+3. **Preheat empty** at 400°F for 15 minutes in a well-ventilated area
+4. **Wipe down** the interior with a damp cloth to remove ash
+5. **Let cool completely** (30 minutes minimum)
+6. **First cooking session:** Start with something simple (frozen french fries, chicken breast) rather than something fatty or complex
+7. **Monitor the first cook** so you know what "normal" smoke looks like for your unit
+
+After this process, your air fryer should smoke minimally unless you're cooking fatty foods.
+
+## When Smoke Indicates a Real Problem
+
+Excessive smoke after the break-in period can signal a defect. Contact the manufacturer if you see:
+
+- **Black smoke** (not white or gray) pouring out continuously—indicates overheating or a damaged heating element
+- **Smoke that smells like burnt plastic or electrical burning** (not food smell) even after the break-in run—suggests a wiring or component issue
+- **Smoke from the bottom air vent** rather than the top heating chamber—indicates residue in the wrong spot
+- **Smoke on the second or third use without cooking** at high temperatures or fatty foods—points to a defect, not normal operation
+- **Any visible flames or sparks** inside the basket—immediate safety hazard; stop using and contact support
+
+If you observe these, stop using the air fryer and reach out to customer service with photos or a video.
+
+## Quick Troubleshooting Checklist
+
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| Heavy white smoke on first use | Manufacturing residue | Run empty at 400°F for 15 min—normal |
+| Gray smoke when cooking chicken | Oil vaporization | Pat food dry, lower temp 25°F |
+| Smoke reappearing on 2nd/3rd use | Burnt debris | Clean basket and tray weekly |
+| Smoke at 400°F but not 375°F | Temperature sensitivity | Cook at 375°F, add 2-3 min time |
+| Black smoke, no improvement | Potential defect | Contact manufacturer |
+
+## The Bottom Line
+
+If your air fryer smoked on first use with a chemical smell, you watched manufacturing residue burn off. This is normal and harmless. Run the break-in procedure above, and your next 100+ uses should have minimal smoke unless you're intentionally cooking fatty foods.
+
+The key: differentiate between normal oil vaporization (expected with high-heat cooking) and actual equipment failure (black smoke, electrical smell). Once you've done the break-in run, occasional smoke is part of air frying. But heavy smoke on every cook means something needs adjustment—temperature, food prep, or cleaning.
+
+Rest assured: the smoke you saw on day one is almost never a sign your air fryer is defective.`,
+  },
 };
 
 export function getAirFryerArticle(slug: string): AirFryerArticle | null {
