@@ -8,6 +8,7 @@ import { electricToothbrushes } from "@/data/electric-toothbrushes";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+import DealsBanner from '@/components/DealsBanner';
 
 const toothbrushFinderSteps: FinderStep[] = [
   {
@@ -164,6 +165,9 @@ export default function ElectricToothbrushesContent() {
           user ratings, and dental industry standards.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

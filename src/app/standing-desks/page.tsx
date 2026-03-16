@@ -8,6 +8,7 @@ import { standingDesks, StandingDesk } from "@/data/standing-desks";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+import DealsBanner from '@/components/DealsBanner';
 
 const standingDeskFinderSteps: FinderStep[] = [
   {
@@ -169,6 +170,9 @@ export default function StandingDesksContent() {
           real-world stability and ergonomics testing.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

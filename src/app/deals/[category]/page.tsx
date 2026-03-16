@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { DealSchema } from '@/components/DealSchema';
 import DealCard from "@/components/DealCard";
 import { mockDeals } from "@/data/mockDeals";
 import { dealCategories, getCategoryBySlug, getAllCategorySlugs } from "@/lib/dealCategories";
@@ -34,6 +35,7 @@ export default async function CategoryDealsPage({ params }: Props) {
 
   return (
     <main className="bg-white min-h-screen">
+      <DealSchema deals={categoryDeals} categoryName={cat.name} pageUrl={`https://www.thekitchenpick.com/deals/${slug}`} />
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
         <ol className="flex items-center gap-1.5 text-sm text-gray-500">
           <li><Link href="/" className="hover:text-gray-700">Home</Link></li>
@@ -55,6 +57,29 @@ export default async function CategoryDealsPage({ params }: Props) {
           {categoryDeals.map((deal) => (<DealCard key={deal.id} {...deal} />))}
         </div>
       </section>
+
+      {/* Related Guides */}
+      {cat.relatedCategories && cat.relatedCategories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">📚 Related Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {cat.relatedCategories.map((categorySlug) => (
+              <Link
+                key={categorySlug}
+                href={`/${categorySlug}`}
+                className="border border-gray-200 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition"
+              >
+                <h3 className="font-semibold text-gray-900 mb-1 capitalize">
+                  {categorySlug.replace(/-/g, " ")} Guides
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Explore our comprehensive guides and comparisons
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {otherCategories.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">

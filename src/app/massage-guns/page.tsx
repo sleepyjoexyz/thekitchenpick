@@ -8,6 +8,7 @@ import { massageGuns, MassageGun } from "@/data/massage-guns";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+import DealsBanner from '@/components/DealsBanner';
 
 const massageGunFinderSteps: FinderStep[] = [
   {
@@ -170,6 +171,9 @@ export default function MassageGunsContent() {
           ratings, and real-world deep-tissue testing.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

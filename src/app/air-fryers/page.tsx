@@ -9,6 +9,7 @@ import { AirFryer } from "@/data/air-fryers";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+import DealsBanner from '@/components/DealsBanner';
 
 const airFryerFinderSteps: FinderStep[] = [
   {
@@ -168,6 +169,9 @@ export default function AirFryersContent() {
           real-world performance data.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

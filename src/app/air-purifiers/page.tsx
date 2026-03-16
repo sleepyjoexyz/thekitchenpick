@@ -8,6 +8,7 @@ import { airPurifiers } from "@/data/air-purifiers";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
+import DealsBanner from '@/components/DealsBanner';
 
 const airPurifierFinderSteps: FinderStep[] = [
   {
@@ -167,6 +168,9 @@ export default function AirPurifiersContent() {
           performance data.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
