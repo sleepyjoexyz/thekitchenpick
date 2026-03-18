@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "appliance buying guide",
   ],
   openGraph: {
-    title: "The Kitchen Pick",
+    title: "The Kitchen Pick — Data-Driven Kitchen Appliance Comparisons",
     description:
       "Data-driven comparisons of kitchen appliances. Compare specs, prices, and features.",
     url: "https://www.thekitchenpick.com",
