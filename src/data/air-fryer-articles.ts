@@ -1398,6 +1398,124 @@ They DO replace: toaster ovens (for most tasks), microwave reheating (better res
 
 For most people, a 5–6 quart basket-style air fryer under $80 is all you need. It will handle weeknight dinners, reheat leftovers perfectly, and cook frozen foods better than your oven in half the time. Don't overcomplicate it — the best air fryer is the one you use three times a week, not the one with the most features.`,
   },
+  "air-fryer-size-guide-quart-capacity-family-2026": {
+    slug: "air-fryer-size-guide-quart-capacity-family-2026",
+    title: "Air Fryer Size Guide: What Quart Do You Need?",
+    description: "Find the right air fryer capacity for your household. From 2-quart singles to 10-quart family-size, see what fits your cooking style and counter space.",
+    content: `## Introduction
+
+Walking into an appliance store in 2026, you'll find air fryers from 2 to 12 quarts. Size matters. Buy too small, and you cook in batches. Buy too large, and it devours your counter. This guide matches air fryer capacity to your household.
+
+Air fryer quart capacity measures internal basket volume. A 2-quart fryer holds two quart-sized containers. Capacity doesn't always predict cooking performance—a 4-quart shallow basket often cooks more food than a 5-quart tall basket.
+
+## Understanding Air Fryer Size Tiers
+
+### 2–3 Quart Air Fryers (Compact)
+
+**Best For:** Singles, couples, dorm rooms, RVs
+
+**Dimensions:** ~7" × 5" × 8" (fits under cabinets)
+
+**What It Cooks:** 2–3 servings per batch
+- 8–10 chicken wings
+- 1 salmon fillet
+- 2–3 servings of fries
+- 4–6 mozzarella sticks
+
+**Pros:**
+- Fits tight counter spaces
+- Preheats in 2 minutes
+- Uses less electricity
+- Great for testing air fryers
+- Affordable entry point
+
+**Cons:**
+- Can't meal-prep for a week
+- Slow for family cooking (batches required)
+- Not suitable for families of 3+
+
+### 4–5 Quart Air Fryers (Standard)
+
+**Best For:** Families of 2–4, meal preppers
+
+**Dimensions:** ~9" × 8" × 11" (takes up real counter space)
+
+**What It Cooks:** 3–4 servings per batch
+- 20–24 chicken wings
+- 2 salmon fillets
+- 5–6 servings of fries
+- 10–12 mozzarella sticks
+
+**Pros:**
+- Perfect for most households
+- Cooks a family meal in one batch
+- Great build quality at mid-price
+- Most recipes target this size
+
+**Cons:**
+- Takes up notable counter space
+- Slightly longer preheat (3–4 minutes)
+- Overkill for singles/couples
+
+### 6–7 Quart Air Fryers (Large)
+
+**Best For:** Families of 4–6, frequent entertainers
+
+**Dimensions:** ~11" × 10" × 13" (dedicated counter real estate)
+
+**What It Cooks:** 5–6 servings per batch
+- 30–35 chicken wings
+- 3–4 salmon fillets
+- 8–10 servings of fries
+- A whole rotisserie chicken (some models)
+
+**Pros:**
+- Cooks full family meals
+- Minimal batch cooking
+- Great for meal prep
+- Perfect for entertaining
+
+**Cons:**
+- Takes up significant counter space
+- Longer preheat time (4–5 minutes)
+- Overkill for small families
+- Higher electricity usage
+
+## Capacity Guide by Household Size
+
+| Household Size | Recommended Capacity | Examples |
+|---|---|---|
+| 1 person | 2–3 quarts | Ninja Mini |
+| 2 people | 3–4 quarts | Instant Vortex |
+| 3–4 people | 4–5 quarts | Cosori Pro |
+| 4–6 people | 6–7 quarts | Ninja Max |
+| 6+ people | 8–12 quarts | Ninja Dual Zone |
+
+## Frequently Asked Questions
+
+**Q: Is a 3-quart air fryer enough for a family of 4?**
+A: For occasional use, yes. For daily dinners, no. You'll cook in batches. A 4–5 quart works better.
+
+**Q: What's the smallest useful air fryer?**
+A: 3 quarts. Smaller (2-quart) feels limiting unless cooking for one.
+
+**Q: Should I buy a bigger air fryer just in case?**
+A: No. Oversizing wastes counter space and electricity. Buy what matches today.
+
+**Q: Can I fit a whole chicken in a 5-quart air fryer?**
+A: Barely, and only if depth allows. A 6–7 quart is safer.
+
+**Q: What if I have limited counter space?**
+A: Commit to 2–3 quart, or replace an unused appliance.
+
+**Q: Are dual-basket air fryers worth the extra cost?**
+A: Yes for families of 6+. You cook fries and chicken simultaneously at different temperatures.
+
+## Bottom Line
+
+For families of 3–4, a 4–5 quart is the Goldilocks size. Families of 5+ should consider 6–7 quart. Singles and couples: 2–3 quart.`,
+    category: "air-fryers",
+  },
 };
 
 export function getAirFryerArticle(slug: string): AirFryerArticle | null {

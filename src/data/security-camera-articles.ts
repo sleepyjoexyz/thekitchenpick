@@ -1002,6 +1002,98 @@ Yes. A camera with a 1/1.2" sensor at 1080p often outperforms a 1/2.5" sensor at
 
 **For most homes:** 2K is the practical standard. It provides facial detail, license plate readability, and balanced storage. Upgrade to 4K for high-crime areas or if budget allows. Don't downgrade to 1080p unless budget is severe constraint—the $30-50 savings per camera doesn't justify the image quality gap.`,
   },
+  "best-doorbell-camera-no-subscription-2026": {
+    slug: "best-doorbell-camera-no-subscription-2026",
+    title: "Best Doorbell Cameras Without a Subscription",
+    description: "Top video doorbells with local storage and no monthly fees. Compare Ring, Eufy, Reolink, and Arlo models that work without cloud subscriptions.",
+    content: `## Introduction
+
+A video doorbell is one of the most practical home security upgrades. But monthly cloud subscription fees ($10–20) add up to $120–240 per year. Fortunately, several top brands offer doorbell cameras with local storage and zero monthly fees.
+
+This guide reviews the best subscription-free doorbell cameras, covering video quality, night vision, smart features, and which models work best for different home setups.
+
+## Subscription vs. Subscription-Free
+
+**With Subscription ($10–20/month):**
+- Cloud video storage (30–60 days)
+- Advanced AI features (package detection)
+- Extended warranties and premium support
+- Shared access with multiple users
+
+**Without Subscription (Free):**
+- Local storage only (microSD card or NVR)
+- Basic video access (live view, recent clips)
+- Standard 1-year warranty
+- No advanced cloud AI features
+
+For most homeowners, local storage is sufficient. You're recording to your own hardware—no third-party fees required.
+
+## Top 5 Subscription-Free Doorbell Cameras
+
+### 1. Eufy S380 Video Doorbell - $199–229
+**Best Overall Subscription-Free Doorbell**
+
+The Eufy S380 combines excellent video quality, local storage, and zero subscription fees. It's wired (recommended) and includes a wireless backup battery option.
+
+**Specifications:**
+- Resolution: 2K (2560 × 1920)
+- Night vision: Infrared and white light
+- Field of view: 160°
+- Storage: microSD card (local only)
+- Power: Wired to 24V AC transformer
+- Cloud: None (local storage only)
+- Smart features: AI person detection (no fee), motion zones
+- Audio: Two-way talk
+
+**Video & Night Vision:**
+- 2K resolution is excellent for identifying faces
+- Dual night vision (IR + white light) illuminates porch
+- Crystal-clear footage in all lighting
+
+**Storage:**
+- microSD card slot (up to 256GB)
+- Stores weeks of footage locally
+- No cloud backup (pro for privacy)
+
+**Pros:**
+- Excellent 2K video quality
+- Dual night vision (IR + white light)
+- Person detection AI (no monthly fee)
+- microSD storage (no cloud charges)
+- Professional design
+- Eufy reputation (reliable)
+
+**Cons:**
+- Requires 24V AC wiring (not renter-friendly)
+- Higher price ($199–229)
+- microSD card not included (~$30)
+- No cloud backup (if stolen, footage gone)
+- Professional installation recommended ($100–200)
+
+**Best For:** Homeowners with wiring, privacy priority, people who don't want monthly fees
+
+## Frequently Asked Questions
+
+**Q: Is local storage safe? What if stolen?**
+A: If stolen, microSD goes with it. You lose footage. Cloud backup costs $10–20/month.
+
+**Q: Do I need a subscription for person detection?**
+A: Not with Eufy. Most brands charge. Eufy includes it free.
+
+**Q: Wired or battery doorbell?**
+A: Wired if you have existing wiring and own your home. Battery if you rent or no wiring. Battery requires charging every 6 months.
+
+**Q: What size microSD card?**
+A: 64GB standard (2–4 weeks). 256GB gives 1–2 months ($30).
+
+**Q: Do these work with my smart home?**
+A: Eufy, Reolink: Google Home, Alexa. Arlo: HomeKit, Google, Alexa. Wyze: Alexa, Google. Logitech: HomeKit only.
+
+## Bottom Line
+
+Best video quality: Eufy S380 ($199). Best budget wired: Reolink RLC-810A ($149). Best battery option: Arlo Essential ($99). Best budget overall: Wyze Cam ($79).`,
+    category: "security-cameras",
+  },
 };
 
 export function getSecurityCameraArticle(
