@@ -9,7 +9,7 @@ export interface ClimateControlArticle {
 export const climateControlArticles: Record<string, ClimateControlArticle> = {
   "portable-ac-buying-guide": {
     slug: "portable-ac-buying-guide",
-    title: "Portable AC Buying Guide: BTU, Single Hose vs Dual Hose, and What Actually Matters",
+    title: "Portable AC Buying Guide: BTU, Single Hose vs Dual Hose,",
     description:
       "Learn how portable ACs work, how to size BTU for your room, the difference between single and dual hose efficiency, and what matters most when choosing one.",
     category: "climate-control",
@@ -333,7 +333,7 @@ Window ACs are 10–20% more efficient than portable ACs and have lower operatin
 
   "space-heater-energy-costs": {
     slug: "space-heater-energy-costs",
-    title: "How Much Does It Cost to Run a Space Heater? Energy Calculator",
+    title: "How Much Does It Cost to Run a Space Heater? Energy",
     description:
       "Calculate the true electricity cost of running a space heater, compare to central heating, and learn which types use the least energy.",
     category: "climate-control",

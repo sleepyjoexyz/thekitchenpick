@@ -9,7 +9,7 @@ export interface Article {
 export const robotVacuumArticles: Record<string, Article> = {
   "lidar-vs-camera-navigation": {
     slug: "lidar-vs-camera-navigation",
-    title: "LiDAR vs Camera Navigation in Robot Vacuums: Which Maps Better?",
+    title: "LiDAR vs Camera Navigation in Robot Vacuums: Which Maps",
     description:
       "Compare LiDAR, camera, and gyroscope navigation systems in robot vacuums to understand which mapping technology works best for your home.",
     category: "robot-vacuums",
@@ -778,7 +778,7 @@ A robot vacuum can work for pet hair, but it requires maintenance. It's not trul
   },
   "how-to-maintain-robot-vacuum-cleaning-schedule": {
     slug: "how-to-maintain-robot-vacuum-cleaning-schedule",
-    title: "How to Maintain Your Robot Vacuum: Complete Cleaning Schedule",
+    title: "How to Maintain Your Robot Vacuum: Complete Cleaning",
     description: "Follow a complete maintenance schedule to keep your robot vacuum running efficiently and extend its lifespan.",
     category: "Cleaning & Home Maintenance",
     content: `## After Every Run
@@ -854,7 +854,7 @@ Yes, but pet hair requires more frequent maintenance. Clean brushes twice weekly
   },
   "robot-vacuum-summer-maintenance-tips-2026": {
     slug: "robot-vacuum-summer-maintenance-tips-2026",
-    title: "Robot Vacuum Summer Maintenance: Dealing with Sand, Pollen, and Pet Hair",
+    title: "Robot Vacuum Summer Maintenance: Dealing with Sand,",
     description:
       "Master summer robot vacuum maintenance. Learn seasonal challenges like sand and pollen tracking, filter replacement frequency, brush cleaning, and optimal scheduling for summer.",
     category: "robot-vacuums",
@@ -1149,7 +1149,7 @@ Start the summer with a fresh filter replacement, commit to weekly maintenance, 
   },
   "robot-vacuum-stuck-under-furniture": {
     slug: "robot-vacuum-stuck-under-furniture",
-    title: "Robot Vacuum Keeps Getting Stuck Under Furniture — How to Fix It",
+    title: "Robot Vacuum Keeps Getting Stuck Under Furniture — How to",
     description:
       "Robot wedged under couch or bed? Learn clearance heights, furniture risers, virtual walls, and which robots avoid entrapment.",
     category: "robot-vacuums",
@@ -1357,7 +1357,7 @@ Once you've fixed the physical layout, your robot can run autonomously without f
   },
   "robot-vacuum-buying-guide-navigation-suction-2026": {
     slug: "robot-vacuum-buying-guide-navigation-suction-2026",
-    title: "Robot Vacuum Buying Guide 2026: Smart Navigation, Suction Power, and What Actually Matters",
+    title: "Robot Vacuum Buying Guide 2026: Smart Navigation, Suction",
     description: "Complete robot vacuum buying guide covering LiDAR vs camera navigation, suction power ratings, self-emptying bases, mopping combos, pet hair performance, and which brands deliver.",
     category: "robot-vacuums",
     content: `## Introduction
@@ -1465,7 +1465,7 @@ For most homes in 2026, a **$300–$400 LiDAR robot with self-empty base and mop
   },
   "roborock-s8-vs-roomba-j7-pet-hair-2026": {
     slug: "roborock-s8-vs-roomba-j7-pet-hair-2026",
-    title: "Roborock S8 Pro Ultra vs Roomba j7+: Which Robot Vacuum Handles Pet Hair Better?",
+    title: "Roborock S8 Pro Ultra vs Roomba j7+: Which Robot Vacuum",
     description: "Compare the Roborock S8 Pro Ultra and iRobot Roomba j7+ for pet owners. Covers suction power, mopping, obstacle avoidance, self-maintenance, and total cost of ownership.",
     category: "robot-vacuums",
     content: `## The Pet Owner's Dilemma

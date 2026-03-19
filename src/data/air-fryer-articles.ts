@@ -1216,7 +1216,7 @@ Rest assured: the smoke you saw on day one is almost never a sign your air fryer
   },
   "ninja-foodi-vs-cosori-pro-air-fryer-2026": {
     slug: "ninja-foodi-vs-cosori-pro-air-fryer-2026",
-    title: "Ninja Foodi DualZone vs Cosori Pro LE: Which Air Fryer Delivers More?",
+    title: "Ninja Foodi DualZone vs Cosori Pro LE: Which Air Fryer",
     description: "Compare the Ninja Foodi DualZone and Cosori Pro LE air fryers across capacity, cooking performance, ease of use, and value for families.",
     category: "air-fryers",
     content: `## Two Best-Sellers, Different Approaches
@@ -1310,7 +1310,7 @@ The Ninja DualZone handles the largest variety of summer meals with its dual-bas
   },
   "air-fryer-buying-guide-everything-to-know-2026": {
     slug: "air-fryer-buying-guide-everything-to-know-2026",
-    title: "Air Fryer Buying Guide 2026: Everything You Need to Know Before You Buy",
+    title: "Air Fryer Buying Guide 2026: Everything You Need to Know",
     description: "The complete air fryer buying guide — basket vs oven, capacity sizing, wattage, preset programs, accessories, and honest advice about what air fryers can and can't do.",
     category: "air-fryers",
     content: `## Introduction

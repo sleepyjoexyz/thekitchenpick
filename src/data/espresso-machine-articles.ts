@@ -199,7 +199,7 @@ Built-in grinders are convenient but compromise grind control and longevity. The
 
   "single-boiler-vs-dual-boiler": {
     slug: "single-boiler-vs-dual-boiler",
-    title: "Single Boiler vs Dual Boiler Espresso Machines: What's the Difference?",
+    title: "Single Boiler vs Dual Boiler Espresso Machines: What's",
     description:
       "Understand how single boiler and dual boiler systems affect espresso machine performance, temperature control, and workflow.",
     category: "espresso-machines",
@@ -291,7 +291,7 @@ The boiler type doesn't determine espresso quality. Both single and dual boiler 
   },
   "breville-barista-express-vs-delonghi-magnifica": {
     slug: "breville-barista-express-vs-delonghi-magnifica",
-    title: "Breville Barista Express vs DeLonghi Magnifica: Semi-Auto vs Super-Auto Compared",
+    title: "Breville Barista Express vs DeLonghi Magnifica: Semi-Auto",
     description: "Compare the Breville Barista Express semi-automatic with the DeLonghi Magnifica super-automatic. Features, espresso quality, ease of use, and value.",
     category: "espresso-machines",
     content: `## Quick Verdict
@@ -1305,7 +1305,7 @@ Don't overcomplicate it. Buy a decent machine, invest in a grinder, learn the fu
   },
   "breville-barista-express-vs-delonghi-dedica-2026": {
     slug: "breville-barista-express-vs-delonghi-dedica-2026",
-    title: "Breville Barista Express vs De\'Longhi Dedica EC685: Beginner Espresso Showdown",
+    title: "Breville Barista Express vs De\'Longhi Dedica EC685:",
     description: "Compare the Breville Barista Express and DeLonghi Dedica for home espresso. Covers grinder quality, shot consistency, milk steaming, size, and learning curve.",
     category: "espresso-machines",
     content: `## Two Paths Into Home Espresso
@@ -1412,7 +1412,7 @@ The Breville Bambino Plus is purpose-built for the summer iced-coffee workflow w
   },
   "complete-guide-espresso-machines-2026": {
     slug: "complete-guide-espresso-machines-2026",
-    title: "The Complete Guide to Espresso Machines in 2026: From Budget to Barista",
+    title: "Espresso Machines in 2026: From Budget to Barista",
     description: "Everything you need to know about home espresso machines — semi-automatic vs super-automatic, grinders, pressure, milk frothing, and which machine fits your skill level and budget.",
     category: "espresso-machines",
     content: `## Introduction

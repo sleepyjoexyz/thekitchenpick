@@ -214,7 +214,7 @@ The best air purifier for allergies combines three factors: appropriate CADR for
 
   "air-purifier-running-costs": {
     slug: "air-purifier-running-costs",
-    title: "The True Cost of Owning an Air Purifier: Filters, Energy, and Maintenance",
+    title: "The True Cost of Owning an Air Purifier: Filters, Energy,",
     description:
       "Compare upfront, filter replacement, energy consumption, and maintenance costs across budget and premium air purifier models.",
     category: "air-purifiers",
