@@ -561,9 +561,9 @@ The best toothbrush is the one you'll use consistently for years. Don't get trap
 
   "do-you-need-a-smart-toothbrush": {
     slug: "do-you-need-a-smart-toothbrush",
-    title: "Smart Toothbrushes With Apps: Worth It or Gimmick?",
+    title: "Smart Toothbrushes: Worth It or Gimmick 2026?",
     description:
-      "Are smart toothbrushes with Bluetooth apps worth buying? Explore features, real benefits, and who should upgrade from manual to app-connected.",
+      "Are smart toothbrushes worth buying? Compare app-connected vs standard electric. See real benefits and who should upgrade.",
     category: "electric-toothbrushes",
     content: `## Introduction
 

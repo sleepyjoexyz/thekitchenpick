@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }: PageProps) {
         description={article.description}
         url={`https://www.thekitchenpick.com/electric-toothbrushes/${slug}`}
         datePublished="2026-03-15"
-        dateModified="2026-03-15"
+        dateModified="2026-03-18"
       />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://www.thekitchenpick.com" },

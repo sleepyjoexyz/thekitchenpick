@@ -12,9 +12,9 @@ export const securityCameraArticles: Record<
 > = {
   "wired-vs-battery-security-cameras": {
     slug: "wired-vs-battery-security-cameras",
-    title: "Wired vs Battery Security Cameras: Which Setup Is Right for You?",
+    title: "Wired vs Battery Cameras: Which Setup Works Best?",
     description:
-      "Understand the trade-offs between wired and battery security cameras. Compare installation complexity, reliability, maintenance, and costs.",
+      "Comparing wired and battery security cameras? See installation, reliability, costs. Find your ideal home security solution.",
     category: "security-cameras",
     content: `## Introduction
 
