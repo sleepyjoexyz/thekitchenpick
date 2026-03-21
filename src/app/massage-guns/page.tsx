@@ -305,12 +305,7 @@ export default function MassageGunsContent() {
                   className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}
                 >
                   <td className="border border-gray-300 px-4 py-2 font-medium">
-                    <Link
-                      href={`/massage-guns/${gun.id}`}
-                      className="text-blue-600 hover:underline"
-                    >
-                      {gun.brand} {gun.model}
-                    </Link>
+                    {gun.brand} {gun.model}
                   </td>
                   <td className="border border-gray-300 px-4 py-2 text-right">
                     ${gun.price}
