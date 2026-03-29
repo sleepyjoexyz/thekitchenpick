@@ -12,6 +12,7 @@ interface DealCardProps {
   amazonUrl: string;
   timeLeft: string;
   imageAlt: string;
+  imageUrl: string;
 }
 
 export default function DealCard({
@@ -24,6 +25,7 @@ export default function DealCard({
   amazonUrl,
   timeLeft,
   imageAlt,
+  imageUrl,
 }: DealCardProps) {
   const categoryColors: Record<string, string> = {
     'Headphones': 'bg-blue-50 text-blue-600',
@@ -52,9 +54,13 @@ export default function DealCard({
       rel="sponsored noopener noreferrer"
       className="block bg-white rounded border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
     >
-      {/* Compact image */}
-      <div className="bg-gray-100 h-24 flex items-center justify-center text-gray-300">
-        <span className="text-[10px]">{imageAlt}</span>
+      {/* Product image */}
+      <div className="bg-gray-50 aspect-square flex items-center justify-center overflow-hidden">
+        {imageUrl ? (
+          <img src={imageUrl} alt={imageAlt} className="w-full h-full object-contain p-2" loading="lazy" />
+        ) : (
+          <span className="text-[10px] text-gray-300">{imageAlt}</span>
+        )}
       </div>
       <div className="p-2">
         <div className="flex items-center justify-between mb-1">

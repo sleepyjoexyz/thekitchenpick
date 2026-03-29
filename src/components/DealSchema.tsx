@@ -7,17 +7,6 @@ interface DealSchemaProps {
 }
 
 
-// Extract ASIN from Amazon product URL (e.g. /dp/B07NTFMFQD)
-function extractAsin(url: string): string | null {
-  const match = url.match(/\/dp\/([A-Z0-9]{10})/);
-  return match ? match[1] : null;
-}
-
-// Build standard Amazon product image URL — no PA-API required
-function getAmazonImageUrl(asin: string): string {
-  return `https://images.amazon.com/images/P/${asin}.01._SL250_.jpg`;
-}
-
 // Extract brand from product title (first word is the brand)
 function extractBrand(title: string): string {
   return title.split(' ')[0];
@@ -35,7 +24,6 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
 
   // Generate Product schema for each deal
   const items = deals.map((deal, index) => {
-    const asin = extractAsin(deal.amazonUrl);
     const brand = extractBrand(deal.title);
     return {
       '@type': 'ListItem',
@@ -45,7 +33,7 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
         '@type': 'Product',
         'name': deal.title,
         'description': deal.title,
-        ...(asin ? { 'image': getAmazonImageUrl(asin) } : {}),
+        ...(deal.imageUrl ? { 'image': deal.imageUrl } : {}),
         'brand': { '@type': 'Brand', 'name': brand },
         'offers': {
           '@type': 'Offer',

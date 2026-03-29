@@ -10,6 +10,7 @@ export interface Deal {
   amazonUrl: string;
   timeLeft: string;
   imageAlt: string;
+  imageUrl: string;
 }
 
 export const mockDeals: Deal[] = [
@@ -24,7 +25,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Ninja+AF101+Air+Fryer&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Ninja AF101 Air Fryer"
+    "imageAlt": "Ninja AF101 Air Fryer",
+    "imageUrl": "https://m.media-amazon.com/images/I/71+8uTMDRFL._AC_SL300_.jpg"
   },
   {
     "id": "af-002",
@@ -37,7 +39,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Cosori+Pro+Gen+2+Air+Fryer+5.8L&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Cosori Pro Gen 2 Air Fryer 5.8"
+    "imageAlt": "Cosori Pro Gen 2 Air Fryer 5.8",
+    "imageUrl": "https://m.media-amazon.com/images/I/81xlEWE3e+L._AC_SL300_.jpg"
   },
   {
     "id": "af-003",
@@ -50,7 +53,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Ninja+Foodi+Dual+Zone+Air+Fryer&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Ninja Foodi Dual Zone Air Frye"
+    "imageAlt": "Ninja Foodi Dual Zone Air Frye",
+    "imageUrl": "https://m.media-amazon.com/images/I/618DB9UEz3L._AC_SL300_.jpg"
   },
   {
     "id": "af-004",
@@ -63,7 +67,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=COSORI+Smart+Air+Fryer+Oven+30L&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "COSORI Smart Air Fryer Oven 30"
+    "imageAlt": "COSORI Smart Air Fryer Oven 30",
+    "imageUrl": "https://m.media-amazon.com/images/I/71oPHc7PsHL._AC_SL300_.jpg"
   },
   {
     "id": "af-005",
@@ -76,7 +81,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Ninja+MAX+Pro+Air+Fryer&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Ninja MAX Pro Air Fryer"
+    "imageAlt": "Ninja MAX Pro Air Fryer",
+    "imageUrl": "https://m.media-amazon.com/images/I/719F0KSYZqL._AC_SL300_.jpg"
   },
   {
     "id": "af-006",
@@ -89,7 +95,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Cosori+Air+Fryer+Toaster+Oven+32L&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Cosori Air Fryer Toaster Oven "
+    "imageAlt": "Cosori Air Fryer Toaster Oven ",
+    "imageUrl": "https://m.media-amazon.com/images/I/71KotoDG8pL._AC_SL300_.jpg"
   },
   {
     "id": "em-001",
@@ -102,7 +109,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Breville+Barista+Express+BES870XL&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Breville Barista Express BES87"
+    "imageAlt": "Breville Barista Express BES87",
+    "imageUrl": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_SL300_.jpg"
   },
   {
     "id": "em-002",
@@ -115,7 +123,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=De'Longhi+Dedica+EC685+Espresso+Machine&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "De'Longhi Dedica EC685 Espress"
+    "imageAlt": "De'Longhi Dedica EC685 Espress",
+    "imageUrl": "https://m.media-amazon.com/images/I/612V9C5wbwL._AC_SL300_.jpg"
   },
   {
     "id": "em-003",
@@ -128,7 +137,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Gaggia+Classic+Pro+Espresso+Machine&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Gaggia Classic Pro Espresso Ma"
+    "imageAlt": "Gaggia Classic Pro Espresso Ma",
+    "imageUrl": "https://m.media-amazon.com/images/I/81ZZebYrhHL._AC_SL300_.jpg"
   },
   {
     "id": "em-004",
@@ -141,7 +151,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Breville+Barista+Express+Impress+BES881&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Breville Barista Express Impre"
+    "imageAlt": "Breville Barista Express Impre",
+    "imageUrl": "https://m.media-amazon.com/images/I/61I-UOXoLgL._AC_SL300_.jpg"
   },
   {
     "id": "em-005",
@@ -154,7 +165,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=De'Longhi+Magnifica+ESAM3300+Super-Automatic&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "De'Longhi Magnifica ESAM3300 S"
+    "imageAlt": "De'Longhi Magnifica ESAM3300 S",
+    "imageUrl": "https://m.media-amazon.com/images/I/71fis7dVn8L._AC_SL300_.jpg"
   },
   {
     "id": "em-006",
@@ -167,7 +179,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Gaggia+Carezza+Deluxe+Espresso+Machine&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Gaggia Carezza Deluxe Espresso"
+    "imageAlt": "Gaggia Carezza Deluxe Espresso",
+    "imageUrl": "https://m.media-amazon.com/images/I/71F1rpZgNHL._AC_SL300_.jpg"
   },
   {
     "id": "rv-001",
@@ -180,7 +193,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=iRobot+Roomba+j7++with+Obstacle+Avoidance&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "iRobot Roomba j7+ with Obstacl"
+    "imageAlt": "iRobot Roomba j7+ with Obstacl",
+    "imageUrl": "https://m.media-amazon.com/images/I/71M6KSexe5L._AC_SL300_.jpg"
   },
   {
     "id": "rv-002",
@@ -193,7 +207,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Roborock+S7+MaxV+Ultra+Robot+Vacuum&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Roborock S7 MaxV Ultra Robot V"
+    "imageAlt": "Roborock S7 MaxV Ultra Robot V",
+    "imageUrl": "https://m.media-amazon.com/images/I/71DkV-xnzOL._AC_SL300_.jpg"
   },
   {
     "id": "rv-003",
@@ -206,7 +221,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=iRobot+Roomba+i4++Self-Emptying+Vacuum&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "iRobot Roomba i4+ Self-Emptyin"
+    "imageAlt": "iRobot Roomba i4+ Self-Emptyin",
+    "imageUrl": "https://m.media-amazon.com/images/I/61PpouyLKOL._AC_SL300_.jpg"
   },
   {
     "id": "rv-004",
@@ -219,7 +235,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Roborock+S7+Pro+Ultra+Robot+Vacuum&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Roborock S7 Pro Ultra Robot Va"
+    "imageAlt": "Roborock S7 Pro Ultra Robot Va",
+    "imageUrl": "https://m.media-amazon.com/images/I/61b-693nj5L._AC_SL300_.jpg"
   },
   {
     "id": "rv-005",
@@ -232,7 +249,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=iRobot+Roomba+j6++Robot+Vacuum&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "iRobot Roomba j6+ Robot Vacuum"
+    "imageAlt": "iRobot Roomba j6+ Robot Vacuum",
+    "imageUrl": "https://m.media-amazon.com/images/I/7100nUB3hjL._AC_SL300_.jpg"
   },
   {
     "id": "rv-006",
@@ -245,7 +263,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Roborock+Q5+Pro++Robot+Vacuum&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Roborock Q5 Pro+ Robot Vacuum"
+    "imageAlt": "Roborock Q5 Pro+ Robot Vacuum",
+    "imageUrl": "https://m.media-amazon.com/images/I/61KBMtvTenL._AC_SL300_.jpg"
   },
   {
     "id": "ap-001",
@@ -258,7 +277,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Dyson+Pure+Cool+TP04+Air+Purifier&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Dyson Pure Cool TP04 Air Purif"
+    "imageAlt": "Dyson Pure Cool TP04 Air Purif",
+    "imageUrl": "https://m.media-amazon.com/images/I/61o5ASq6N8L._AC_SL300_.jpg"
   },
   {
     "id": "ap-002",
@@ -271,7 +291,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Levoit+Core+400S+Smart+Air+Purifier&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Levoit Core 400S Smart Air Pur"
+    "imageAlt": "Levoit Core 400S Smart Air Pur",
+    "imageUrl": "https://m.media-amazon.com/images/I/61YVFzh9kLL._AC_SL300_.jpg"
   },
   {
     "id": "ap-003",
@@ -284,7 +305,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Dyson+Purifier+Hot+Cool+HP07+Heater&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Dyson Purifier Hot+Cool HP07 H"
+    "imageAlt": "Dyson Purifier Hot+Cool HP07 H",
+    "imageUrl": "https://m.media-amazon.com/images/I/61o5ASq6N8L._AC_SL300_.jpg"
   },
   {
     "id": "ap-004",
@@ -297,7 +319,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Levoit+Core+Evo+Air+Purifier&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Levoit Core Evo Air Purifier"
+    "imageAlt": "Levoit Core Evo Air Purifier",
+    "imageUrl": "https://m.media-amazon.com/images/I/71t-9BTIg9L._AC_SL300_.jpg"
   },
   {
     "id": "ap-005",
@@ -310,7 +333,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Blueair+211++Auto+Air+Purifier&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Blueair 211+ Auto Air Purifier"
+    "imageAlt": "Blueair 211+ Auto Air Purifier",
+    "imageUrl": "https://m.media-amazon.com/images/I/71NTcOKGJxL._AC_SL300_.jpg"
   },
   {
     "id": "ap-006",
@@ -323,7 +347,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Winix+5500-2+HEPA+Air+Purifier&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Winix 5500-2 HEPA Air Purifier"
+    "imageAlt": "Winix 5500-2 HEPA Air Purifier",
+    "imageUrl": "https://m.media-amazon.com/images/I/71ENQM-0ptL._AC_SL300_.jpg"
   },
   {
     "id": "sd-001",
@@ -336,7 +361,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=FlexiSpot+E7+Electric+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "FlexiSpot E7 Electric Standing"
+    "imageAlt": "FlexiSpot E7 Electric Standing",
+    "imageUrl": "https://m.media-amazon.com/images/I/71G57ucOZtL._AC_SL300_.jpg"
   },
   {
     "id": "sd-002",
@@ -349,7 +375,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Uplift+Desk+V2+Commercial+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Uplift Desk V2 Commercial Stan"
+    "imageAlt": "Uplift Desk V2 Commercial Stan",
+    "imageUrl": "https://m.media-amazon.com/images/I/7148mEiHU7L._AC_SL300_.jpg"
   },
   {
     "id": "sd-003",
@@ -362,7 +389,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=FlexiSpot+Pro+Plus+3+Leg+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "FlexiSpot Pro Plus 3 Leg Stand"
+    "imageAlt": "FlexiSpot Pro Plus 3 Leg Stand",
+    "imageUrl": "https://m.media-amazon.com/images/I/619BvGyu2VL._AC_SL300_.jpg"
   },
   {
     "id": "sd-004",
@@ -375,7 +403,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+AnkerDesk+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker AnkerDesk Standing Desk"
+    "imageAlt": "Anker AnkerDesk Standing Desk",
+    "imageUrl": "https://m.media-amazon.com/images/I/71YrY8uGdCL._AC_SL300_.jpg"
   },
   {
     "id": "sd-005",
@@ -388,7 +417,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Uplift+Desk+Bamboo+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Uplift Desk Bamboo Standing De"
+    "imageAlt": "Uplift Desk Bamboo Standing De",
+    "imageUrl": "https://m.media-amazon.com/images/I/51YjCKJ9AbL._AC_SL300_.jpg"
   },
   {
     "id": "sd-006",
@@ -401,7 +431,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=FlexiSpot+EN1+Electric+Standing+Desk&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "FlexiSpot EN1 Electric Standin"
+    "imageAlt": "FlexiSpot EN1 Electric Standin",
+    "imageUrl": "https://m.media-amazon.com/images/I/6161JtFQjWL._AC_SL300_.jpg"
   },
   {
     "id": "sc-001",
@@ -414,7 +445,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=3-Pack+Tapo+MagCam+4K+Outdoor+Wireless+Camera&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "3-Pack Tapo MagCam 4K Outdoor "
+    "imageAlt": "3-Pack Tapo MagCam 4K Outdoor ",
+    "imageUrl": "https://m.media-amazon.com/images/I/71Wrxi7DSsL._AC_SL300_.jpg"
   },
   {
     "id": "sc-002",
@@ -427,7 +459,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Blink+Outdoor+4+\u2013+3+camera+system&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Blink Outdoor 4 \u2013 3 camera sys"
+    "imageAlt": "Blink Outdoor 4 \u2013 3 camera sys",
+    "imageUrl": "https://m.media-amazon.com/images/I/414-yxOaD8L._AC_SL300_.jpg"
   },
   {
     "id": "sc-003",
@@ -440,7 +473,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Ring+Battery+Doorbell+with+Indoor+Cam&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Ring Battery Doorbell with Ind"
+    "imageAlt": "Ring Battery Doorbell with Ind",
+    "imageUrl": "https://m.media-amazon.com/images/I/61CzWvbBMcL._AC_SL300_.jpg"
   },
   {
     "id": "sc-004",
@@ -453,7 +487,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Arlo+Essential+1-Camera+Outdoor+2K&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Arlo Essential 1-Camera Outdoo"
+    "imageAlt": "Arlo Essential 1-Camera Outdoo",
+    "imageUrl": "https://m.media-amazon.com/images/I/81N6AYRboqL._AC_SL300_.jpg"
   },
   {
     "id": "sc-005",
@@ -466,7 +501,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Baseus+X1+Pro+Dual-Tracking+Solar+Camera&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Baseus X1 Pro Dual-Tracking So"
+    "imageAlt": "Baseus X1 Pro Dual-Tracking So",
+    "imageUrl": "https://m.media-amazon.com/images/I/61nrd1nJNgL._AC_SL300_.jpg"
   },
   {
     "id": "sc-006",
@@ -479,6 +515,7 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=4-Pack+eufy+Security+S220+SoloCam&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "4-Pack eufy Security S220 Solo"
+    "imageAlt": "4-Pack eufy Security S220 Solo",
+    "imageUrl": "https://m.media-amazon.com/images/I/51ND02TCp5L._AC_SL300_.jpg"
   }
 ];
