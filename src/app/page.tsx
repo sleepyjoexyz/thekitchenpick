@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import DealCard from "@/components/DealCard";
+import EmailSignup from "@/components/EmailSignup";
 import { mockDeals } from "@/data/mockDeals";
 import { dealCategories } from "@/lib/dealCategories";
 
@@ -13,6 +14,8 @@ export default function Home() {
         <p className="text-gray-600 mb-6">Discover today's best deals on kitchen appliances, smart home devices, and workspace essentials. {mockDeals.length} deals across {dealCategories.length} categories.</p>
         <Link href="/deals" className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">Browse All Deals</Link>
       </section>
+
+      <EmailSignup />
 
       {dealCategories.map((cat) => {
         const categoryDeals = mockDeals.filter((d) => d.category === cat.name).slice(0, 6);

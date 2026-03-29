@@ -402,6 +402,282 @@ If budget is tight, mini offers recovery for under $100. Full-size requires $200
 
 Choose mini if: You travel frequently, need portability first, want light recovery, or are budget-conscious. Choose full-size if: You train seriously, have chronic tension, live in one place primarily, or need aggressive deep-tissue work. Many athletes benefit from owning both—a full-size for home daily recovery and a mini for travel. The trade-off is straightforward: weight and portability vs stall force and versatility.`,
   },
+
+  "percussion-vs-vibration-massage-guns": {
+    slug: "percussion-vs-vibration-massage-guns",
+    title: "Percussion vs Vibration Massage Guns: Which Technology Is Better?",
+    description:
+      "Compare percussion and vibration massage gun technologies. Understand how each works, which muscles they target best, and which type suits your recovery goals.",
+    category: "massage-guns",
+    content: `## Introduction
+
+Massage guns use two fundamentally different technologies: percussion and vibration. Percussion drives rapid strikes into muscle tissue—like a jackhammer. Vibration oscillates at high frequency—like a rumble massager. Both improve recovery, but they work differently. This guide explains the science behind each and helps you choose.
+
+## What Is Percussion Massage?
+
+Percussion massage strikes muscle tissue repeatedly—up to 3,200 times per minute. The massage head impacts the muscle, then retracts, then strikes again. Each strike creates a compression wave that penetrates deep tissue.
+
+Most popular massage guns are percussion-based: Theragun, Hypervolt, Ekrin, Achedaway. They're the dominant technology because percussive impact effectively addresses muscle tension and knots.
+
+### How Percussion Works
+
+Percussion massage guns use a motor that drives an eccentric cam (an off-center weight). As the cam rotates, it pushes the massage head outward—impact—then pulls it back. This cycle repeats 1,200-3,200 times per minute.
+
+Each impact creates a compression wave that travels 1-2 inches into muscle tissue. Multiple impacts in quick succession create cumulative effect—like tapping the same spot 30 times in 5 seconds.
+
+### Percussion Advantages
+
+- **Deep penetration** - compression waves reach deep muscle tissue and knots
+- **Effective for knots** - strikes break up adhesions and trigger point tension
+- **Visible muscle movement** - you can see muscle tissue respond
+- **Better for athletes** - addresses the intense tension that develops from training
+- **More adaptable** - variable speed settings change impact frequency for different uses
+
+### Percussion Disadvantages
+
+- **Louder** - impact noise can be 65-75 dB
+- **More intense** - can be uncomfortable if not applied correctly
+- **Heavier** - mechanical complexity adds weight
+- **Stall force matters** - lighter models (20 lbs) feel weak; you want 30+ lbs for effectiveness
+
+## What Is Vibration Massage?
+
+Vibration massage oscillates side-to-side rapidly—similar to an electric toothbrush or phone vibration. The massage head doesn't strike; it trembles at high frequency (typically 1,200-2,400 Hz).
+
+Fewer mainstream massage guns use pure vibration, but shakers like Shiatsu massagers and some wearable devices use this technology.
+
+### How Vibration Works
+
+Vibration massage uses a simple motor that drives an eccentric weight. As the weight rotates off-center, the entire head trembles back-and-forth. This creates oscillating pressure rather than impacts.
+
+### Vibration Advantages
+
+- **More comfortable** - gentler sensation, less jarring
+- **Better for sensitive users** - less intimidating, less intense
+- **Quieter** - oscillation produces less noise than percussion
+- **Lighter** - simpler mechanics = less weight
+- **Good for light activation** - suitable for pre-workout warm-up or light recovery
+
+### Vibration Disadvantages
+
+- **Shallow penetration** - oscillation doesn't reach as deep as percussion strikes
+- **Less effective for knots** - can't break up serious tension like percussion does
+- **Variable quality** - some vibration massagers feel cheap or buzzy
+- **Less versatile** - limited speed options on cheaper models
+- **Less evidence** - fewer studies on vibration massage effectiveness vs percussion
+
+## Science: Which Is More Effective?
+
+Percussion massage has stronger scientific support. Studies show:
+- Percussive massage reduces muscle soreness (DOMS) better than passive rest
+- Impact-based massage increases blood flow and reduces recovery time
+- Compression waves from percussion effectively address myofascial tension
+
+Vibration massage has less research, but available studies show:
+- Vibration improves some measures of muscle recovery
+- Vibration is gentler but less effective than percussion for deep tension
+- Vibration + light stretching can be effective for warm-up
+
+**Consensus:** Percussion is more effective for serious muscle recovery. Vibration is better for light activation and sensitive users.
+
+## Percussion vs Vibration by Use Case
+
+### Pre-Workout Activation
+
+Percussion: 2-3 minutes at medium speed (1,500-2,000 PPM), light pressure. Gets blood flowing.
+Vibration: 2-3 minutes at medium frequency. Gentler warm-up, less intensity.
+Winner: Percussion (deeper activation).
+
+### Post-Workout Recovery
+
+Percussion: 2-3 minutes per muscle group at high speed (2,500-3,200 PPM), medium-high pressure. Addresses fresh soreness.
+Vibration: Less effective for acute soreness. Fine for light cool-down.
+Winner: Percussion (more effective for recovery).
+
+### Chronic Muscle Tension / Knots
+
+Percussion: 3-5 minutes per area at medium-high pressure. Percussion directly addresses adhesions.
+Vibration: May help over time but less effective for stubborn knots.
+Winner: Percussion (breaks up tension).
+
+### Sensitive Muscle Groups (Neck, Lower Back)
+
+Percussion: Higher risk of discomfort if stall force too high.
+Vibration: Gentler, less risky for sensitive areas.
+Winner: Vibration (safety/comfort).
+
+### Light Maintenance Between Sessions
+
+Percussion: 30-60 seconds per muscle group at low speed (1,200-1,500 PPM).
+Vibration: Effective for light maintenance without intensity.
+Winner: Tie (both work for light use).
+
+## Mixed Technology: Percussion + Vibration
+
+Some newer massage guns claim to offer both percussion and vibration modes. In practice, a single motor can't genuinely alternate between both—it's usually percussion at different speeds. True dual-technology would require two separate motors, which would be heavier and more expensive.
+
+Skip "dual-mode" claims. Choose either pure percussion or pure vibration.
+
+## Brand Comparison: Percussion Leaders
+
+Theragun, Hypervolt, Ekrin, Achedaway all use percussion. They compete on stall force, speed range, battery life, and price—not on percussion vs vibration.
+
+## When to Choose Vibration
+
+You prefer gentler sensation and prioritize comfort over deep penetration. You have sensitive skin or lower pain tolerance. You're using massage guns only for light warm-up, not serious recovery.
+
+## When to Choose Percussion
+
+You train hard and need deep muscle recovery. You have chronic tension or trigger points. You want to see visible muscle response. You want the most effective technology backed by research.
+
+## Conclusion
+
+Percussion is more effective and dominates the market. Vibration is gentler but less powerful. For serious athletes and muscle recovery, percussion massage guns are the better choice. For light, comfortable activation, vibration works fine. Most users benefit from percussion unless sensitivity is a primary concern.`,
+  },
+
+  "best-massage-guns-under-100": {
+    slug: "best-massage-guns-under-100",
+    title: "Best Massage Guns Under $100: Budget Picks That Actually Work",
+    description:
+      "Find the best massage guns under $100. Compare affordable models and discover which ones deliver real recovery despite the low price.",
+    category: "massage-guns",
+    content: `## Introduction
+
+You don't need to spend $200+ to get a functioning massage gun. Under $100, you can find models with 12-35 lbs of stall force, adequate battery life, and enough muscle penetration for casual recovery. This guide identifies the best sub-$100 options and shows you what to expect at this ultra-budget price point.
+
+## The Sub-$100 Reality
+
+Under $100, expect: 12-35 lbs stall force, 2-4 speed settings, 2-4 attachments, 60-120 minute battery life. Most are either lightweight portables or budget full-size units. Build quality varies—some are durable, others fail within months.
+
+The key: at this price, focus on basic recovery, not advanced features. No app, no heating, no fancy designs—just a motor that goes forward and backward.
+
+## Top Models Under $100
+
+### Opove M3 Pro Max ($119 sometimes discounted to $99)
+
+25 lbs stall force, 4 speeds, 5 attachments, 6-hour battery. Opove's claim to fame is exceptional battery life—enough for weeks of daily use. Stall force is moderate but sufficient for casual recovery.
+
+Pros: Longest battery life, good speed options, affordable.
+Cons: Lesser-known brand, only 25 lbs force, no app or advanced features.
+Best for: Travel, daily casual recovery, users who hate charging.
+
+### Bob and Brad Q2 Mini ($49-$69)
+
+8 lbs stall force, 2 speeds, 3 attachments. This is the budget king. Bob and Brad are physical therapists with a YouTube following, so quality is decent. 8 lbs is light, but for very casual users, it works.
+
+Pros: Ultra-affordable at $49, trusted brand name, lightweight (0.5 lbs).
+Cons: Lowest stall force available, can't address deep tension, limited speed options.
+Best for: First-time buyers testing the concept, very light recovery, travel.
+
+### Hypervolt Go 2 on Sale ($99-$129, sometimes discounted)
+
+14 lbs stall force, 3 speeds, 2 attachments, 2-hour battery. Hypervolt's lightweight option. At full price ($129), it's marginal value. On sale ($99), it's worth considering if you want the Hypervolt brand.
+
+Pros: Reputable brand, quiet operation (67 dB), lightweight and portable.
+Cons: 14 lbs is weak, only 2 attachments, limited versatility.
+Best for: Brand loyalists wanting Hypervolt at lower price, light recovery users.
+
+### Ekrin Mini B39 ($99)
+
+18 lbs stall force, 4 speeds, 4 attachments, 2-hour battery. Ekrin's lightweight option. 18 lbs is weak but acceptable for light-to-medium recovery.
+
+Pros: 4 speeds and attachments despite low price, reasonable stall force, multiple speed settings.
+Cons: Still lightweight, limited penetration, not for serious muscle tension.
+Best for: Users wanting more attachments and speed options on a budget.
+
+### Percussion Care Mini ($79)
+
+16 lbs stall force, 3 speeds, 3 attachments. Another lightweight option. Percussion Care is a lesser-known brand, but reviews suggest decent durability for the price.
+
+Pros: Affordable, lightweight, 3 attachments.
+Cons: 16 lbs is weak, no long-term durability history, limited speed options.
+Best for: Budget-conscious first-time buyers, light recovery.
+
+### Innerneed Portable Mini ($89)
+
+14 lbs stall force, 3 speeds, 4 attachments. Another portable option with decent attachment count.
+
+Pros: Affordable, 4 attachments despite low price.
+Cons: 14 lbs is weak, unknown brand reliability unknown.
+Best for: Users prioritizing attachment variety over power.
+
+## The Stall Force Problem Under $100
+
+Every model under $100 has one weakness: weak stall force (8-25 lbs). This means:
+- Light muscle activation only
+- Can't address deep knots or chronic tension
+- Won't work well for serious athletes
+- Feels somewhat effective but lacks impact
+
+If you're training hard, you need 30+ lbs. Everything under $100 sacrifices power for price.
+
+## Build Quality & Durability
+
+Budget massage guns often cut corners on:
+- Motor quality (may overheat after extended use)
+- Attachment durability (attachments break or wobble)
+- Battery life (degrades quickly)
+- Noise (cheaper motors are louder)
+
+The best budget models (Opove, Bob and Brad, Hypervolt Go 2) have proven track records. Unknown brands may fail after 6-12 months.
+
+## What You're Missing vs $200+ Models
+
+Premium models offer: higher stall force (30-60 lbs), better build quality, app integration, heating, longer battery, more accessories. Budget models strip down to bare essentials.
+
+At $99, you're buying lightweight recovery, not serious deep-tissue work.
+
+## Best For Different Users
+
+First-time buyer testing concept: Bob and Brad Q2 Mini ($49). Cheapest entry point.
+Casual recovery (1-2x per week): Opove M3 Pro Max ($99). Best battery life.
+Travel-focused user: Hypervolt Go 2 ($99 sale price). Brand name, lightweight.
+Home casual user: Ekrin Mini B39 ($99). Most attachments, decent speed options.
+Light daily recovery: Bob and Brad Q2 Mini ($49) + save $50.
+
+## When Not to Buy Under $100
+
+Don't buy under $100 if:
+- You train hard and need deep recovery (get Ekrin B37 at $199)
+- You have chronic muscle tension (need 40+ lbs force)
+- You're muscular and need serious penetration (need 30+ lbs minimum)
+- You want long-term durability and don't want replacement hassle
+
+## Real-World Expectations
+
+A $99 massage gun will:
+- Provide light muscle activation
+- Help with post-workout soreness (mild to moderate)
+- Be sufficient for casual users
+- Possibly need replacement within 1-2 years
+- Not solve serious muscle tension
+
+A $99 massage gun won't:
+- Address deep knots like a $300+ model
+- Last 5+ years of heavy use
+- Have advanced features or app control
+- Match the performance of mid-range models
+
+## Comparison: $99 vs $199
+
+Ekrin B37 ($199): 56 lbs stall force, 5 speeds, 6 attachments, 2-hour battery.
+Opove M3 Pro Max ($99): 25 lbs stall force, 4 speeds, 5 attachments, 6-hour battery.
+
+For $100 more, you get 2.2x the stall force, more speed options, and equal attachments. The B37 is better value if you can spend $199. If you absolutely can't, Opove is the best $99 option.
+
+## Buying Tips for Budget Models
+
+1. Check reviews on Amazon/YouTube specifically about durability
+2. Choose brands with physical therapy backing (Bob and Brad)
+3. Look for models with 3+ speed settings (gives flexibility)
+4. Prioritize 4+ attachments for versatility
+5. Confirm 90+ minute battery life
+6. Check warranty (some offer 1-year replacement guarantee)
+
+## Conclusion
+
+Under $100, Opove M3 Pro Max wins on battery life and all-around value. Bob and Brad Q2 Mini wins on price and trusted brand. Hypervolt Go 2 at sale price ($99) wins if you want the Hypervolt name. Ekrin Mini B39 wins on attachment variety. All are suitable for light casual recovery. None compete with models at $200+. Buy under $100 if you're budget-constrained; save for $199+ if you need serious recovery.`,
+  },
 };
 
 export function getMassageGunArticle(slug: string): MassageGunArticle | null {

@@ -41,8 +41,12 @@ export function BreadcrumbSchema({ items }: { items: { name: string; url: string
 }
 
 export function ArticleSchema({ title, description, url, datePublished, dateModified }: {
-  title: string; description: string; url: string; datePublished: string; dateModified: string;
+  title: string; description: string; url: string; datePublished?: string; dateModified?: string;
 }) {
+  const today = new Date().toISOString().split('T')[0];
+  const publishDate = datePublished || today;
+  const modifyDate = dateModified || today;
+
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -50,8 +54,8 @@ export function ArticleSchema({ title, description, url, datePublished, dateModi
       "headline": title,
       "description": description,
       "url": url,
-      "datePublished": datePublished,
-      "dateModified": dateModified,
+      "datePublished": publishDate,
+      "dateModified": modifyDate,
       "author": { "@type": "Organization", "name": "The Kitchen Pick" },
       "publisher": { "@type": "Organization", "name": "The Kitchen Pick", "url": "https://www.thekitchenpick.com" }
     })}} />

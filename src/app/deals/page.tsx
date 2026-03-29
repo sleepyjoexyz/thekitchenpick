@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import DealCard from "@/components/DealCard";
+import EmailSignup from "@/components/EmailSignup";
 import { mockDeals } from "@/data/mockDeals";
 import { dealCategories } from "@/lib/dealCategories";
 import { DealSchema } from '@/components/DealSchema';
@@ -45,7 +46,9 @@ export default function DealsPage() {
         );
       })}
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100 mt-8">
+      <EmailSignup />
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">
         <p className="text-xs text-gray-400">Deals are sourced from Amazon, Slickdeals, and Reddit. Prices and availability may change. As an Amazon Associate, The Kitchen Pick earns from qualifying purchases.</p>
       </section>
     </main>

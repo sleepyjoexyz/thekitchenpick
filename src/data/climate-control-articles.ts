@@ -487,6 +487,395 @@ For a 2,000 sq ft home with average insulation, lowering the temperature 5°F sa
 
 A 1,500W space heater costs $1.56–$4.68 per day depending on usage (8–24 hours). Over a month, expect $45–$140. The cost-benefit depends on your situation: if you're heating one room and can lower your whole-house thermostat, a space heater provides comfort at marginal extra cost. If you're trying to heat multiple rooms or the whole house, you're wasting money. Use a space heater to create comfort in one primary room while lowering the house-wide temperature. Combine it with a timer, low-setting operation, and insulation improvements to minimize cost. For most households, a space heater is economically justified as a supplement, not a replacement for central heating.`,
   },
+
+  "smart-thermostat-buying-guide": {
+    slug: "smart-thermostat-buying-guide",
+    title: "Smart Thermostat Buying Guide: What Features Actually Matter",
+    description:
+      "Learn which smart thermostat features justify the cost. Compare learning thermostats, voice control, remote access, and energy reports to find the right fit.",
+    category: "climate-control",
+    content: `## Introduction
+
+Smart thermostats promise to reduce heating and cooling costs while adding convenience. The market offers dozens of models ranging from $99 to $400+. But which features actually matter? Learning capability? Voice control? Remote access? This guide breaks down smart thermostat technology and helps you choose a model that matches your needs.
+
+## What Is a Smart Thermostat?
+
+A smart thermostat connects to your home WiFi and allows remote control via smartphone, voice command, or automatic schedules. Unlike programmable thermostats (which require manual scheduling), smart thermostats adapt to your behavior and preferences.
+
+Key smart thermostat brands: Nest (Google), Ecobee, Honeywell Home, Sensi, Emerson.
+
+## Core Smart Features Worth Considering
+
+### Remote Access via Smartphone
+
+Control your thermostat from anywhere via app. You're at work and realize you forgot to adjust the heat? Change it from your phone. You're returning home early? Pre-heat the house.
+
+Cost impact: Makes you more responsive to temperature changes. Potential $5-10/month savings from not overheating while away.
+Worth it: Yes, if you travel or have irregular schedules.
+
+### Learning / Adaptive Scheduling
+
+Some thermostats (Nest) learn your schedule automatically. They observe when you're home and adjust temperature accordingly. You don't manually program—the system adapts.
+
+Cost impact: Moderate savings (10-15%) by automatically lowering temperature when you're away.
+Worth it: Yes, but only if your schedule is consistent.
+
+### Geofencing (Location-Based Automation)
+
+The thermostat detects when your phone leaves home and automatically adjusts temperature. You arrive home and the house starts warming before you walk through the door.
+
+Cost impact: Saves energy by not conditioning the house when nobody's home.
+Worth it: Yes, if your schedule is predictable and you value convenience.
+
+### Voice Control (Alexa, Google Assistant)
+
+Ask "Alexa, set the thermostat to 72°F" instead of using the app.
+
+Cost impact: None—it's convenience, not savings.
+Worth it: Only if you already use voice assistants and value the integration.
+
+### Energy Reports & Usage Analytics
+
+Detailed dashboards showing when you heat/cool, daily usage patterns, and estimated costs.
+
+Cost impact: None directly, but awareness helps you optimize settings.
+Worth it: Only if you're actively monitoring and adjusting behavior based on data.
+
+### Humidity Control
+
+Maintains optimal humidity levels (30-50%) alongside temperature. Prevents dry air in winter and excess moisture in summer.
+
+Cost impact: Improves comfort and air quality; minor energy impact.
+Worth it: Yes, if you have dry air issues or allergies.
+
+## The Real Savings: What Actually Reduces Bills
+
+Smart thermostats save money through behavior change, not magic. The savings come from:
+
+1. **Automatic schedule optimization** - lower temperature when you're away
+2. **Remote control** - respond quickly to temperature swings
+3. **Awareness** - seeing energy reports makes you more conscious of usage
+4. **Integrations** - some models detect occupancy and adjust automatically
+
+Studies show average savings: 10-15% on heating/cooling annually. For a household spending $2,000/year on HVAC, that's $200-300/year.
+
+## Top Models Compared
+
+### Nest Learning Thermostat (Google) - $250
+
+Pros: Best learning algorithm, beautiful design, integrates with Google Home, excellent app.
+Cons: Expensive, requires C-wire, not compatible with all systems, privacy concerns (Google data).
+Best for: Tech-forward users with predictable schedules, Google Home users.
+Savings potential: 15-20% (highest among smart thermostats due to learning).
+
+### Ecobee SmartThermostat ($169) + Voice Control
+
+Pros: Works with most systems, remote sensors (place around house for zone monitoring), Alexa/Google integration, good design.
+Cons: Requires C-wire on most installs, app less polished than Nest.
+Best for: Households with multiple zones, Alexa users, moderate budgets.
+Savings potential: 12-15%.
+
+### Honeywell Home ($129-199)
+
+Pros: Reliable, works with most systems, affordable mid-range option.
+Cons: Less sophisticated learning than Nest, app interface less intuitive.
+Best for: Budget-conscious users wanting basic smart features.
+Savings potential: 10-12%.
+
+### Sensi Smart Thermostat ($129)
+
+Pros: Works without C-wire (battery backup), excellent customer support, affordable.
+Cons: Less learning capability than Nest, smaller feature set.
+Best for: Renters, budget users, those without C-wire infrastructure.
+Savings potential: 8-10%.
+
+### Budget Non-Learning Smart ($89-99)
+
+Brands: Leeo, GE Enbrighten, others.
+Pros: Affordable, basic remote control and scheduling.
+Cons: No learning, limited features, smaller app ecosystem.
+Best for: Budget-only priorities, basic smart control.
+Savings potential: 5-8%.
+
+## Installation: Professional vs DIY
+
+Most smart thermostats require a C-wire (common wire) for power. If your existing thermostat uses a C-wire, installation is straightforward DIY (15 minutes). If not, you may need professional installation ($150-300) to add a C-wire or install a power adapter.
+
+Budget: Add $150-300 to cost if professional installation required.
+
+## The Cost-Benefit Math
+
+**Nest ($250) + professional installation ($200) = $450 total**
+- Savings: $200-300/year
+- Payback: 1.5-2.25 years
+- Long-term: Worth it if you keep the system 5+ years
+
+**Honeywell ($129) + professional installation ($200) = $329 total**
+- Savings: $150-250/year
+- Payback: 1.3-2.2 years
+- Long-term: Good value, faster payback than Nest
+
+**Budget smart ($89) + professional installation ($200) = $289 total**
+- Savings: $80-120/year
+- Payback: 2.4-3.6 years
+- Consideration: Slower ROI; might make sense if DIY installation possible
+
+## Hidden Costs
+
+Subscription models: Some thermostats charge monthly for advanced features.
+- Nest Mini: No subscription required
+- Ecobee: Some features require SmartHome Membership ($5/month)
+- Others: Most offer free cloud services
+
+Smart home ecosystem: If you need Alexa/Google integration, add cost of relevant hub ($50+).
+
+## Who Benefits From Smart Thermostats
+
+**High candidates:**
+- Inconsistent schedules (work varies, travel frequently)
+- Predictable routines (work 9-5, home weekends)
+- Multiple occupants with different comfort preferences
+- Homes with existing smart home systems
+
+**Lower candidates:**
+- Consistent 24/7 home presence (remote work, retired)
+- Renters (limited installation options)
+- Simple schedules (heat Sept-April, cool June-Aug)
+- Budget-only priorities
+
+## Alternative: Programmable Thermostat
+
+Don't have WiFi or want to avoid subscription costs? A programmable thermostat (no smart features) costs $50-100 and can achieve 5-10% savings through automated scheduling.
+
+Tradeoff: No remote access or learning, just scheduled temperature setpoints.
+
+## Privacy Considerations
+
+Smart thermostats send usage data to manufacturers. Google Nest explicitly states it uses data for product improvement. If privacy is a concern, Honeywell and Sensi are less invasive than Nest.
+
+## Conclusion
+
+Smart thermostats save 10-15% on HVAC costs through automated scheduling and behavior awareness. Nest ($250) offers best learning and design; Ecobee ($169) offers good value with zone control; Honeywell ($129) offers reliable mid-range option. Budget models ($89-99) provide basic smart features at low cost. Installation costs ($0-300) affect ROI. If your schedule is predictable and you can do DIY installation, smart thermostats pay for themselves in 1.5-2 years. If professional installation required, payback takes 2-3 years. Best for households with variable schedules; less beneficial for 24/7 home presence.`,
+  },
+
+  "humidifier-vs-dehumidifier-guide": {
+    slug: "humidifier-vs-dehumidifier-guide",
+    title: "Humidifier vs Dehumidifier: Which Does Your Home Need?",
+    description:
+      "Understand humidity problems and whether your home needs a humidifier or dehumidifier. Learn ideal humidity levels, signs of imbalance, and which type solves your problem.",
+    category: "climate-control",
+    content: `## Introduction
+
+Home humidity levels affect comfort, air quality, and structural health. Too dry and you suffer respiratory issues. Too humid and mold grows. The solution is either a humidifier (adds moisture) or dehumidifier (removes moisture). This guide helps you identify your humidity problem and choose the right solution.
+
+## What Is Humidity?
+
+Humidity is the amount of water vapor in air. Relative humidity (RH) is a percentage: 50% RH means the air contains half the water vapor it could hold at that temperature.
+
+Optimal indoor humidity: 30-50% RH. This range balances comfort and health.
+
+Below 30% RH: Air is very dry. Skin cracks, sinuses hurt, mucous membranes dry out.
+Above 60% RH: Air is very humid. Mold thrives, dust mites multiply, wallpaper peels.
+
+## How to Check Your Home's Humidity
+
+Buy a hygrometer ($10-20). A simple dial hygrometer tells you RH%. Many smart thermostats display humidity.
+
+Check humidity in different rooms. Basements tend to be humid. Upstairs bedrooms in winter tend to be dry.
+
+## Problems Caused by Too Much Humidity (Above 60% RH)
+
+### Mold and Mildew Growth
+
+Mold thrives at RH above 60%. It grows on walls, ceilings, shower tiles, and inside HVAC ducts. Mold is allergenic and toxic.
+
+### Dust Mites
+
+Dust mites breed at humidity above 50%. They're allergens; their droppings trigger asthma and allergies.
+
+### Wood Damage and Swelling
+
+High humidity causes wood to absorb moisture. Floors warp, doors stick, and structural wood rots.
+
+### Condensation on Windows
+
+Cold windows + humid indoor air = condensation. Repeated condensation damages window seals and causes mold around frames.
+
+### Musty Odors
+
+That "damp basement" smell indicates mold and mildew.
+
+### Wallpaper Peeling
+
+High humidity causes glue to fail. Wallpaper peels away from walls.
+
+## Problems Caused by Too Little Humidity (Below 30% RH)
+
+### Dry Skin and Chapped Lips
+
+Very dry air pulls moisture from skin. Lips crack, hands become red and irritated.
+
+### Sinus Problems and Nosebleeds
+
+Dry mucous membranes crack and bleed. Sinus congestion worsens because mucus can't drain properly.
+
+### Respiratory Irritation
+
+Dry air irritates lungs and throat. Coughs worsen. People with asthma or bronchitis suffer more.
+
+### Static Electricity
+
+Dry air builds static. You get shocked touching doorknobs. Uncomfortable and potentially damaging to electronics.
+
+### Increased Colds and Flu
+
+Very dry air impairs the body's respiratory defenses. Viruses spread more easily at humidity below 20%.
+
+### Cracked Wood
+
+Low humidity causes wood to dry and shrink. Hardwood floors gap, wooden furniture cracks.
+
+## Dehumidifiers: When You Need Them
+
+A dehumidifier removes water vapor from air. It pulls in humid air, cools it to condense the moisture, then releases dry air.
+
+### How Dehumidifiers Work
+
+Most dehumidifiers use refrigerant (like an AC unit). Humid air passes over cold coils. Water condenses and drips into a collection tank. Dry air returns to the room.
+
+Some use desiccant technology (absorbent material) instead of refrigerant. Desiccant dehumidifiers work better in very cold environments.
+
+### When to Buy a Dehumidifier
+
+- Humidity consistently above 60%
+- Basement or crawlspace shows moisture
+- You smell mold or mustiness
+- Bathrooms have persistent mold
+- Laundry room stays humid despite ventilation
+- Coastal homes with salt air (high humidity)
+
+### Dehumidifier Types and Capacity
+
+Capacity is measured in pints: how many pints of water it removes per day (or per 24 hours in certain conditions).
+
+Small (30-50 pint): Suitable for bedrooms, small rooms (up to 500 sq ft).
+Medium (50-70 pint): Suitable for basements, living rooms, large rooms (500-1000 sq ft).
+Large (70+ pint): Suitable for whole houses or very humid basements.
+
+Price ranges: $150-300 for small, $300-600 for medium, $600+ for large.
+
+### Best Dehumidifier Features
+
+- Automatic shutoff (stops when tank is full)
+- Continuous drain option (hose to floor drain, no tank emptying)
+- Frost protection (for cold basements)
+- Energy Star certification (lower operating costs)
+- Adjustable humidity target (turns off when target RH is reached)
+
+### Dehumidifier Limitations
+
+- Runs constantly in very humid conditions (high electricity cost)
+- Noise (compressor fan is audible)
+- Adds heat to room (while removing humidity, it warms air slightly)
+- Needs regular maintenance (empty tank or check drain hose)
+
+## Humidifiers: When You Need Them
+
+A humidifier adds water vapor to air. It evaporates water into air, increasing humidity.
+
+### How Humidifiers Work
+
+**Evaporative (most common):** Water soaks into a wick. A fan blows air through the wick, and water evaporates into the room. Natural, safe, energy-efficient.
+
+**Ultrasonic:** Vibrating membrane creates fine mist. Very quiet but can leave white mineral dust if tap water is used (use distilled water).
+
+**Steam (warm mist):** Boils water and releases steam. Good for colds but adds heat and poses burn risk.
+
+### When to Buy a Humidifier
+
+- Humidity consistently below 30%
+- Winter heating dries out your home
+- You have nosebleeds, chapped lips, sinus pain
+- Wood furniture or floors are cracking
+- Dry coughs worsen indoors
+- Static electricity is annoying
+- You have asthma triggered by dry air
+
+### Humidifier Types and Capacity
+
+Capacity: How much humidity it adds per day (typically measured in gallons added).
+
+Personal/bedroom humidifiers: $30-80, suitable for single rooms.
+Medium whole-room: $80-200, suitable for 400-800 sq ft.
+Large whole-home: $200-500, can humidify entire house if HVAC-connected.
+
+### Best Humidifier Features
+
+- Large water tank (less frequent refilling)
+- Automatic shutoff when tank empties
+- Humidistat (only runs when humidity drops below target)
+- Cool mist (safe, energy-efficient)
+- Whisper-quiet operation
+- Easy cleaning (mold grows in humidifiers if not maintained)
+- Filter or wick replacements (should be affordable)
+
+### Humidifier Limitations
+
+- Requires distilled water (prevents mineral buildup and white dust)
+- Needs regular cleaning (prevents mold and bacteria)
+- Only effective in sealed rooms (open doors reduce impact)
+- Can promote mold if overused (don't exceed 50% RH)
+
+## Regional Climate Patterns
+
+**Dry climates (Southwest, Mountain West):** Humidity naturally low (20-40% year-round). Humidifiers common; dehumidifiers rare.
+
+**Humid climates (Southeast, Gulf Coast):** High humidity in summer (60-80%). Dehumidifiers common; humidifiers rare.
+
+**Mixed climates (Northeast, Midwest):** Winter heating dries air (20-40%), summer AC reduces humidity (40-50%). May need both at different times.
+
+**Coastal areas:** Salt air and ocean influence keeps humidity high (55-75%). Dehumidifiers essential.
+
+## Humidity Targets by Season
+
+**Winter (heated homes):** Aim for 35-50% RH. Heating naturally dries air; humidifiers help.
+
+**Summer (cooled homes):** Aim for 40-50% RH. AC removes humidity; dehumidifiers help in humid climates.
+
+**Shoulder seasons (spring/fall):** Natural humidity may already be in the 40-60% range. May not need devices.
+
+## The Cost of Humidity Control
+
+Dehumidifier running continuously: $25-50/month in electricity (depending on capacity and climate).
+
+Humidifier running 8 hours daily: $2-5/month in electricity.
+
+Dehumidifiers cost more to operate because they run compressors. Humidifiers cost less because they evaporate water without heavy mechanical work.
+
+## Whole-Home Solutions
+
+If humidity is a problem throughout your house:
+
+**Ventilation:** Bathroom and kitchen exhaust fans remove moisture. Ensure they vent outside (not into attic).
+
+**HVAC integration:** Some furnaces and AC systems include humidifiers/dehumidifiers. Adds $500-1500 but treats the whole house automatically.
+
+**Ductless dehumidifier:** Portable but designed for larger spaces. $400-800 for whole-home coverage.
+
+## Hybrid Approach
+
+Some homes need both:
+- Winter: Humidifier (heating dries air)
+- Summer: Dehumidifier (if in humid climate)
+
+## Conclusion
+
+Humidity below 30% needs a humidifier (dry air causes respiratory issues, wood damage). Humidity above 60% needs a dehumidifier (mold, dust mites, wood swelling). Ideal range is 30-50% RH.
+
+Buy a hygrometer ($10-20) to diagnose your problem. If dry: invest in a humidifier ($80-200). If humid: invest in a dehumidifier ($150-600). Portable units work for single rooms; whole-home HVAC integration works for entire houses.
+
+Consider your climate: dry regions need humidifiers year-round; humid regions need dehumidifiers year-round; mixed climates need both seasonally. Proper humidity reduces mold, improves respiratory health, and protects your home structure.`,
+  },
 };
 
 export function getClimateControlArticle(slug: string): ClimateControlArticle | null {

@@ -7,8 +7,27 @@ interface DealSchemaProps {
 }
 
 
-// Extract brand from product title (first word is the brand)
+// Extract brand from product title using known brands list
 function extractBrand(title: string): string {
+  const knownBrands = [
+    'Ninja', 'Cosori', 'Instant Pot', 'Breville', 'Cuisinart', 'KitchenAid', 'Hamilton Beach',
+    'Dyson', 'iRobot', 'Roomba', 'Roborock', 'Ecovacs', 'Shark',
+    'Keurig', 'Nespresso', 'DeLonghi', 'Philips', 'Bose', 'Sony', 'Apple', 'Samsung',
+    'LG', 'JBL', 'Sennheiser', 'Audio-Technica', 'Jabra', 'Anker', 'Logitech',
+    'Razer', 'Corsair', 'SteelSeries', 'HyperX', 'Dell', 'ASUS', 'Acer', 'BenQ',
+    'Ring', 'Arlo', 'Wyze', 'Google', 'Amazon', 'Eufy', 'Graco', 'Chicco',
+    'UPPAbaby', 'Britax', 'Baby Jogger', 'Fisher-Price', 'VTech', 'Hatch',
+    'Furbo', 'Petcube', 'Litter-Robot', 'Whistle', 'Fi', 'PetSafe',
+    'Levoit', 'Honeywell', 'Coway', 'Winix', 'Blueair', 'Oral-B', 'Waterpik',
+    'FlexiSpot', 'Uplift', 'Theragun', 'Hyperice', 'Renpho',
+    'Bang & Olufsen', 'Marshall', 'Sonos', 'Ultimate Ears',
+  ];
+  const titleLower = title.toLowerCase();
+  for (const brand of knownBrands) {
+    if (titleLower.startsWith(brand.toLowerCase())) {
+      return brand;
+    }
+  }
   return title.split(' ')[0];
 }
 
