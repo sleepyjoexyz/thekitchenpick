@@ -57,6 +57,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Kitchen Pick — Data-Driven Kitchen Appliance Comparisons',
+    description: 'Compare kitchen appliances side-by-side with detailed specs, prices, and features. Find the best air fryers, espresso machines, robot vacuums and more.',
+    images: ['/og-image.png'],
+  },
   robots: "index, follow",
   manifest: '/manifest.json',
   icons: {

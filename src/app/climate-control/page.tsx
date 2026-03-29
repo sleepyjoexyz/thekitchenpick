@@ -352,7 +352,7 @@ export default function ClimateControlContent() {
                       <a
                         href={`https://amazon.com/dp/${product.amazonAsin}?tag=rogeti02-20`}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="sponsored noopener noreferrer"
                         className="text-blue-600 hover:underline"
                       >
                         View
