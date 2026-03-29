@@ -132,7 +132,7 @@ export async function POST(request: NextRequest) {
 
     if (checkError && checkError.code !== "PGRST116") {
       console.error("Supabase error checking subscriber:", checkError);
-      return NextResponse.json({ error: "Failed to check subscription status" }, { status: 500 });
+      return NextResponse.json({ error: "Failed to check subscription status", debug: { code: checkError.code, message: checkError.message, details: checkError.details, hint: checkError.hint } }, { status: 500 });
     }
 
     if (existingSubscriber) {
@@ -173,6 +173,6 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("Error in POST /api/subscribe:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error", debug: String(error) }, { status: 500 });
   }
 }
