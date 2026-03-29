@@ -1,10 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase";
+import { createClient } from "@supabase/supabase-js";
 
 // Validate email format
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
+}
+
+// Create Supabase client using available keys (service key preferred, anon key fallback)
+function getSupabaseClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const serviceKey = process.env.SUPABASE_SERVICE_KEY;
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const key = serviceKey || anonKey;
+
+  if (!url || !key) {
+    return null;
+  }
+  return createClient(url, key);
 }
 
 // Send email via Resend API
@@ -102,9 +115,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid email format" }, { status: 400 });
     }
 
-    const supabase = createServerSupabaseClient();
+    const supabase = getSupabaseClient();
 
     if (!supabase) {
+      console.error("Missing Supabase env vars: NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY or SUPABASE_SERVICE_KEY");
       return NextResponse.json({ error: "Service is not configured" }, { status: 503 });
     }
 
