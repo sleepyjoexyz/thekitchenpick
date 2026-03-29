@@ -5,30 +5,48 @@ import { useState } from 'react';
 export default function EmailSignup() {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
 
     if (!email) return;
 
-    // Get existing emails from localStorage
-    const existingEmails = localStorage.getItem('kitchenPickEmails');
-    const emails = existingEmails ? JSON.parse(existingEmails) : [];
+    setLoading(true);
 
-    // Add new email if not already subscribed
-    if (!emails.includes(email)) {
-      emails.push(email);
-      localStorage.setItem('kitchenPickEmails', JSON.stringify(emails));
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || 'Something went wrong. Please try again.');
+        setLoading(false);
+        return;
+      }
+
+      // Show success message
+      setSubmitted(true);
+      setEmail('');
+
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+    } catch (err) {
+      console.error('Subscription error:', err);
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
     }
-
-    // Show success message
-    setSubmitted(true);
-    setEmail('');
-
-    // Reset after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
   };
 
   return (
@@ -44,25 +62,34 @@ export default function EmailSignup() {
 
           {submitted ? (
             <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-green-700 font-medium">
-              Thanks! You'll hear from us soon.
+              Thanks! Check your email to confirm your subscription.
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 mb-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </form>
+            <>
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 mb-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={loading}
+                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                />
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap disabled:bg-blue-400 disabled:cursor-not-allowed"
+                >
+                  {loading ? 'Subscribing...' : 'Subscribe'}
+                </button>
+              </form>
+              {error && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700 text-sm">
+                  {error}
+                </div>
+              )}
+            </>
           )}
 
           <p className="text-xs text-gray-500">
