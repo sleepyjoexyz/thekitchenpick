@@ -7,17 +7,13 @@ function isValidEmail(email: string): boolean {
   return emailRegex.test(email);
 }
 
-// Create Supabase client using available keys (service key preferred, anon key fallback)
-function getSupabaseClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceKey = process.env.SUPABASE_SERVICE_KEY;
-  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const key = serviceKey || anonKey;
+// Subscriber data is centralized on the dwuconsulting Supabase project
+// (separate from the site's main Supabase project used for comments)
+const SUBSCRIBER_SUPABASE_URL = "https://tyegvzooxbwjkckqfjkv.supabase.co";
+const SUBSCRIBER_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5ZWd2em9veGJ3amtja3Fmamt2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwNTgzODIsImV4cCI6MjA4NjYzNDM4Mn0.1k_F_oDjGml23uycVwfAvHzqFXDygQYpabqGQ-DByhc";
 
-  if (!url || !key) {
-    return null;
-  }
-  return createClient(url, key);
+function getSubscriberSupabase() {
+  return createClient(SUBSCRIBER_SUPABASE_URL, SUBSCRIBER_SUPABASE_ANON_KEY);
 }
 
 // Send email via Resend API
@@ -115,14 +111,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid email format" }, { status: 400 });
     }
 
-    const supabase = getSupabaseClient();
+    const supabase = getSubscriberSupabase();
 
-    if (!supabase) {
-      console.error("Missing Supabase env vars: NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY or SUPABASE_SERVICE_KEY");
-      return NextResponse.json({ error: "Service is not configured" }, { status: 503 });
-    }
-
-    // Use RPC to bypass PostgREST schema cache issues
+    // Use RPC function for atomic check-and-insert
     const { data, error: rpcError } = await supabase.rpc("subscribe_email", {
       p_email: trimmedEmail,
       p_site_name: "thekitchenpick",
@@ -130,13 +121,7 @@ export async function POST(request: NextRequest) {
 
     if (rpcError) {
       console.error("Supabase RPC error:", rpcError);
-      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "NOT_SET";
-      const hasAnon = !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-      const hasService = !!process.env.SUPABASE_SERVICE_KEY;
-      return NextResponse.json({
-        error: "Failed to save subscription",
-        debug: { code: rpcError.code, message: rpcError.message, hint: rpcError.hint, supabaseUrl, hasAnon, hasService }
-      }, { status: 500 });
+      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 });
     }
 
     const result = data as { status: string; id: string };
