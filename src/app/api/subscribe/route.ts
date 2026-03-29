@@ -130,7 +130,13 @@ export async function POST(request: NextRequest) {
 
     if (rpcError) {
       console.error("Supabase RPC error:", rpcError);
-      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 });
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "NOT_SET";
+      const hasAnon = !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      const hasService = !!process.env.SUPABASE_SERVICE_KEY;
+      return NextResponse.json({
+        error: "Failed to save subscription",
+        debug: { code: rpcError.code, message: rpcError.message, hint: rpcError.hint, supabaseUrl, hasAnon, hasService }
+      }, { status: 500 });
     }
 
     const result = data as { status: string; id: string };
