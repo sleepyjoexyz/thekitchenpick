@@ -27,7 +27,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Our+Place+Wonder+Oven+Air+Fryer&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Our Place Wonder Oven Air Fryer',
-    imageUrl: 'https://m.media-amazon.com/images/I/41a2wV3s9ZL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71XRnDTPpnL._AC_SL300_.jpg',
   },
   {
     id: 'af-002',
@@ -41,7 +41,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Ninja+4-in-1+Air+Fryer+5+QT&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Ninja 4-in-1 Air Fryer 5 QT',
-    imageUrl: 'https://m.media-amazon.com/images/I/51HCFt7VwqL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71QwoGmcfUL._AC_SL300_.jpg',
   },
   {
     id: 'af-003',
@@ -55,7 +55,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Bella+Air+Fryer+4+QT&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Bella Air Fryer 4 QT',
-    imageUrl: 'https://m.media-amazon.com/images/I/41YUFSrFdvL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61w9+nXxwlL._AC_SL300_.jpg',
   },
   {
     id: 'af-004',
@@ -69,7 +69,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Emeril+Lagasse+French+Door+Air+Fryer+26+QT&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Emeril Lagasse French Door Air Fryer 26 QT',
-    imageUrl: 'https://m.media-amazon.com/images/I/41mZu6o5L2L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61w9+nXxwlL._AC_SL300_.jpg',
   },
   {
     id: 'af-005',
@@ -83,7 +83,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Ninja+Flip+Air+Fryer&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Ninja Flip Air Fryer',
-    imageUrl: 'https://m.media-amazon.com/images/I/51W5qh0E5CL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81iQGSa1M4L._AC_SL300_.jpg',
   },
   // ESPRESSO MACHINES
   {
@@ -98,7 +98,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Nespresso+Vertuo+Next+Coffee+and+Espresso+Maker&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Nespresso Vertuo Next Coffee and Espresso Maker',
-    imageUrl: 'https://m.media-amazon.com/images/I/41xRnVKgFLL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71DDe-wo6wL._AC_UL320_.jpg',
   },
   {
     id: 'em-002',
@@ -112,7 +112,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=DeLonghi+Stilosa+Espresso+Machine&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'DeLonghi Stilosa Espresso Machine',
-    imageUrl: 'https://m.media-amazon.com/images/I/41SPsHWYt+L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81c3ItE+jyL._AC_UL320_.jpg',
   },
   {
     id: 'em-003',
@@ -126,7 +126,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=DeLonghi+Magnifica+Evo+with+Auto+Milk+Frother&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'DeLonghi Magnifica Evo with Auto Milk Frother',
-    imageUrl: 'https://m.media-amazon.com/images/I/41P3HgxnqOL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71PhUHWoYRL._AC_UL320_.jpg',
   },
   {
     id: 'em-004',
@@ -140,7 +140,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Breville+Bambino+Espresso+Machine&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Breville Bambino Espresso Machine',
-    imageUrl: 'https://m.media-amazon.com/images/I/41c4o0VvF5L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61egYXcL9OL._AC_UL320_.jpg',
   },
   {
     id: 'em-005',
@@ -154,7 +154,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Breville+Barista+Express&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Breville Barista Express',
-    imageUrl: 'https://m.media-amazon.com/images/I/41VU2aFGXuL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg',
   },
   // ROBOT VACUUMS
   {
@@ -169,7 +169,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Eufy+Robot+Vacuum+C28&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Eufy Robot Vacuum C28',
-    imageUrl: 'https://m.media-amazon.com/images/I/41xqTLCOKYL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61g0icC5L5L._AC_SL300_.jpg',
   },
   {
     id: 'rv-002',
@@ -183,7 +183,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Shark+AI+Ultra+Robot+Vacuum&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Shark AI Ultra Robot Vacuum',
-    imageUrl: 'https://m.media-amazon.com/images/I/41Yxz0BTOJL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71aVw0Zpt6L._AC_SL300_.jpg',
   },
   {
     id: 'rv-003',
@@ -197,7 +197,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Dreame+X60+Max+Ultra+Robot+Vacuum&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Dreame X60 Max Ultra Robot Vacuum',
-    imageUrl: 'https://m.media-amazon.com/images/I/51vHFXITL8L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71aVw0Zpt6L._AC_SL300_.jpg',
   },
   {
     id: 'rv-004',
@@ -211,7 +211,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Ecovacs+Deebot+X11+Robot+Vacuum+and+Mop&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Ecovacs Deebot X11 Robot Vacuum and Mop',
-    imageUrl: 'https://m.media-amazon.com/images/I/41KKdZJWMqL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71VvMSw8lzL._AC_SL300_.jpg',
   },
   {
     id: 'rv-005',
@@ -225,7 +225,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=iRobot+Roomba+Combo+Vacuum+and+Mop&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'iRobot Roomba Combo Vacuum and Mop',
-    imageUrl: 'https://m.media-amazon.com/images/I/41b7jBVYBkL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81HwVwvNo4L._AC_SL300_.jpg',
   },
   // AIR PURIFIERS
   {
@@ -240,7 +240,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Blueair+Blue+Pure+311i+Max+Air+Purifier&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Blueair Blue Pure 311i Max Air Purifier',
-    imageUrl: 'https://m.media-amazon.com/images/I/41eXrDBLv5L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/717L1lcSQCL._AC_SL300_.jpg',
   },
   {
     id: 'ap-002',
@@ -254,7 +254,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Coway+Airmega+True+HEPA+Purifier&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Coway Airmega True HEPA Purifier',
-    imageUrl: 'https://m.media-amazon.com/images/I/41c9BkKOnaL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61Cgh4ol4oL._AC_SL300_.jpg',
   },
   {
     id: 'ap-003',
@@ -268,7 +268,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Levoit+Core+400S+Smart+Air+Purifier&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Levoit Core 400S Smart Air Purifier',
-    imageUrl: 'https://m.media-amazon.com/images/I/41kDCHR1xVL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71xUzGIF+BL._AC_SL300_.jpg',
   },
   {
     id: 'ap-004',
@@ -282,7 +282,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Winix+5500-2+HEPA+Air+Purifier+with+PlasmaWave&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Winix 5500-2 HEPA Air Purifier with PlasmaWave',
-    imageUrl: 'https://m.media-amazon.com/images/I/41lZhVwQpSL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81CED7g9a-L._AC_SL300_.jpg',
   },
   {
     id: 'ap-005',
@@ -296,7 +296,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=2-Pack+HEPA+Air+Purifier+for+Home+100+Sq+Ft&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: '2-Pack HEPA Air Purifier for Home 100 Sq Ft',
-    imageUrl: 'https://m.media-amazon.com/images/I/41ZN8FlG0RL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61aae14eU1L._AC_SL300_.jpg',
   },
   // STANDING DESKS
   {
@@ -311,7 +311,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=FlexiSpot+E7+Electric+Standing+Desk+48+Inch&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'FlexiSpot E7 Electric Standing Desk 48 Inch',
-    imageUrl: 'https://m.media-amazon.com/images/I/41rkM5Md8pL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61ZR4GuC3FL._AC_UL320_.jpg',
   },
   {
     id: 'sd-002',
@@ -325,7 +325,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=FlexiSpot+EN1+Electric+Standing+Desk&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'FlexiSpot EN1 Electric Standing Desk',
-    imageUrl: 'https://m.media-amazon.com/images/I/41y0j3z8YqL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61ZR4GuC3FL._AC_UL320_.jpg',
   },
   {
     id: 'sd-003',
@@ -339,7 +339,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=FlexiSpot+Monitor+Arm&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'FlexiSpot Monitor Arm',
-    imageUrl: 'https://m.media-amazon.com/images/I/41Nx0HjFt5L._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81UbLBUEhlL._AC_SL300_.jpg',
   },
   {
     id: 'sd-004',
@@ -353,7 +353,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Fezibo+Electric+Standing+Desk+48x24&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Fezibo Electric Standing Desk 48x24',
-    imageUrl: 'https://m.media-amazon.com/images/I/41aM5YvHRRL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61ZR4GuC3FL._AC_UL320_.jpg',
   },
   {
     id: 'sd-005',
@@ -367,7 +367,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=ErGear+Electric+Standing+Desk+with+Drawer&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'ErGear Electric Standing Desk with Drawer',
-    imageUrl: 'https://m.media-amazon.com/images/I/41ZvFYDvPYL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61ZR4GuC3FL._AC_UL320_.jpg',
   },
   // SECURITY CAMERAS
   {
@@ -382,7 +382,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Blink+Outdoor+4+Three+Camera+System&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Blink Outdoor 4 Three Camera System',
-    imageUrl: 'https://m.media-amazon.com/images/I/41oLgM5g5FL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/31oSNXtjjyL._AC_SL300_.jpg',
   },
   {
     id: 'sc-002',
@@ -396,7 +396,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Ring+Battery+Doorbell+with+Indoor+Cam&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Ring Battery Doorbell with Indoor Cam',
-    imageUrl: 'https://m.media-amazon.com/images/I/41qGdkP8dDL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61xb7m6EMpL._AC_SL300_.jpg',
   },
   {
     id: 'sc-003',
@@ -410,7 +410,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Aqara+2K+Indoor+Security+Camera+E1&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Aqara 2K Indoor Security Camera E1',
-    imageUrl: 'https://m.media-amazon.com/images/I/41Y9J6WiJnL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/6134T2Cs0hL._AC_SL300_.jpg',
   },
   {
     id: 'sc-004',
@@ -424,7 +424,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=eufy+Security+S220+SoloCam+4-Pack&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'eufy Security S220 SoloCam 4-Pack',
-    imageUrl: 'https://m.media-amazon.com/images/I/41fZ3mK5jdL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71oSxJycVlL._AC_SL300_.jpg',
   },
   {
     id: 'sc-005',
@@ -438,6 +438,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Blink+Wired+Floodlight+Cam&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Blink Wired Floodlight Cam',
-    imageUrl: 'https://m.media-amazon.com/images/I/41mM8gQPWkL._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/41ez-CE0WAL._AC_SL300_.jpg',
   },
 ];
