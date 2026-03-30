@@ -15,6 +15,7 @@ interface DealCardProps {
   timeLeft: string;
   imageAlt: string;
   imageUrl: string;
+  coupon?: string;
 }
 
 const categoryIcons: Record<string, string> = {
@@ -46,6 +47,7 @@ export default function DealCard({
   timeLeft,
   imageAlt,
   imageUrl,
+  coupon,
 }: DealCardProps) {
   const [imgError, setImgError] = useState(false);
   const icon = categoryIcons[category] || '\u{1F4E6}';
@@ -88,6 +90,11 @@ export default function DealCard({
           <span className="text-sm font-bold text-gray-900">${dealPrice.toFixed(2)}</span>
           <span className="text-[10px] text-gray-400 line-through">${originalPrice.toFixed(2)}</span>
         </div>
+        {coupon && (
+          <div className="bg-green-50 border border-green-200 rounded px-1 py-0.5 mb-1">
+            <span className="text-[9px] font-semibold text-green-700">{coupon}</span>
+          </div>
+        )}
         <div className="flex items-center justify-between">
           <span className="text-[9px] text-gray-400">{source}</span>
           <span className="text-[9px] text-gray-500">{timeLeft}</span>
