@@ -63,6 +63,10 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
           'priceValidUntil': priceValidUntil,
           'shippingDetails': {
             '@type': 'OfferShippingDetails',
+            'shippingDestination': {
+              '@type': 'DefinedRegion',
+              'addressCountry': 'US'
+            },
             'shippingRate': {
               '@type': 'MonetaryAmount',
               'value': 0,
