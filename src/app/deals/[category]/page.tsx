@@ -22,6 +22,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: cat.name + " Deals — Save Today | The Kitchen Pick",
     description: cat.description,
     alternates: { canonical: "https://www.thekitchenpick.com/deals/" + slug },
+    openGraph: {
+      title: cat.name + " Deals — Save Today | The Kitchen Pick",
+      description: cat.description,
+      type: 'website',
+      url: "https://www.thekitchenpick.com/deals/" + slug,
+      images: [
+        {
+          url: 'https://www.thekitchenpick.com/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'The Kitchen Pick',
+        },
+      ],
+      locale: 'en_US',
+      siteName: 'The Kitchen Pick',
+    },
   };
 }
 

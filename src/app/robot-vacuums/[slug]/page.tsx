@@ -44,6 +44,17 @@ export async function generateMetadata(
       description: article.description,
       type: "article",
       url: `https://www.thekitchenpick.com/robot-vacuums/${slug}`,
+
+    images: [
+      {
+        url: 'https://www.thekitchenpick.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Kitchen Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Kitchen Pick',
     },
     alternates: {
       canonical: `https://www.thekitchenpick.com/robot-vacuums/${slug}`,

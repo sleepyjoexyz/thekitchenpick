@@ -11,6 +11,17 @@ export const metadata: Metadata = {
       description: "Data-driven comparison of climate control devices with specs, prices, and ratings.",
       url: "https://www.thekitchenpick.com/climate-control",
       type: "website",
+
+    images: [
+      {
+        url: 'https://www.thekitchenpick.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Kitchen Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Kitchen Pick',
     },
 };
 

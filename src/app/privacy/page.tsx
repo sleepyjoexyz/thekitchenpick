@@ -7,6 +7,22 @@ export const metadata: Metadata = {
     alternates: {
       canonical: "https://www.thekitchenpick.com/privacy",
     },
+  openGraph: {
+    title: 'Privacy Policy | The Kitchen Pick',
+    description: 'Privacy policy for The Kitchen Pick. Learn how we protect your information.',
+    type: 'website',
+    url: 'https://www.thekitchenpick.com/privacy',
+    images: [
+      {
+        url: 'https://www.thekitchenpick.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Kitchen Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Kitchen Pick',
+  },
 };
 
 export default function PrivacyPolicy() {

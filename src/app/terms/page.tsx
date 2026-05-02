@@ -7,6 +7,22 @@ export const metadata: Metadata = {
     alternates: {
       canonical: "https://www.thekitchenpick.com/terms",
     },
+  openGraph: {
+    title: 'Terms of Service | The Kitchen Pick',
+    description: 'Terms of Service for The Kitchen Pick. Read our terms and conditions.',
+    type: 'website',
+    url: 'https://www.thekitchenpick.com/terms',
+    images: [
+      {
+        url: 'https://www.thekitchenpick.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Kitchen Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Kitchen Pick',
+  },
 };
 
 export default function TermsOfService() {
