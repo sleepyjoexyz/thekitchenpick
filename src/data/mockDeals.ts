@@ -147,7 +147,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0F4QK2T8Y?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'XIXUBX 20Bar Espresso Machine, Compact Espresso',
-    imageUrl: 'https://m.media-amazon.com/images/I/615-UeDWIL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/615-%2BUeDWIL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -252,7 +252,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FNDG2TNK?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'KNKA Air Purifier for Home Bedroom Large Room Up',
-    imageUrl: 'https://m.media-amazon.com/images/I/71eM07-OB6L._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71eM07%2BOB6L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -327,7 +327,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0G3X3X5C2?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'DUMOS 48 Inch Electric Standing Desk Height',
-    imageUrl: 'https://m.media-amazon.com/images/I/71doVt-dTOL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71doVt%2BdTOL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -372,7 +372,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DT3Y1X96?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Huuger 55 x 28 Large Electric Standing Desk',
-    imageUrl: 'https://m.media-amazon.com/images/I/81oIr0Y-C1L._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81oIr0Y%2BC1L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -432,7 +432,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FVLJLWM2?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: '2K Cameras for Home Security Indoor Outdoor for',
-    imageUrl: 'https://m.media-amazon.com/images/I/71qx1-3UedL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71qx1%2B3UedL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
