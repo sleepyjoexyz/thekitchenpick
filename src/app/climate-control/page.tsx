@@ -5,10 +5,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { climateDevices } from "@/data/climate-control";
+import { climateControlArticles } from "@/data/climate-control-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const climateFinderSteps: FinderStep[] = [
   {
@@ -368,97 +370,12 @@ export default function ClimateControlContent() {
         </div>
       </section>
 
-      {/* Featured Articles */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Expert Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              <Link
-                href="/climate-control/portable-ac-buying-guide"
-                className="hover:text-blue-600"
-              >
-                Portable AC Buying Guide
-              </Link>
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Learn how portable ACs work, how to size BTU for your room, single vs dual hose
-              efficiency, and what matters most when choosing one.
-            </p>
-            <Link
-              href="/climate-control/portable-ac-buying-guide"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              Read guide →
-            </Link>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              <Link
-                href="/climate-control/best-space-heaters-for-large-rooms"
-                className="hover:text-blue-600"
-              >
-                Best Space Heaters for Large Rooms
-              </Link>
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Discover which space heaters work for 300+ sq ft rooms, ceramic vs oil-filled
-              vs infrared, and how to heat large spaces safely.
-            </p>
-            <Link
-              href="/climate-control/best-space-heaters-for-large-rooms"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              Read guide →
-            </Link>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              <Link
-                href="/climate-control/portable-ac-vs-window-ac"
-                className="hover:text-blue-600"
-              >
-                Portable AC vs Window AC
-              </Link>
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Compare efficiency, installation, noise, and restrictions. Find out which is
-              truly better and when portable is your only option.
-            </p>
-            <Link
-              href="/climate-control/portable-ac-vs-window-ac"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              Read guide →
-            </Link>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              <Link
-                href="/climate-control/space-heater-energy-costs"
-                className="hover:text-blue-600"
-              >
-                Space Heater Energy Costs
-              </Link>
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Calculate the true electricity cost of running a space heater, compare to central
-              heating, and learn which types use the least energy.
-            </p>
-            <Link
-              href="/climate-control/space-heater-energy-costs"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              Read guide →
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Featured Articles — dynamic, links every article in climate-control-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/climate-control"
+        categoryName="Climate Control"
+        articles={climateControlArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">

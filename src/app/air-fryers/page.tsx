@@ -6,10 +6,12 @@ import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { airFryers } from "@/data/air-fryers";
 import { AirFryer } from "@/data/air-fryers";
+import { airFryerArticles } from "@/data/air-fryer-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const airFryerFinderSteps: FinderStep[] = [
   {
@@ -361,73 +363,12 @@ export default function AirFryersContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Air Fryer Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/air-fryers/basket-vs-oven-air-fryer">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Basket vs Oven-Style Air Fryers
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the trade-offs between traditional basket-style and
-                larger oven-style units. Which design is right for you?
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-fryers/best-air-fryers-under-100">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Air Fryers Under $100
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Quality air fryers don't have to be expensive. Compare our top
-                budget picks and learn what you get at this price point.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-fryers/dual-zone-air-fryers-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Dual Zone Air Fryers: Are Two Baskets Better?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand how dual zone technology works and whether cooking
-                different foods simultaneously is worth the extra cost.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-fryers/air-fryer-vs-convection-oven">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Air Fryer vs Convection Oven
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                The surprising truth: air fryers and convection ovens use the
-                same technology. Here's what actually separates them.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in air-fryer-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/air-fryers"
+        categoryName="Air Fryer"
+        articles={airFryerArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

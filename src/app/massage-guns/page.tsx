@@ -5,10 +5,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { massageGuns, MassageGun } from "@/data/massage-guns";
+import { massageGunArticles } from "@/data/massage-gun-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const massageGunFinderSteps: FinderStep[] = [
   {
@@ -353,73 +355,12 @@ export default function MassageGunsContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Massage Gun Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/massage-guns/theragun-vs-hypervolt">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Theragun vs Hypervolt: Which Wins?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Head-to-head comparison of the two leading brands. Specs, grip,
-                noise, app features, and price breakdown.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/massage-guns/best-massage-guns-under-200">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Massage Guns Under $200
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Top options in the budget tier. Compare stall force, battery
-                life, and value at this price point.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/massage-guns/massage-gun-stall-force-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Stall Force Explained: How Much Do You Need?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                What stall force means, why it matters more than speed, and the
-                right amount for your body.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/massage-guns/mini-vs-full-size-massage-gun">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Mini vs Full-Size: When Small Is Enough
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Trade-offs between portable and full-size models. Stall force,
-                battery, and who benefits from each.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in massage-gun-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/massage-guns"
+        categoryName="Massage Gun"
+        articles={massageGunArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

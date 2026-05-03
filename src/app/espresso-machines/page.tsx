@@ -7,11 +7,13 @@ import ComparisonTable from "@/components/ComparisonTable";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { espressoMachines } from "@/data/espresso-machines";
+import { espressoMachineArticles } from "@/data/espresso-machine-articles";
 import { Product } from "@/lib/types";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const espressoFinderSteps: FinderStep[] = [
   {
@@ -179,73 +181,12 @@ export default function EspressoMachinesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Espresso Machine Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/espresso-machines/semi-automatic-vs-super-automatic">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Semi-Automatic vs Super-Automatic
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the difference between manual control and full
-                automation. Which type is right for you?
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/espresso-machines/best-espresso-machines-under-500">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Machines Under $500
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Quality espresso doesn't have to be expensive. Compare our top
-                budget picks in detail.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/espresso-machines/do-you-need-a-built-in-grinder">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Built-In Grinder: Necessary?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Integrated grinders save space but come with tradeoffs. Should
-                you buy one?
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/espresso-machines/single-boiler-vs-dual-boiler">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Single vs Dual Boiler
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Boiler types affect temperature control and workflow. Learn
-                which suits your needs.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in espresso-machine-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/espresso-machines"
+        categoryName="Espresso Machine"
+        articles={espressoMachineArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

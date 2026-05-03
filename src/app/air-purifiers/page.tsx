@@ -5,10 +5,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { airPurifiers } from "@/data/air-purifiers";
+import { airPurifierArticles } from "@/data/air-purifier-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const airPurifierFinderSteps: FinderStep[] = [
   {
@@ -359,73 +361,12 @@ export default function AirPurifiersContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Air Purifier Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/air-purifiers/hepa-filter-types-explained">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                HEPA Filter Types Explained
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Learn the difference between H11, H13, and H14 HEPA filters and
-                how they affect particle capture rates.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/best-air-purifiers-for-allergies">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Purifiers for Allergies & Asthma
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Identify key allergens and find the best purifiers for allergy
-                sufferers and asthma management.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/air-purifier-running-costs">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                True Cost of Air Purifier Ownership
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Compare upfront, filter, energy, and maintenance costs across
-                budget and premium models.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/air-purifiers/do-air-purifiers-help-with-smoke">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Air Purifiers & Wildfire Smoke
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand smoke particle sizes and which purifiers actually
-                help during wildfire season.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in air-purifier-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/air-purifiers"
+        categoryName="Air Purifier"
+        articles={airPurifierArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

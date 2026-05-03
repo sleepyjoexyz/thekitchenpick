@@ -6,10 +6,11 @@ import ProductFinder from "@/components/ProductFinder";
 import { securityCameras } from "@/data/security-cameras";
 import { SecurityCamera } from "@/data/security-cameras";
 import Link from "next/link";
-import { getAllSecurityCameraArticleSlugs } from "@/data/security-camera-articles";
+import { securityCameraArticles } from "@/data/security-camera-articles";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const securityCameraFinderSteps: FinderStep[] = [
   {
@@ -92,8 +93,6 @@ export default function SecurityCamerasContent() {
   const [powerType, setPowerType] = useState<string>("all");
   const [resolution, setResolution] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
-  const articles = getAllSecurityCameraArticleSlugs();
-
   const filteredProducts = useMemo(() => {
     let result = [...securityCameras];
 
@@ -358,42 +357,12 @@ export default function SecurityCamerasContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Security Camera Guides & Articles
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {articles.map((slug) => {
-            const slugToTitle: Record<string, string> = {
-              "wired-vs-battery-security-cameras":
-                "Wired vs Battery Security Cameras",
-              "security-cameras-without-subscription":
-                "Best Security Cameras Without Monthly Fees",
-              "indoor-vs-outdoor-security-cameras":
-                "Indoor vs Outdoor Security Cameras",
-              "security-camera-resolution-guide":
-                "1080p vs 2K vs 4K Security Cameras",
-            };
-            return (
-              <div
-                key={slug}
-                className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {slugToTitle[slug] || slug}
-                </h3>
-                <Link
-                  href={`/security-cameras/${slug}`}
-                  className="text-blue-600 hover:underline font-medium"
-                >
-                  Read Article →
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in security-camera-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/security-cameras"
+        categoryName="Security Camera"
+        articles={securityCameraArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">

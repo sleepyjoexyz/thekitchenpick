@@ -6,10 +6,12 @@ import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { robotVacuums } from "@/data/robot-vacuums";
 import { RobotVacuum } from "@/data/robot-vacuums";
+import { robotVacuumArticles } from "@/data/robot-vacuum-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const robotVacuumFinderSteps: FinderStep[] = [
   {
@@ -270,73 +272,12 @@ export default function RobotVacuumsContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Robot Vacuum Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/robot-vacuums/lidar-vs-camera-navigation">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                LiDAR vs Camera Navigation
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the differences between LiDAR, camera, and gyroscope
-                navigation systems and which works best for your home.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/robot-vacuums/best-robot-vacuums-under-500">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Under $500
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Compare budget and mid-range robot vacuums with honest
-                trade-off analysis for smart shopping.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/robot-vacuums/self-emptying-robot-vacuums-worth-it">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Self-Emptying: Worth It?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Analyze whether self-emptying bases justify the $100-$300
-                premium cost with honest ROI analysis.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/robot-vacuums/robot-vacuum-mop-combo-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Vacuum-Mop Combos: Do They Work?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Evaluate whether robot vacuum-mop combos effectively clean or if
-                they're a gimmick.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in robot-vacuum-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/robot-vacuums"
+        categoryName="Robot Vacuum"
+        articles={robotVacuumArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

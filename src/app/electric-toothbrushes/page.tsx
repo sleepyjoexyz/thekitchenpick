@@ -5,10 +5,12 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
 import { electricToothbrushes } from "@/data/electric-toothbrushes";
+import { electricToothbrushArticles } from "@/data/electric-toothbrush-articles";
 import Link from "next/link";
 import { BreadcrumbSchema, ProductListSchema } from "@/components/JsonLd";
 import type { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 const toothbrushFinderSteps: FinderStep[] = [
   {
@@ -369,73 +371,12 @@ export default function ElectricToothbrushesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Electric Toothbrush Guides
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/electric-toothbrushes/sonic-vs-oscillating-toothbrush">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Sonic vs Oscillating: Which Cleans Better?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Compare the two main electric toothbrush technologies. Learn how
-                each works, clinical evidence, and which is gentler on gums.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/electric-toothbrushes/best-electric-toothbrushes-under-100">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Electric Toothbrushes Under $100
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Find great electric toothbrushes on a budget. Compare top picks
-                and see what features actually matter at this price point.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/electric-toothbrushes/electric-toothbrush-replacement-head-costs">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                The Hidden Cost: Replacement Heads
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Calculate the true cost of ownership including replacement heads.
-                See how annual costs differ by brand and model.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/electric-toothbrushes/do-you-need-a-smart-toothbrush">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Smart Toothbrushes: Worth It or Gimmick?
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                What do app-connected toothbrushes really do? Learn which smart
-                features matter and who should upgrade.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in electric-toothbrush-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/electric-toothbrushes"
+        categoryName="Electric Toothbrush"
+        articles={electricToothbrushArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
