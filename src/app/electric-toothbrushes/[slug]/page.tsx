@@ -39,7 +39,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${article.title} | The Kitchen Pick`,
+    title: article.title,
     description: article.description,
     openGraph: {
       title: article.title,

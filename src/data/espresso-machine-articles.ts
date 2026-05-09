@@ -12,7 +12,7 @@ export const espressoMachineArticles: Record<string, EspressoMachineArticle> = {
   "semi-automatic-vs-super-automatic": {
     slug: "semi-automatic-vs-super-automatic",
     title:
-      "Semi-Automatic vs Super-Automatic Espresso Machines: Which Type Is Right for You?",
+      "Semi-Automatic vs Super-Automatic Espresso Machines",
     description:
       "Understand the key differences between semi-automatic and super-automatic espresso machines and choose the right one for your needs.",
     category: "espresso-machines",
@@ -1305,7 +1305,7 @@ Don't overcomplicate it. Buy a decent machine, invest in a grinder, learn the fu
   },
   "breville-barista-express-vs-delonghi-dedica-2026": {
     slug: "breville-barista-express-vs-delonghi-dedica-2026",
-    title: "Breville Barista Express vs De\'Longhi Dedica EC685:",
+    title: "Breville Barista Express vs De\'Longhi Dedica EC685",
     description: "Compare the Breville Barista Express and DeLonghi Dedica for home espresso. Covers grinder quality, shot consistency, milk steaming, size, and learning curve.",
     category: "espresso-machines",
     content: `## Two Paths Into Home Espresso
@@ -1366,7 +1366,7 @@ Both machines make real espresso that beats any pod machine. The Barista Express
   },
   "best-espresso-machine-iced-coffee-summer-2026": {
     slug: "best-espresso-machine-iced-coffee-summer-2026",
-    title: "Best Espresso Machines for Iced Coffee and Cold Drinks (Summer 2026)",
+    title: "Best Espresso Machines for Iced Coffee 2026",
     description: "Make cafe-quality iced lattes, cold espresso tonics, and affogatos at home. These espresso machines excel at the concentrated shots that summer cold drinks demand.",
     category: "espresso-machines",
     content: `## Why Espresso Machines Make Better Iced Coffee

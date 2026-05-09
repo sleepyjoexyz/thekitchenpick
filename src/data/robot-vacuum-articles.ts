@@ -526,7 +526,7 @@ If you're expecting professional mopping quality, you'll be disappointed. If you
 
 For most people, buying a dedicated robot vacuum and keeping a handheld mop separately gives better results and more flexibility than a combo.`,
   },
-  "best-robot-vacuum-for-pet-hair": { slug: "best-robot-vacuum-for-pet-hair", title: "Best Robot Vacuum for Pet Hair 2026: Roomba vs Roborock vs Ecovacs Compared", description: "Compare Roomba j9+, Roborock S8 MaxV Ultra, and Ecovacs X2 Omni for pet hair. Suction power, tangle-free brushes, and which handles shedding best.", category: "robot-vacuums", content: `## The Pet Hair Problem
+  "best-robot-vacuum-for-pet-hair": { slug: "best-robot-vacuum-for-pet-hair", title: "Best Robot Vacuum for Pet Hair 2026", description: "Compare Roomba j9+, Roborock S8 MaxV Ultra, and Ecovacs X2 Omni for pet hair. Suction power, tangle-free brushes, and which handles shedding best.", category: "robot-vacuums", content: `## The Pet Hair Problem
 
 If you have dogs or cats, you already know: pet hair gets everywhere. It weaves into carpet fibers, collects under furniture, and seems to regenerate faster than you can vacuum. A good robot vacuum can handle daily maintenance so you are not running a full-size vacuum every day — but not all robot vacuums handle pet hair equally.
 
@@ -854,7 +854,7 @@ Yes, but pet hair requires more frequent maintenance. Clean brushes twice weekly
   },
   "robot-vacuum-summer-maintenance-tips-2026": {
     slug: "robot-vacuum-summer-maintenance-tips-2026",
-    title: "Robot Vacuum Summer Maintenance: Dealing with Sand,",
+    title: "Robot Vacuum Summer Maintenance: Sand & Pollen",
     description:
       "Master summer robot vacuum maintenance. Learn seasonal challenges like sand and pollen tracking, filter replacement frequency, brush cleaning, and optimal scheduling for summer.",
     category: "robot-vacuums",
@@ -1149,7 +1149,7 @@ Start the summer with a fresh filter replacement, commit to weekly maintenance, 
   },
   "robot-vacuum-stuck-under-furniture": {
     slug: "robot-vacuum-stuck-under-furniture",
-    title: "Robot Vacuum Keeps Getting Stuck Under Furniture — How to",
+    title: "Robot Vacuum Stuck Under Furniture? How to Fix It",
     description:
       "Robot wedged under couch or bed? Learn clearance heights, furniture risers, virtual walls, and which robots avoid entrapment.",
     category: "robot-vacuums",

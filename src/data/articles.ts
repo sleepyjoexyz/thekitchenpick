@@ -10,7 +10,7 @@ export const articles: Record<string, Article> = {
   "semi-automatic-vs-super-automatic": {
     slug: "semi-automatic-vs-super-automatic",
     title:
-      "Semi-Automatic vs Super-Automatic Espresso Machines: Which Type Is Right for You?",
+      "Semi-Automatic vs Super-Automatic Espresso Machines",
     description:
       "Understand the key differences between semi-automatic and super-automatic espresso machines and choose the right one for your needs.",
     category: "espresso-machines",
@@ -197,7 +197,7 @@ Built-in grinders are convenient but compromise grind control and longevity. The
 
   "single-boiler-vs-dual-boiler": {
     slug: "single-boiler-vs-dual-boiler",
-    title: "Single Boiler vs Dual Boiler Espresso Machines: What's the Difference?",
+    title: "Single Boiler vs Dual Boiler Espresso Machines",
     description:
       "Understand how single boiler and dual boiler systems affect espresso machine performance, temperature control, and workflow.",
     category: "espresso-machines",
@@ -675,7 +675,7 @@ A standing desk is a tool that requires proper technique. The height must be opt
 
   "standing-desk-stability-test": {
     slug: "standing-desk-stability-test",
-    title: "Standing Desk Stability: Why Wobble Matters More Than You Think",
+    title: "Standing Desk Stability: Why Wobble Matters",
     description:
       "Understand standing desk wobble. Learn what causes it, why it matters for health and longevity, and which desk designs are most stable at maximum height.",
     category: "standing-desks",

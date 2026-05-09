@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Best Climate Control Devices Compared — 2025-2026 | The Kitchen Pick",
+    title: "Best Climate Control Devices Compared | The Kitchen Pick",
     description: "Compare humidifiers, dehumidifiers, and portable heaters. Find the best climate control device for your home and comfort needs.",
     alternates: {
       canonical: "https://www.thekitchenpick.com/climate-control",

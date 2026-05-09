@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Best Electric Toothbrushes Compared — 2025-2026 | The Kitchen Pick",
+    title: "Best Electric Toothbrushes Compared | The Kitchen Pick",
     description: "Compare electric toothbrushes with brush type, vibration, smart features, and battery life. Find the best electric toothbrush for your oral health.",
     alternates: {
       canonical: "https://www.thekitchenpick.com/electric-toothbrushes",

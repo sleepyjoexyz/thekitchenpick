@@ -214,7 +214,7 @@ The best air purifier for allergies combines three factors: appropriate CADR for
 
   "air-purifier-running-costs": {
     slug: "air-purifier-running-costs",
-    title: "The True Cost of Owning an Air Purifier: Filters, Energy,",
+    title: "True Cost of an Air Purifier: Filters & Energy",
     description:
       "Compare upfront, filter replacement, energy consumption, and maintenance costs across budget and premium air purifier models.",
     category: "air-purifiers",
@@ -701,7 +701,7 @@ Choose HEPA + activated carbon over anything else. The science is clear, and you
 
   "best-air-purifier-spring-allergies-2026": {
     slug: "best-air-purifier-spring-allergies-2026",
-    title: "Best Air Purifier for Spring Allergies 2026: HEPA Filters That Actually Work",
+    title: "Best Air Purifier for Spring Allergies 2026",
     description:
       "Spring allergy season hits hard. Find the best HEPA air purifier that targets pollen, CADR ratings, and allergen removal to breathe easier.",
     category: "air-purifiers",

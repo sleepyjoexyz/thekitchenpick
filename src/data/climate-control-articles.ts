@@ -9,7 +9,7 @@ export interface ClimateControlArticle {
 export const climateControlArticles: Record<string, ClimateControlArticle> = {
   "portable-ac-buying-guide": {
     slug: "portable-ac-buying-guide",
-    title: "Portable AC Buying Guide: BTU, Single Hose vs Dual Hose,",
+    title: "Portable AC Buying Guide: BTU & Hose Options",
     description:
       "Learn how portable ACs work, how to size BTU for your room, the difference between single and dual hose efficiency, and what matters most when choosing one.",
     category: "climate-control",

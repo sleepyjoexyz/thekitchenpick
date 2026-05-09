@@ -592,7 +592,7 @@ Don't be swayed by marketing claims about air fryer "technology." The real value
   },
   "best-air-fryer-for-family": {
     slug: "best-air-fryer-for-family",
-    title: "Best Air Fryer for a Family of 4: Capacity, Features, and Value Compared",
+    title: "Best Air Fryer for a Family of 4: Capacity & Value",
     description: "Find the best air fryer for families. We compare capacity, features, and value across top models for households of 4 or more.",
     category: "air-fryers",
     content: `## Why Capacity Matters for Families
@@ -836,7 +836,7 @@ Yes, 350 degrees F for 5-8 minutes. Often better than microwave for fried items 
   },
   "best-air-fryer-recipes-for-summer-2026": {
     slug: "best-air-fryer-recipes-for-summer-2026",
-    title: "Best Air Fryer Recipes for Summer 2026: Quick Meals Without Heating Your Kitchen",
+    title: "Best Summer Air Fryer Recipes 2026: Stay Cool Cooking",
     description:
       "Discover the best air fryer recipes for summer 2026. Learn why air fryers are superior to ovens in hot weather, plus 10 quick summer recipes with exact times and temperatures.",
     category: "air-fryers",

@@ -755,7 +755,7 @@ Set phone reminders, use a desk app, or listen to body cues (restlessness or fat
   },
   "standing-desk-home-office-summer-setup-2026": {
     slug: "standing-desk-home-office-summer-setup-2026",
-    title: "Standing Desk Home Office Setup for Summer 2026: Beat the",
+    title: "Standing Desk Home Office Setup for Summer 2026",
     description:
       "Optimize your standing desk setup for summer 2026. Learn about desk fan placement, monitor glare from summer sun, anti-fatigue mat selection, and optimal sit-stand schedules during heat.",
     category: "standing-desks",
@@ -1037,7 +1037,7 @@ Most importantly: listen to your body. Standing 45 minutes in 70°F is normal. S
   },
   "standing-desk-vs-treadmill-desk-2026": {
     slug: "standing-desk-vs-treadmill-desk-2026",
-    title: "Standing Desk vs Treadmill Desk 2026: Which Is Better for",
+    title: "Standing Desk vs Treadmill Desk: Which Is Better?",
     description:
       "Compare standing and treadmill desks for work-from-home health benefits. Learn about calorie burn, posture, cost, and which active desk fits your routine.",
     category: "standing-desks",

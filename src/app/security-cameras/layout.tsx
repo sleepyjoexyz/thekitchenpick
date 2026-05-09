@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Best Security Cameras Compared — 2025-2026 | The Kitchen Pick",
+    title: "Best Security Cameras Compared | The Kitchen Pick",
     description: "Compare security cameras for indoor and outdoor use. Detailed specs on resolution, night vision, smart features, and pricing to protect your home.",
     alternates: {
       canonical: "https://www.thekitchenpick.com/security-cameras",

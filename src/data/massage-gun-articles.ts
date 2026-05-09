@@ -405,7 +405,7 @@ Choose mini if: You travel frequently, need portability first, want light recove
 
   "percussion-vs-vibration-massage-guns": {
     slug: "percussion-vs-vibration-massage-guns",
-    title: "Percussion vs Vibration Massage Guns: Which Technology Is Better?",
+    title: "Percussion vs Vibration Massage Guns: Which Wins?",
     description:
       "Compare percussion and vibration massage gun technologies. Understand how each works, which muscles they target best, and which type suits your recovery goals.",
     category: "massage-guns",
@@ -537,7 +537,7 @@ Percussion is more effective and dominates the market. Vibration is gentler but 
 
   "best-massage-guns-under-100": {
     slug: "best-massage-guns-under-100",
-    title: "Best Massage Guns Under $100: Budget Picks That Actually Work",
+    title: "Best Massage Guns Under $100: Budget Picks",
     description:
       "Find the best massage guns under $100. Compare affordable models and discover which ones deliver real recovery despite the low price.",
     category: "massage-guns",
