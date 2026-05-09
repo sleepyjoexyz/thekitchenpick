@@ -63,9 +63,15 @@ export function ArticleSchema({ title, description, url, datePublished, dateModi
 }
 
 export function ProductListSchema({ products, categoryName, categoryUrl }: {
-  products: { name: string; brand: string; price: number; rating: number; description: string }[];
+  products: { name: string; brand: string; price: number; rating: number; description: string; imageUrl?: string }[];
   categoryName: string; categoryUrl: string;
 }) {
+  // priceValidUntil = tomorrow (matches DealSchema convention; Google Merchant listings expects a forward date)
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const priceValidUntil = tomorrow.toISOString().split('T')[0];
+  const FALLBACK_IMAGE = "https://www.thekitchenpick.com/og-image.png";
+
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -79,9 +85,34 @@ export function ProductListSchema({ products, categoryName, categoryUrl }: {
         "item": {
           "@type": "Product",
           "name": `${p.brand} ${p.name}`,
+          "image": p.imageUrl || FALLBACK_IMAGE,
           "brand": { "@type": "Brand", "name": p.brand },
           "description": p.description || `${p.brand} ${p.name}`,
-          "offers": { "@type": "Offer", "price": p.price, "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+          "offers": {
+            "@type": "Offer",
+            "price": p.price,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": priceValidUntil,
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "US" },
+              "shippingRate": { "@type": "MonetaryAmount", "value": 0, "currency": "USD" },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
+                "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 5, "unitCode": "DAY" }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "US",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 30,
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn"
+            }
+          },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": p.rating, "bestRating": 5, "worstRating": 1, "ratingCount": 1 }
         }
       }))
