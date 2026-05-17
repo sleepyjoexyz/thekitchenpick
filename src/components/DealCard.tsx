@@ -6,17 +6,11 @@ interface DealCardProps {
   id: string;
   title: string;
   category: string;
-  // Legacy price fields — no longer displayed (Amazon Associates Operating
-  // Agreement requires live-API prices with timestamps; static prices banned).
-  originalPrice?: number;
-  dealPrice?: number;
-  percentOff?: number;
   source: string;
-  sourceUrl?: string;
   amazonUrl: string;
   timeLeft?: string;
   imageAlt: string;
-  imageUrl: string;
+  imageUrl?: string;
   coupon?: string;
 }
 
