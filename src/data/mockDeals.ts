@@ -19,7 +19,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08R6KMBQT?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Instant Pot 4QT Vortex',
-    imageUrl: 'https://m.media-amazon.com/images/I/71XyGxT1ITL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -30,7 +29,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CNY1F31S?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Chefman Air Fryer -',
-    imageUrl: 'https://m.media-amazon.com/images/I/71Ld+1SBc5L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -41,7 +39,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CKP6Y6KB?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Typhur Dome 2 AI',
-    imageUrl: 'https://m.media-amazon.com/images/I/6154mct-b7L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -52,7 +49,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08DL8WH9V?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'CHEFMAN Multifunctional Digital Air',
-    imageUrl: 'https://m.media-amazon.com/images/I/71s8nikz44L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -63,7 +59,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0C33CHG99?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Cosori 9-in-1 TurboBlaze Air',
-    imageUrl: 'https://m.media-amazon.com/images/I/81lTKYX5LNL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -74,7 +69,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0D1TY3H2J?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'De\'Longhi La Specialista Opera',
-    imageUrl: 'https://m.media-amazon.com/images/I/71HB5OYqz8L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -85,7 +79,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FD2VBCKN?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: '(2026 Upgrade) Gevi 20',
-    imageUrl: 'https://m.media-amazon.com/images/I/61v+Chx5nwL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -96,7 +89,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0G64ZVGGZ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: '(2026 Upgrade) Espresso Machine',
-    imageUrl: 'https://m.media-amazon.com/images/I/71IJhlEv+cL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -107,7 +99,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0F4DBXT8X?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'CASABREWS 5418 PRO Espresso',
-    imageUrl: 'https://m.media-amazon.com/images/I/61Pcs0bqEsL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -118,7 +109,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DP1WXVK8?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'atatix Espresso Machine with',
-    imageUrl: 'https://m.media-amazon.com/images/I/71EccNulBWL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -129,7 +119,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FPD4HCGR?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Lefant LiDAR Robot Vacuum',
-    imageUrl: 'https://m.media-amazon.com/images/I/71CXfU9uwML._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -140,7 +129,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DX1DQKMD?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'roborock Qrevo CurvX Robot',
-    imageUrl: 'https://m.media-amazon.com/images/I/51GvwytZMFL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -151,7 +139,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B07R295MLS?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'eufy Robot Vacuum 11S',
-    imageUrl: 'https://m.media-amazon.com/images/I/7162dbcZW3L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -162,7 +149,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DP8DPXKW?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'ILIFE A12 Pro Robot',
-    imageUrl: 'https://m.media-amazon.com/images/I/71vnR94KZJL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -173,7 +159,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DWX69JVG?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'roborock Q7 M5+ Robot',
-    imageUrl: 'https://m.media-amazon.com/images/I/61EOq1YWmnL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -184,7 +169,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DQYH3NF4?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Frigidaire PureA300 HEPA Air',
-    imageUrl: 'https://m.media-amazon.com/images/I/61DSeaCev1L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -195,7 +179,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FNDG2TNK?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'KNKA Air Purifier for',
-    imageUrl: 'https://m.media-amazon.com/images/I/71eM07+OB6L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -206,7 +189,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08PJQ3MWB?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'MOOKA Air Purifiers for',
-    imageUrl: 'https://m.media-amazon.com/images/I/71EJd1tHoSL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -217,7 +199,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08FJ678YK?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'LEVOIT Air Purifier for',
-    imageUrl: 'https://m.media-amazon.com/images/I/61YVFzh9kLL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -228,7 +209,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B09WHV1NJL?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'VEWIOR Air Purifiers for',
-    imageUrl: 'https://m.media-amazon.com/images/I/71tKyP04wsL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -239,7 +219,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DJ2XKJJT?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'FLEXISPOT EN1 One-Piece Standing',
-    imageUrl: 'https://m.media-amazon.com/images/I/71KwCPJpoAL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -250,7 +229,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0G3X1JMPC?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'DUMOS 40 Inch Electric',
-    imageUrl: 'https://m.media-amazon.com/images/I/71CQOj8zi0L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -261,7 +239,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B09DYF1SRQ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'FlexiSpot E6 Bamboo 3-Stage',
-    imageUrl: 'https://m.media-amazon.com/images/I/71G57ucOZtL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -272,7 +249,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DT3Y1X96?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Huuger 55 x 28',
-    imageUrl: 'https://m.media-amazon.com/images/I/81oIr0Y+C1L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -283,7 +259,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0851B8QJ7?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'FLEXISPOT EN1 One-Piece Standing',
-    imageUrl: 'https://m.media-amazon.com/images/I/71ojKp4gsfL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -294,7 +269,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0GK96RHP1?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Security Cameras Wireless Outdoor,',
-    imageUrl: 'https://m.media-amazon.com/images/I/610iZX9CHPL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -305,7 +279,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0D9XRH3ZJ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Sense-U Battery Baby Monitor',
-    imageUrl: 'https://m.media-amazon.com/images/I/71b5f2vJnKL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -316,7 +289,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DPX6H1FY?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Aqara 4MP Camera Hub',
-    imageUrl: 'https://m.media-amazon.com/images/I/71AtiM9qjzL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -327,7 +299,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FS1JPBRV?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: '4MP Indoor Cameras for',
-    imageUrl: 'https://m.media-amazon.com/images/I/610QtwDp-iL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -338,7 +309,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0C5QRZ47P?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Ring Outdoor Cam (Stick',
-    imageUrl: 'https://m.media-amazon.com/images/I/51jsmzS6DYL._AC_SL1500_.jpg',
     coupon: '',
   },
 ];
