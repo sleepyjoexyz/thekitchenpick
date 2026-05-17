@@ -37,27 +37,18 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
   }
 
   // Generate Product schema for each deal.
-  // NOTE: The schema.org Offer block (price/priceValidUntil/shipping/returns)
-  // was removed 2026-05-15. Amazon Associates Operating Agreement requires
-  // displayed prices to come from a live Amazon API call with a timestamp;
-  // statically-baked prices in JSON-LD are not compliant. Products are still
-  // emitted with name/image/brand/url so Google can index the list.
-  const items = deals.map((deal, index) => {
-    const brand = extractBrand(deal.title);
-    return {
-      '@type': 'ListItem',
-      'position': index + 1,
-      'item': {
-        '@context': 'https://schema.org',
-        '@type': 'Product',
-        'name': deal.title,
-        'description': deal.title,
-        ...(deal.imageUrl ? { 'image': deal.imageUrl } : {}),
-        'brand': { '@type': 'Brand', 'name': brand },
-        'url': deal.amazonUrl,
-      }
-    };
-  });
+  // Plain navigational ListItem — no inner Product wrapper.
+  // Product items in ItemList require offers/review/aggregateRating
+  // for Google rich-results carousel eligibility. We can't supply
+  // offers (Operating Agreement bans static Amazon prices) and we
+  // won't fabricate reviews. So we drop the rich-result eligibility
+  // claim and emit a clean navigational ItemList.
+  const items = deals.map((deal, index) => ({
+    '@type': 'ListItem',
+    'position': index + 1,
+    'url': deal.amazonUrl,
+    'name': deal.title,
+  }));
 
   // Generate ItemList schema
   const schema = {
