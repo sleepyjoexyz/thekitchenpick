@@ -47,7 +47,7 @@ export default function DealsPage() {
 
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-100">
-        <p className="text-xs text-gray-400">Deals are sourced from Amazon, Slickdeals, and Reddit. Prices and availability may change. As an Amazon Associate, The Kitchen Pick earns from qualifying purchases.</p>
+        <p className="text-xs text-gray-400">Featured products are editor-selected and link to Amazon. Click through to see the current Amazon price — availability and pricing on Amazon may change at any time. As an Amazon Associate, The Kitchen Pick earns from qualifying purchases.</p>
       </section>
     </main>
   );

@@ -2,16 +2,18 @@ export interface Deal {
   id: string;
   title: string;
   category: 'Air Fryers' | 'Espresso Machines' | 'Robot Vacuums' | 'Air Purifiers' | 'Standing Desks' | 'Security Cameras';
-  originalPrice: number;
-  dealPrice: number;
-  percentOff: number;
+  // Legacy price fields — retained on existing rows but no longer required
+  // for new entries and no longer displayed (Amazon Operating Agreement).
+  originalPrice?: number;
+  dealPrice?: number;
+  percentOff?: number;
   source: string;
-  sourceUrl: string;
+  sourceUrl?: string;
   amazonUrl: string;
-  timeLeft: string;
+  timeLeft?: string;
   imageAlt: string;
   imageUrl: string;
-  coupon: string;
+  coupon?: string;
 }
 
 export const mockDeals: Deal[] = [

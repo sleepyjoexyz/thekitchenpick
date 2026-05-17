@@ -36,12 +36,12 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
     return null;
   }
 
-  // Get tomorrow's date for priceValidUntil
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const priceValidUntil = tomorrow.toISOString().split('T')[0];
-
-  // Generate Product schema for each deal
+  // Generate Product schema for each deal.
+  // NOTE: The schema.org Offer block (price/priceValidUntil/shipping/returns)
+  // was removed 2026-05-15. Amazon Associates Operating Agreement requires
+  // displayed prices to come from a live Amazon API call with a timestamp;
+  // statically-baked prices in JSON-LD are not compliant. Products are still
+  // emitted with name/image/brand/url so Google can index the list.
   const items = deals.map((deal, index) => {
     const brand = extractBrand(deal.title);
     return {
@@ -54,49 +54,7 @@ export function DealSchema({ deals, categoryName, pageUrl }: DealSchemaProps) {
         'description': deal.title,
         ...(deal.imageUrl ? { 'image': deal.imageUrl } : {}),
         'brand': { '@type': 'Brand', 'name': brand },
-        'offers': {
-          '@type': 'Offer',
-          'price': deal.dealPrice,
-          'priceCurrency': 'USD',
-          'availability': 'https://schema.org/InStock',
-          'url': deal.amazonUrl,
-          'priceValidUntil': priceValidUntil,
-          'shippingDetails': {
-            '@type': 'OfferShippingDetails',
-            'shippingDestination': {
-              '@type': 'DefinedRegion',
-              'addressCountry': 'US'
-            },
-            'shippingRate': {
-              '@type': 'MonetaryAmount',
-              'value': 0,
-              'currency': 'USD'
-            },
-            'deliveryTime': {
-              '@type': 'ShippingDeliveryTime',
-              'handlingTime': {
-                '@type': 'QuantitativeValue',
-                'minValue': 0,
-                'maxValue': 1,
-                'unitCode': 'DAY'
-              },
-              'transitTime': {
-                '@type': 'QuantitativeValue',
-                'minValue': 1,
-                'maxValue': 5,
-                'unitCode': 'DAY'
-              }
-            }
-          },
-          'hasMerchantReturnPolicy': {
-            '@type': 'MerchantReturnPolicy',
-            'applicableCountry': 'US',
-            'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnWindow',
-            'merchantReturnDays': 30,
-            'returnMethod': 'https://schema.org/ReturnByMail',
-            'returnFees': 'https://schema.org/FreeReturn'
-          }
-        }
+        'url': deal.amazonUrl,
       }
     };
   });

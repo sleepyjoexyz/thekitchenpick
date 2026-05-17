@@ -6,13 +6,15 @@ interface DealCardProps {
   id: string;
   title: string;
   category: string;
-  originalPrice: number;
-  dealPrice: number;
-  percentOff: number;
+  // Legacy price fields — no longer displayed (Amazon Associates Operating
+  // Agreement requires live-API prices with timestamps; static prices banned).
+  originalPrice?: number;
+  dealPrice?: number;
+  percentOff?: number;
   source: string;
-  sourceUrl: string;
+  sourceUrl?: string;
   amazonUrl: string;
-  timeLeft: string;
+  timeLeft?: string;
   imageAlt: string;
   imageUrl: string;
   coupon?: string;
@@ -39,12 +41,8 @@ const categoryColors: Record<string, string> = {
 export default function DealCard({
   title,
   category,
-  originalPrice,
-  dealPrice,
-  percentOff,
   source,
   amazonUrl,
-  timeLeft,
   imageAlt,
   imageUrl,
   coupon,
@@ -78,28 +76,21 @@ export default function DealCard({
         )}
       </div>
       <div className="p-2">
-        <div className="flex items-center justify-between mb-1">
+        <div className="mb-1">
           <span className={`text-[10px] font-semibold px-1 py-0.5 rounded ${colorClass}`}>
             {category}
           </span>
-          <span className="bg-red-50 text-red-600 text-[10px] font-bold px-1 py-0.5 rounded">
-            -{percentOff}%
-          </span>
         </div>
-        <h3 className="text-[11px] font-bold text-gray-900 mb-1 line-clamp-2 leading-tight">{title}</h3>
-        <div className="flex items-baseline gap-1 mb-1">
-          <span className="text-sm font-bold text-gray-900">${dealPrice.toFixed(2)}</span>
-          <span className="text-[10px] text-gray-400 line-through">${originalPrice.toFixed(2)}</span>
-        </div>
+        <h3 className="text-[11px] font-bold text-gray-900 mb-2 line-clamp-2 leading-tight">{title}</h3>
         {coupon && (
           <div className="bg-green-50 border border-green-200 rounded px-1 py-0.5 mb-1">
             <span className="text-[9px] font-semibold text-green-700">{coupon}</span>
           </div>
         )}
-        <div className="flex items-center justify-between">
-          <span className="text-[9px] text-gray-400">{source}</span>
-          <span className="text-[9px] text-gray-500">{timeLeft}</span>
+        <div className="mt-1 mb-1 bg-orange-500 text-white text-[10px] font-bold px-2 py-1 rounded text-center">
+          Check price on Amazon →
         </div>
+        <div className="text-[9px] text-gray-400 text-right">{source}</div>
       </div>
     </a>
   );
