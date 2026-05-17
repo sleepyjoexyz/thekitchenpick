@@ -11,6 +11,7 @@ interface DealCardProps {
   timeLeft?: string;
   imageAlt: string;
   imageUrl?: string;
+  price?: number;
   coupon?: string;
 }
 
@@ -39,6 +40,7 @@ export default function DealCard({
   amazonUrl,
   imageAlt,
   imageUrl,
+  price,
   coupon,
 }: DealCardProps) {
   const [imgError, setImgError] = useState(false);
@@ -75,7 +77,12 @@ export default function DealCard({
             {category}
           </span>
         </div>
-        <h3 className="text-[11px] font-bold text-gray-900 mb-2 line-clamp-2 leading-tight">{title}</h3>
+        <h3 className="text-[11px] font-bold text-gray-900 mb-1 line-clamp-2 leading-tight">{title}</h3>
+        {price !== undefined && (
+          <div className="text-sm font-bold text-gray-900 mb-1">
+            ${price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+          </div>
+        )}
         {coupon && (
           <div className="bg-green-50 border border-green-200 rounded px-1 py-0.5 mb-1">
             <span className="text-[9px] font-semibold text-green-700">{coupon}</span>

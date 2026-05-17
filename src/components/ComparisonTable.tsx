@@ -1,7 +1,7 @@
 "use client";
 
 import { Product } from "@/lib/types";
-import { getTypeLabel, formatRating, getAmazonLink, getPriceTier } from "@/lib/utils";
+import { getTypeLabel, formatRating, getAmazonLink, formatPrice } from "@/lib/utils";
 import { useState } from "react";
 
 interface ComparisonTableProps {
@@ -106,7 +106,7 @@ export default function ComparisonTable({ products }: ComparisonTableProps) {
                   {product.brand} {product.model}
                 </td>
                 <td className="px-4 py-3 text-blue-600 font-bold">
-                  {getPriceTier(product.price)}
+                  {formatPrice(product.price)}
                 </td>
                 <td className="px-4 py-3 text-gray-700">
                   {getTypeLabel(product.type)}
