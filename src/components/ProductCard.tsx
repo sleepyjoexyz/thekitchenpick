@@ -1,7 +1,7 @@
 "use client";
 
 import { Product } from "@/lib/types";
-import { formatPrice, getTypeLabel, formatRating, getAmazonLink } from "@/lib/utils";
+import { getTypeLabel, formatRating, getAmazonLink, getPriceTier } from "@/lib/utils";
 
 interface ProductCardProps {
   product: Product;
@@ -24,7 +24,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.brand} {product.model}
         </h3>
         <p className="text-xl font-bold text-blue-600 mb-3">
-          {formatPrice(product.price)}
+          {getPriceTier(product.price)}
         </p>
 
         <div className="space-y-2 mb-4 text-xs text-gray-600">

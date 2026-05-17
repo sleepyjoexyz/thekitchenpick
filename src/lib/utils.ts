@@ -30,6 +30,18 @@ export function getPriceRangeLabel(
   return labels[range] || range;
 }
 
+// S1223 (Phase 4b Path A): infer tier label from price for rendering.
+// Replaces visible "$N" comparison-table / product-card display with an
+// editorial tier label. Thresholds chosen to span the typical consumer-product
+// price range across all 36 category pages (Budget < $50, Mid-Range < $150,
+// Premium < $400, Luxury >= $400).
+export function getPriceTier(price: number): string {
+  if (price < 50) return "Budget";
+  if (price < 150) return "Mid-Range";
+  if (price < 400) return "Premium";
+  return "Luxury";
+}
+
 export function getTypeLabel(type: string): string {
   const labels: Record<string, string> = {
     "semi-automatic": "Semi-Automatic",
