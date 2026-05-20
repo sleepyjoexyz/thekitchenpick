@@ -153,7 +153,7 @@ export const mockDeals: Deal[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/51GvwytZMFL._AC_SL1500_.jpg',
     price: 899.98,
     timeLeft: 'Limited Time Deal',
-    imageAlt: 'roborock Qrevo CurvX Robot',
+    imageAlt: 'roborock Qrevo CurvX Robot Vacuum',
     coupon: '',
   },
   {
@@ -321,7 +321,7 @@ export const mockDeals: Deal[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/61sdq6lJkpL._AC_SL1500_.jpg',
     price: 349.99,
     timeLeft: 'Limited Time Deal',
-    imageAlt: 'Arlo Ultra 4K 3-Camera System',
+    imageAlt: 'Arlo Ultra 4K Security System',
     coupon: '',
   },
   {
