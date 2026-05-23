@@ -71,8 +71,6 @@ export function ProductListSchema({ products, categoryName, categoryUrl }: {
   products: { name: string; brand: string; price: number; rating: number; description: string; imageUrl?: string }[];
   categoryName: string; categoryUrl: string;
 }) {
-  const FALLBACK_IMAGE = "https://www.thekitchenpick.com/og-image.png";
-
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -83,13 +81,7 @@ export function ProductListSchema({ products, categoryName, categoryUrl }: {
       "itemListElement": products.map((p, i) => ({
         "@type": "ListItem",
         "position": i + 1,
-        "item": {
-          "@type": "Product",
-          "name": `${p.brand} ${p.name}`,
-          "image": p.imageUrl || FALLBACK_IMAGE,
-          "brand": { "@type": "Brand", "name": p.brand },
-          "description": p.description || `${p.brand} ${p.name}`
-        }
+        "name": `${p.brand} ${p.name}`
       }))
     })}} />
   );
