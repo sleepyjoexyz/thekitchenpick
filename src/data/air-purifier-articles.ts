@@ -829,7 +829,7 @@ If you only use an air purifier during spring (April-May), the cost-benefit impr
 
 For 2 months of severe spring allergy relief, these costs are reasonable.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: When should I replace the filter during spring allergy season?**
 

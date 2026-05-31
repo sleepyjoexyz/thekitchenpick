@@ -335,7 +335,7 @@ Both require regular cleaning. The DeLonghi has an automatic cleaning cycle and 
 
 At $400 vs $600, the DeLonghi costs 33% less and includes full automation. The Breville justifies its premium only if you value the craft of espresso making and are willing to invest time learning. For most households, the DeLonghi provides better value per dollar spent.
 
-## FAQ
+## Frequently Asked Questions
 
 **Can beginners use the Breville?** Yes, but expect a learning curve of 2-3 weeks. The DeLonghi is better for absolute beginners.
 
@@ -538,7 +538,7 @@ Purge the steam wand 2 seconds to remove condensed water. Fill pitcher 1/3 full 
 
 Not purging the group head before the shot. Inconsistent dose between shots. Rushing machine warm-up. Grinding too fine early (powder-fine grinds choke the machine). Uneven tamping causing channels. Ignoring output weight. Neglecting WDT distribution.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How often should I clean my portafilter and basket?**
 After every shot. Residual oils affect the next shot.
@@ -836,7 +836,7 @@ Heat and milk residue accelerate bacterial growth:
 - Clean steam wand immediately after frothing (milk sours in heat)
 - Daily deep clean in hot climates
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I make iced espresso without an espresso machine?**
 Yes. Cold brew concentrate method or flash-brewed coffee work well. Drinks won't have espresso's crema/intensity, but are quality iced coffee drinks.
@@ -1267,7 +1267,7 @@ Most entry-level machines have a steam wand (small metal tube) for milk frothing
 
 This takes 20+ attempts to perfect. It's normal. Even café baristas practice regularly.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I make good espresso with a moka pot instead of an espresso machine?**
 

@@ -736,7 +736,7 @@ Standing with weight on one leg (causes hip asymmetry). Hunching over keyboard (
 
 **Feet/leg pain:** check shoes (need cushioning), use anti-fatigue mat, reduce standing duration. **Lower back pain:** verify desk and monitor height, check chair lumbar support, strengthen core muscles. **Wrist/arm pain:** keyboard too high or low, mouse too far, add wrist rest.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How long should I stand each day?**
 20-30 minutes per hour is optimal. Alternate with sitting throughout the day.
@@ -1007,7 +1007,7 @@ Standing work increases water loss (sweating). Dehydration reduces cognitive per
 - **Shoulder tension:** Likely from poor monitor height; adjust monitor arm
 - **Lower back pain:** Likely from inadequate lumbar support while sitting; adjust chair
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Should I stand less in summer than winter?**
 Yes. Heat reduces standing endurance 30-40%. Expect to stand 20-30% less during 95°F+ heat waves.
@@ -1195,7 +1195,7 @@ Consider a **sit-stand desk combined with occasional treadmill time for low-focu
 
 This hybrid approach delivers 70-80% of treadmill desk health benefits at 40% of the cost and with minimal productivity loss.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How long should I stand on a standing desk each day?**
 

@@ -595,7 +595,7 @@ All three robots now include AI-powered obstacle avoidance that detects pet wast
 - You want a good all-around robot with capable pet-hair handling
 - You prefer a bagless self-empty system
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How often should I run a robot vacuum with pets?**
 A: Daily for heavy shedders (labs, huskies, golden retrievers). Every 2-3 days for moderate shedders. The self-empty bases on all three models mean you can run daily without manually emptying the dustbin.
@@ -835,7 +835,7 @@ These quick tasks take 2-3 minutes.
 
 Keep floors clear of loose items. Run the robot regularly (prevents motor seizing). Replace consumables on schedule (don't wait for failure). Update firmware. Store in a dry location.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How often should I run my robot vacuum?**
 2-3 times per week typical. Homes with pets or high traffic benefit from daily runs.
@@ -1119,7 +1119,7 @@ Prevention is much easier than repair. Keep robot and charging dock in dry locat
 - [ ] Inspect all moving parts for wear
 - [ ] Reset sensors and recalibrate dock (if applicable)
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I run my robot vacuum daily in summer?**
 Yes. Daily runs in high-pollen or high-shedding situations are appropriate. Just increase filter replacement frequency accordingly.

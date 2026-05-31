@@ -815,7 +815,7 @@ Smart toothbrushes aren't necessary for everyone, but certain groups see real va
 
 **Busy professionals** — Set-and-forget timers and habit tracking help people who rush through brushing. The app accountability keeps you honest.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Do smart toothbrushes actually clean better than regular electric brushes?**
 A: The brush bristles do the cleaning. Smart features improve *your technique*, which indirectly improves cleaning. If you already have good brushing habits, the difference is minimal.

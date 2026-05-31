@@ -638,7 +638,7 @@ This is a full countertop oven with air fry capability. At 24 quarts, it can air
 
 **Full dinner (chicken + veggies):** Only the Ninja DualZone and Breville handle this simultaneously. The Cosori requires sequential cooking.
 
-## FAQ
+## Frequently Asked Questions
 
 **Is a bigger air fryer always better?** No. Larger baskets take longer to preheat and use more energy. Buy for your actual needs, not maximum capacity.
 
@@ -817,7 +817,7 @@ Quick breads and muffins: reduce recipe by 50%, use muffin tins, reduce temp 25 
 
 Reducing temp too much (don't go below 320 degrees F). Ignoring basket capacity (overcrowding steams food). Not adjusting for moisture (air fryer evaporates liquid faster). Covering food completely (blocks air circulation). Forgetting to preheat (3-5 minutes needed). Using low smoke point oils (olive oil, butter burn easily). Converting cream-based recipes (cream sauces break in dry air fryer heat).
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Do I need to preheat my air fryer?**
 Yes, 3-5 minutes. Preheating ensures food starts cooking immediately and browns properly.
@@ -1073,7 +1073,7 @@ Air fryers excel at frozen summer foods:
 - Use air fryer on kitchen counter near window if possible
 - Cook multiple meals simultaneously (maximizes efficiency)
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How do air fryers compare to outdoor grilling in summer?**
 Air fryers are faster (half the time) and don't heat the kitchen. But they can't replicate true grill char. Best approach: air fry on hot days, grill when evening cools.
