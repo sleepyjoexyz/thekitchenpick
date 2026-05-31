@@ -559,7 +559,7 @@ Espresso requires a burr grinder producing fine, consistent particles. Blade gri
     slug: "iced-espresso-drinks-at-home-summer-2026",
     title: "How to Make Iced Espresso Drinks at Home This Summer",
     description:
-      "Master iced espresso drinks for summer 2026. Learn iced latte and cappuccino techniques, cold brew concentrate, espresso tonic, and flash-brewed iced coffee. Includes equipment guide and recipes.",
+      "Master iced espresso drinks for summer 2026. Learn iced latte and cappuccino techniques, cold brew concentrate, espresso tonic, and flash-brewed iced coffee.",
     category: "espresso-machines",
     content: `## Introduction
 
@@ -1367,7 +1367,7 @@ Both machines make real espresso that beats any pod machine. The Barista Express
   "best-espresso-machine-iced-coffee-summer-2026": {
     slug: "best-espresso-machine-iced-coffee-summer-2026",
     title: "Best Espresso Machines for Iced Coffee 2026",
-    description: "Make cafe-quality iced lattes, cold espresso tonics, and affogatos at home. These espresso machines excel at the concentrated shots that summer cold drinks demand.",
+    description: "Make cafe-quality iced lattes, cold espresso tonics, and affogatos at home. These espresso machines excel at the concentrated shots that summer cold drinks.",
     category: "espresso-machines",
     content: `## Why Espresso Machines Make Better Iced Coffee
 
@@ -1413,7 +1413,7 @@ The Breville Bambino Plus is purpose-built for the summer iced-coffee workflow w
   "complete-guide-espresso-machines-2026": {
     slug: "complete-guide-espresso-machines-2026",
     title: "Espresso Machines in 2026: From Budget to Barista",
-    description: "Everything you need to know about home espresso machines — semi-automatic vs super-automatic, grinders, pressure, milk frothing, and which machine fits your skill level and budget.",
+    description: "Everything you need to know about home espresso machines — semi-automatic vs super-automatic, grinders, pressure, milk frothing.",
     category: "espresso-machines",
     content: `## Introduction
 

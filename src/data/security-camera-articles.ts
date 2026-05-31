@@ -690,7 +690,7 @@ For most homeowners: Start with outdoor (front door), then add 1-2 interior came
     slug: "security-camera-resolution-guide",
     title: "1080p vs 2K vs 4K Security Cameras: How Much Resolution",
     description:
-      "Compare security camera resolutions. Understand real-world image quality differences, storage impact, bandwidth requirements, and when each resolution makes sense.",
+      "Compare security camera resolutions. Understand real-world image quality differences, storage impact, bandwidth requirements.",
     category: "security-cameras",
     content: `## Introduction
 

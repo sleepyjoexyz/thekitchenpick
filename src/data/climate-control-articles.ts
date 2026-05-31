@@ -206,7 +206,7 @@ Space heaters work for large rooms when expectations are realistic. A single 150
     slug: "portable-ac-vs-window-ac",
     title: "Portable AC vs Window AC: Which Should You Buy?",
     description:
-      "Compare portable and window air conditioners on efficiency, installation, noise, portability, and restrictions. Find out which is truly better and when portable is your only option.",
+      "Compare portable and window air conditioners on efficiency, installation, noise, portability, and restrictions.",
     category: "climate-control",
     content: `## Introduction
 
@@ -662,7 +662,7 @@ Smart thermostats save 10-15% on HVAC costs through automated scheduling and beh
     slug: "humidifier-vs-dehumidifier-guide",
     title: "Humidifier vs Dehumidifier: Which Does Your Home Need?",
     description:
-      "Understand humidity problems and whether your home needs a humidifier or dehumidifier. Learn ideal humidity levels, signs of imbalance, and which type solves your problem.",
+      "Understand humidity problems and whether your home needs a humidifier or dehumidifier. Learn ideal humidity levels, signs of imbalance.",
     category: "climate-control",
     content: `## Introduction
 

@@ -757,7 +757,7 @@ Set phone reminders, use a desk app, or listen to body cues (restlessness or fat
     slug: "standing-desk-home-office-summer-setup-2026",
     title: "Standing Desk Home Office Setup for Summer 2026",
     description:
-      "Optimize your standing desk setup for summer 2026. Learn about desk fan placement, monitor glare from summer sun, anti-fatigue mat selection, and optimal sit-stand schedules during heat.",
+      "Optimize your standing desk setup for summer 2026. Learn about desk fan placement, monitor glare from summer sun, anti-fatigue mat selection.",
     category: "standing-desks",
     content: `## Introduction
 

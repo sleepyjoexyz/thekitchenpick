@@ -856,7 +856,7 @@ Yes, but pet hair requires more frequent maintenance. Clean brushes twice weekly
     slug: "robot-vacuum-summer-maintenance-tips-2026",
     title: "Robot Vacuum Summer Maintenance: Sand & Pollen",
     description:
-      "Master summer robot vacuum maintenance. Learn seasonal challenges like sand and pollen tracking, filter replacement frequency, brush cleaning, and optimal scheduling for summer.",
+      "Master summer robot vacuum maintenance. Learn seasonal challenges like sand and pollen tracking, filter replacement frequency, brush cleaning.",
     category: "robot-vacuums",
     content: `## Introduction
 
@@ -1358,7 +1358,7 @@ Once you've fixed the physical layout, your robot can run autonomously without f
   "robot-vacuum-buying-guide-navigation-suction-2026": {
     slug: "robot-vacuum-buying-guide-navigation-suction-2026",
     title: "Robot Vacuum Buying Guide 2026: Smart Navigation, Suction",
-    description: "Complete robot vacuum buying guide covering LiDAR vs camera navigation, suction power ratings, self-emptying bases, mopping combos, pet hair performance, and which brands deliver.",
+    description: "Complete robot vacuum buying guide covering LiDAR vs camera navigation, suction power ratings, self-emptying bases, mopping combos, pet hair performance.",
     category: "robot-vacuums",
     content: `## Introduction
 
@@ -1466,7 +1466,7 @@ For most homes in 2026, a **$300–$400 LiDAR robot with self-empty base and mop
   "roborock-s8-vs-roomba-j7-pet-hair-2026": {
     slug: "roborock-s8-vs-roomba-j7-pet-hair-2026",
     title: "Roborock S8 Pro Ultra vs Roomba j7+: Which Robot Vacuum",
-    description: "Compare the Roborock S8 Pro Ultra and iRobot Roomba j7+ for pet owners. Covers suction power, mopping, obstacle avoidance, self-maintenance, and total cost of ownership.",
+    description: "Compare the Roborock S8 Pro Ultra and iRobot Roomba j7+ for pet owners. Covers suction power, mopping, obstacle avoidance, self-maintenance.",
     category: "robot-vacuums",
     content: `## The Pet Owner's Dilemma
 

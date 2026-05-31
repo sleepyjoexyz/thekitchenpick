@@ -838,7 +838,7 @@ Yes, 350 degrees F for 5-8 minutes. Often better than microwave for fried items 
     slug: "best-air-fryer-recipes-for-summer-2026",
     title: "Best Summer Air Fryer Recipes 2026: Stay Cool Cooking",
     description:
-      "Discover the best air fryer recipes for summer 2026. Learn why air fryers are superior to ovens in hot weather, plus 10 quick summer recipes with exact times and temperatures.",
+      "Discover the best air fryer recipes for summer 2026. Learn why air fryers are superior to ovens in hot weather.",
     category: "air-fryers",
     content: `## Introduction
 
@@ -1311,7 +1311,7 @@ The Ninja DualZone handles the largest variety of summer meals with its dual-bas
   "air-fryer-buying-guide-everything-to-know-2026": {
     slug: "air-fryer-buying-guide-everything-to-know-2026",
     title: "Air Fryer Buying Guide 2026: Everything You Need to Know",
-    description: "The complete air fryer buying guide — basket vs oven, capacity sizing, wattage, preset programs, accessories, and honest advice about what air fryers can and can't do.",
+    description: "The complete air fryer buying guide — basket vs oven, capacity sizing, wattage, preset programs, accessories.",
     category: "air-fryers",
     content: `## Introduction
 

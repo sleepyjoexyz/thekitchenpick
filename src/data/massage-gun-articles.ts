@@ -11,7 +11,7 @@ export const massageGunArticles: Record<string, MassageGunArticle> = {
     slug: "theragun-vs-hypervolt",
     title: "Theragun vs Hypervolt: Which Percussion Massager Wins?",
     description:
-      "Head-to-head comparison of Theragun and Hypervolt massage guns. Compare specs, grip design, app features, noise, and price to find the best fit for your recovery needs.",
+      "Head-to-head comparison of Theragun and Hypervolt massage guns. Compare specs, grip design, app features, noise.",
     category: "massage-guns",
     content: `## Introduction
 
