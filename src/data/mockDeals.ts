@@ -126,6 +126,8 @@ export const mockDeals: Deal[] = [
     category: 'Espresso Machines',
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0GQCR4WKZ?tag=rogeti02-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61KMplppx2L._AC_SL1500_.jpg',
+    price: 136.14,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Nespresso Vertuo Next Coffee Espresso Maker Black',
     coupon: '',
