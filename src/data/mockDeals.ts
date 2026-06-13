@@ -146,14 +146,13 @@ export const mockDeals: Deal[] = [
   },
   {
     id: 'RV-002',
-    title: 'Roborock Q7 M5+ Robot Vacuum Self-Empty, 5500Pa Suction',
+    title: 'Dreame L20 Ultra Robot Vacuum and Mop, 7000Pa Suction, Self-Emptying',
     category: 'Robot Vacuums',
     source: 'Amazon',
-    amazonUrl: 'https://www.amazon.com/dp/B0DWX69JVG?tag=rogeti02-20',
-    imageUrl: 'https://m.media-amazon.com/images/I/61EOq1YWmnL._AC_SL1500_.jpg',
-    price: 299.99,
+    amazonUrl: 'https://www.amazon.com/dp/B0CC236CLT?tag=rogeti02-20',
+    price: 279.00,
     timeLeft: 'Limited Time Deal',
-    imageAlt: 'Roborock Q7 M5+ Self-Empty Robot Vacuum',
+    imageAlt: 'Dreame L20 Ultra Robot Vacuum and Mop',
     coupon: '',
   },
   {
