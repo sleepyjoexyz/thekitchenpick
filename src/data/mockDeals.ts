@@ -133,14 +133,13 @@ export const mockDeals: Deal[] = [
   },
   {
     id: 'RV-001',
-    title: 'DREAME L40s Ultra CE Robot Vacuum and Mop, 13000Pa Suction, Self-Emptying Dock',
+    title: 'Dreame X50 Ultra Complete Robot Vacuum and Mop, 20000Pa, Auto-Empty, Self-Cleaning',
     category: 'Robot Vacuums',
     source: 'Amazon',
-    amazonUrl: 'https://www.amazon.com/dp/B0DYSPQXWG?tag=rogeti02-20',
-    imageUrl: 'https://m.media-amazon.com/images/I/611QlqC7v7L._AC_SL1500_.jpg',
-    price: 469.99,
+    amazonUrl: 'https://www.amazon.com/dp/B0F3J51GW5?tag=rogeti02-20',
+    price: 824.00,
     timeLeft: 'Limited Time Deal',
-    imageAlt: 'Dreame L40s Ultra CE Robot Vacuum Mop',
+    imageAlt: 'Dreame X50 Ultra Complete Robot Vacuum Mop',
     coupon: '',
   },
   {
