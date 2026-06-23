@@ -367,7 +367,7 @@ export const mockDeals: Deal[] = [
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0GQ33SWXZ?tag=rogeti02-20',
     imageUrl: 'https://m.media-amazon.com/images/I/71bUoaTW-nL._AC_SL1500_.jpg',
-    price: 79.99,
+    price: 69.99,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'eufy eufyCam C37 2K Solar Outdoor Camera',
     coupon: '',
