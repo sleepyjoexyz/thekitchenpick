@@ -350,14 +350,13 @@ export const mockDeals: Deal[] = [
   },
   {
     id: 'SC-004',
-    title: 'Blink Outdoor 2K+ Wireless Smart Security Camera, 2-Year Battery',
+    title: 'Blink Outdoor 4 XR Extended Range Wireless Security Camera, 2-Camera System, 2-Year Battery',
     category: 'Security Cameras',
     source: 'Amazon',
-    amazonUrl: 'https://www.amazon.com/dp/B0F968JH9R?tag=rogeti02-20',
-    imageUrl: 'https://m.media-amazon.com/images/I/61yKuVheKvL._SL1500_.jpg',
-    price: 34.99,
+    amazonUrl: 'https://www.amazon.com/dp/B0DV4WPXNM?tag=rogeti02-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61WIx40azeL._SL1000_.jpg',
     timeLeft: 'Limited Time Deal',
-    imageAlt: 'Blink Outdoor 2K+ Wireless Security Camera Black',
+    imageAlt: 'Blink Outdoor 4 XR Extended Range Wireless Security Camera 2-Pack',
     coupon: '',
   },
   {
