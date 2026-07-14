@@ -1,4 +1,4 @@
-const AFFILIATE_TAG = "rogeti02-20";
+const AFFILIATE_TAG = "kitchenpick05-20";
 
 export function getAmazonLink(asin: string | null): string | null {
   if (!asin) return null;
