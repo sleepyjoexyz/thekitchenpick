@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -91,8 +92,11 @@ const standingDeskResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function StandingDesksContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function StandingDesksContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [deskWidth, setDeskWidth] = useState<string>("all");
   const [motorType, setMotorType] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -460,5 +464,13 @@ export default function StandingDesksContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function StandingDesksPage() {
+  return (
+    <Suspense fallback={null}>
+      <StandingDesksContent />
+    </Suspense>
   );
 }

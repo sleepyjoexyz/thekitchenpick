@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductFinder from "@/components/ProductFinder";
 import { securityCameras } from "@/data/security-cameras";
@@ -88,8 +89,11 @@ const securityCameraResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function SecurityCamerasContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function SecurityCamerasContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [powerType, setPowerType] = useState<string>("all");
   const [resolution, setResolution] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -571,5 +575,13 @@ export default function SecurityCamerasContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function SecurityCamerasPage() {
+  return (
+    <Suspense fallback={null}>
+      <SecurityCamerasContent />
+    </Suspense>
   );
 }

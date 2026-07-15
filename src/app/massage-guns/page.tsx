@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -91,8 +92,11 @@ const massageGunResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function MassageGunsContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function MassageGunsContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [hasApp, setHasApp] = useState<string>("all");
   const [hasHeating, setHasHeating] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -477,5 +481,13 @@ export default function MassageGunsContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function MassageGunsPage() {
+  return (
+    <Suspense fallback={null}>
+      <MassageGunsContent />
+    </Suspense>
   );
 }

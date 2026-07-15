@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -96,8 +97,11 @@ const climateResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function ClimateControlContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function ClimateControlContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [deviceType, setDeviceType] = useState<string>("all");
   const [hasWifi, setHasWifi] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -463,5 +467,13 @@ export default function ClimateControlContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function ClimateControlPage() {
+  return (
+    <Suspense fallback={null}>
+      <ClimateControlContent />
+    </Suspense>
   );
 }

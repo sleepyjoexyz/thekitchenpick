@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -86,8 +87,11 @@ const toothbrushResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function ElectricToothbrushesContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function ElectricToothbrushesContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [brushType, setBrushType] = useState<string>("all");
   const [hasApp, setHasApp] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -476,5 +480,13 @@ export default function ElectricToothbrushesContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function ElectricToothbrushesPage() {
+  return (
+    <Suspense fallback={null}>
+      <ElectricToothbrushesContent />
+    </Suspense>
   );
 }

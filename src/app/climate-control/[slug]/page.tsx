@@ -116,6 +116,24 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Recommended Products */}
 
+      {/* Buyer-Intent CTA */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Ready to Choose Your Climate Control Unit?
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Compare our top-rated picks side by side, then filter to the best budget options under $400 for your needs.
+          </p>
+          <Link
+            href="/climate-control?budget=budget"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+          >
+            See the Best Climate Picks Under $400 &rarr;
+          </Link>
+        </div>
+      </section>
+
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>

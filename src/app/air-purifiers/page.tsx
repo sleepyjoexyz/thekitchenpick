@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -88,8 +89,11 @@ const airPurifierResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function AirPurifiersContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function AirPurifiersContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [hasCarbon, setHasCarbon] = useState<string>("all");
   const [smartFeatures, setSmartFeatures] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -439,5 +443,13 @@ export default function AirPurifiersContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function AirPurifiersPage() {
+  return (
+    <Suspense fallback={null}>
+      <AirPurifiersContent />
+    </Suspense>
   );
 }

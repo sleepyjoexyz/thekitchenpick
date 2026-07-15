@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -91,8 +92,11 @@ const airFryerResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function AirFryersContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function AirFryersContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [style, setStyle] = useState<string>("all");
   const [dualZone, setDualZone] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -442,5 +446,13 @@ export default function AirFryersContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function AirFryersPage() {
+  return (
+    <Suspense fallback={null}>
+      <AirFryersContent />
+    </Suspense>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import ProductFinder from "@/components/ProductFinder";
@@ -92,8 +93,11 @@ const robotVacuumResultConfig: FinderResultConfig = {
   ],
 };
 
-export default function RobotVacuumsContent() {
-  const [priceRange, setPriceRange] = useState<string>("all");
+function RobotVacuumsContent() {
+  const searchParams = useSearchParams();
+  const [priceRange, setPriceRange] = useState<string>(
+    searchParams.get("budget") === "budget" ? "budget" : "all"
+  );
   const [selfEmpty, setSelfEmpty] = useState<string>("all");
   const [mopping, setMopping] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("name");
@@ -372,5 +376,13 @@ export default function RobotVacuumsContent() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function RobotVacuumsPage() {
+  return (
+    <Suspense fallback={null}>
+      <RobotVacuumsContent />
+    </Suspense>
   );
 }
