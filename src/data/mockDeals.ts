@@ -139,7 +139,7 @@ export const mockDeals: Deal[] = [
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0H365CZ25?tag=rogeti02-20',
     imageUrl: 'https://m.media-amazon.com/images/I/61i9cnjzHuL._AC_SL1500_.jpg',
-    price: 259.99,
+    price: 279.99,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'roborock Q7 M5+ Robot Vacuum and Mop with Auto-Empty Dock',
     coupon: '',
