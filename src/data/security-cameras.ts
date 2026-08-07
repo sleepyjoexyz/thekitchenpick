@@ -22,6 +22,7 @@ export interface SecurityCamera {
   cons: string[];
   bestFor: string;
   amazonAsin: string | null;
+  quickPickImg?: string;
   rating: number;
   imageAlt: string;
   lastVerified: null;
@@ -302,6 +303,7 @@ export const securityCameras: SecurityCamera[] = [
     ],
     bestFor: "Budget builders wanting multi-camera systems with 2K quality",
     amazonAsin: "B0BHT9V8NZ",
+    quickPickImg: "https://m.media-amazon.com/images/I/71yXzMO9ctL._AC_SL1500_.jpg",
     rating: 4.2,
     imageAlt: "Wyze Cam v3 Pro wired 2K security camera",
     lastVerified: null,
