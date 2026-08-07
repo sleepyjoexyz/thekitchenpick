@@ -358,7 +358,6 @@ export const climateDevices: ClimateDevice[] = [
     ],
     bestFor: "Budget office workers needing personal desktop warmth",
     amazonAsin: "B00KK4BNMK",
-    quickPickImg: "https://m.media-amazon.com/images/I/71b2vBtlwVL._AC_SL1200_.jpg",
     rating: 3.9,
     imageAlt: "Vornado MVH Vortex compact personal space heater",
     lastVerified: null,

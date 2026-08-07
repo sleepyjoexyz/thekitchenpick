@@ -345,7 +345,7 @@ function ElectricToothbrushesContent() {
                   <td className="border border-gray-300 px-4 py-2 text-center">
                     {product.amazonAsin ? (
                       <a
-                        href={`https://amazon.com/dp/${product.amazonAsin}?tag=kitchenpick05-20`}
+                        href={`https://amazon.com/dp/${product.amazonAsin}?tag=rogeti02-20`}
                         target="_blank"
                         rel="sponsored noopener noreferrer"
                         className="text-blue-600 hover:underline"
