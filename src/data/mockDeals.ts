@@ -67,7 +67,7 @@ export const mockDeals: Deal[] = [
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0C33CHG99?tag=kitchenpick05-20',
     imageUrl: 'https://m.media-amazon.com/images/I/81R9sA3IyBL._AC_SL1500_.jpg',
-    price: 109.99,
+    price: 89.99,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Cosori TurboBlaze 6Qt Air Fryer Black',
     coupon: '',
